@@ -7,12 +7,12 @@ import { Card, CardContent } from "../components/ui/card"
 import { ArrowRight, Brain, Monitor, Globe } from "lucide-react"
 import { VideoSlider } from "../components/VideoSlider"
 import { useLocale } from "../context/locale-context"
-
+import { motion } from "framer-motion"
 export default function HomePage() {
   const { t, dir } = useLocale()
 
   return (
-    <div className="min-h-screen bg-white rtl:font-arabic ltr:font-english">
+    <div className="min-h-screen bg-white">
       {/* Hero Section with Video Slider */}
       <section className="relative h-[700px] bg-gradient-to-r from-primary to-primary-600 flex items-center">
         <div className="absolute inset-0">

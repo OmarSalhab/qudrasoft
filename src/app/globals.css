@@ -7,12 +7,18 @@
 	--background: "#ffffff";
 	--foreground: oklch(0.145 0 0);
 }
+
 @theme inline {
 	--font-english: var(--font-inter);
-	--font-arabic: var(--font-cairo);
+	--font-arabic: var(--font-tajawal);
 }
 
 body {
 	background-color: var(--background);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--font-inter), 'Inter', sans-serif;
+}
+
+/* RTL font support */
+[dir="rtl"] body {
+	font-family: var(--font-tajawal), 'Tajawal', sans-serif;
 }

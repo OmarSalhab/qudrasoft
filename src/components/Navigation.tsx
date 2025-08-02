@@ -35,7 +35,7 @@ export default function Navigation() {
 
 	return (
 		<>
-			<header className="bg-secondary text-gray-950 relative z-50 rtl:text-xl rtl:font-arabic ltr:font-english ">
+			<header className="bg-secondary text-gray-950 relative z-50 rtl:text-xl  ">
 				<div className="container mx-auto px-4">
 					<div className="flex items-center justify-between h-20">
 						<Link

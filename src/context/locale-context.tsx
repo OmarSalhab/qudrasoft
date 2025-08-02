@@ -27,6 +27,9 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("locale", locale)
     document.documentElement.dir = locale === "ar" ? "rtl" : "ltr"
     document.documentElement.lang = locale
+
+    document.body.className = document.body.className.replace(/font-(english|arabic)/g, '')
+    document.body.classList.add(locale === "ar" ? "font-arabic" : "font-english")
   }, [locale])
 
   const t = getTranslation(locale)

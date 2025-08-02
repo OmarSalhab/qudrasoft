@@ -12,6 +12,10 @@ module.exports = {
 				secondary: "#F5F5F5",
 				accent:"#d91f34"
 			},
+			fontFamily: {
+				'english': ['var(--font-inter)', 'Inter', 'sans-serif'],
+				'arabic': ['var(--font-tajawal)', 'Tajawal', 'sans-serif'],
+			},
 		},
 	},
 	plugins: [],
