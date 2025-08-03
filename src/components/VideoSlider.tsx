@@ -62,7 +62,7 @@ export function VideoSlider() {
 	};
 
 	const handleVideoLoaded = () => {
-		console.log("Video loaded successfully");
+		
 	};
 
 	const handleVideoError = (error: unknown) => {

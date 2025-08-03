@@ -1,105 +1,129 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { useLocale } from "../context/locale-context"
+import Link from "next/link";
+import { useLocale } from "../context/locale-context";
+import {
+	MessageCircle,
+	Linkedin,
+	Instagram,
+	Facebook,
+	Heart,
+} from "lucide-react";
+
+// import { Card } from "@/components/ui/card";
+// import { Button } from "@/components/ui/button";
 
 export default function Footer() {
-  const { t, dir } = useLocale()
+	const { t, dir } = useLocale();
 
-  return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8">
-          <div>
-            <div className={`flex items-center space-x-2 ${dir === "rtl" ? "space-x-reverse" : ""} mb-4`}>
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <span className="text-gray-900 font-bold text-sm">E</span>
-              </div>
-              <span className="font-semibold text-lg">E-Solutions</span>
-            </div>
-            <p className="text-gray-400 text-sm leading-relaxed">{t.footer.description}</p>
-          </div>
+	return (
+		<footer className="bg-slate-900 text-white">
+			<div
+				className={`container mx-auto px-4 py-12 ${
+					dir === "rtl" ? "rtl" : "ltr"
+				}`}
+			>
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+					{/* Social Media Section */}
+					<div className={`${dir === "rtl" ? "text-center" : "text-center"} items-center flex flex-col`}>
+						<h3 className="text-lg font-semibold mb-6 text-secondary">
+							{t.footer.followUs}
+						</h3>
+						<div className="flex gap-3">
+							<Link href="#" className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+								<MessageCircle className="w-6 h-6 text-white" />
+							</Link>
+							<Link href="#" className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+								<Linkedin className="w-6 h-6 text-white" />
+							</Link>
+							<Link href="#" className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+								<Instagram className="w-6 h-6 text-white" />
+							</Link>
+							<Link href="#" className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+								<Facebook className="w-6 h-6 text-white" />
+							</Link>
+						</div>
+					</div>
 
-          <div>
-            <h3 className="font-semibold mb-4">{t.footer.services}</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link href="/services/ai-automation" className="hover:text-white transition-colors">
-                  {t.services.aiAutomation.title}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/e-menu" className="hover:text-white transition-colors">
-                  {t.services.eMenu.title}
-                </Link>
-              </li>
-              <li>
-                <Link href="/services/landing-website" className="hover:text-white transition-colors">
-                  {t.services.landingWebsite.title}
-                </Link>
-              </li>
-            </ul>
-          </div>
+					{/* Contact Section */}
+					<div className={`${dir === "rtl" ? "text-center" : "text-center"}`}>
+						<h3 className="text-lg font-semibold mb-6 text-secondary">
+							{t.footer.contactUs}
+						</h3>
+						<div className="space-y-3">
+							<p className="text-gray-300">{t.footer.phone}</p>
+							<p className="text-gray-300">{t.footer.email}</p>
+							<p className="text-gray-300">{t.footer.website}</p>
+						</div>
+					</div>
 
-          <div>
-            <h3 className="font-semibold mb-4">{t.footer.company}</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link href="/about-us" className="hover:text-white transition-colors">
-                  {t.nav.aboutUs}
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" className="hover:text-white transition-colors">
-                  {t.nav.careers}
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:text-white transition-colors">
-                  {t.nav.blog}
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact-us" className="hover:text-white transition-colors">
-                  {t.nav.contactUs}
-                </Link>
-              </li>
-            </ul>
-          </div>
+					{/* Quick Links Section */}
+					<div className={`${dir === "rtl" ? "text-center" : "text-center"}`}>
+						<h3 className="text-lg font-semibold mb-6 text-secondary">
+							{t.footer.quickLinks}
+						</h3>
+						<div className="space-y-3">
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+								{t.footer.services}
+							</p>
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+								{t.footer.createWebsites}
+							</p>
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+								{t.footer.createStores}
+							</p>
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+								{t.footer.mobileApps}
+							</p>
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+								{t.footer.cloudSolutions}
+							</p>
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors mt-4">
+								{t.footer.etoProgram}
+							</p>
+							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+								{t.footer.schoolProgram}
+							</p>
+							<div className="mt-6">
+								<p className="text-gray-400 text-sm">{t.footer.whoWeAre}</p>
+								<p className="text-gray-400 text-sm mt-1">
+									{t.footer.contactUsFooter}
+								</p>
+							</div>
+						</div>
+					</div>
 
-          <div>
-            <h3 className="font-semibold mb-4">{t.footer.connect}</h3>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  LinkedIn
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Twitter
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Facebook
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-white transition-colors">
-                  Instagram
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+					{/* About Us Section */}
+					<div className={`${dir === "rtl" ? "text-center" : "text-center"}`}>
+						<h3 className="text-lg font-semibold mb-6 text-secondary">
+							{t.footer.aboutUs}
+						</h3>
+						<p className="text-gray-300 leading-relaxed text-sm">
+							{t.footer.aboutUsText}
+						</p>
+					</div>
+				</div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>
-            &copy; 2024 E-Solutions Inc. {t.footer.rights} | {t.footer.privacy} | {t.footer.terms}
-          </p>
-        </div>
-      </div>
-    </footer>
-  )
+				{/* Bottom Section */}
+				<div
+					className={`border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center ${
+						dir === "rtl" ? "text-center" : "text-center"
+					}`}
+				>
+					<div className="text-gray-400 text-sm mb-4 md:mb-0">
+						{t.footer.copyright}
+					</div>
+					<div className="flex items-center gap-2 text-gray-400 text-sm">
+						<span>{t.footer.madeInJordan}</span>
+						<Heart className="w-4 h-4 text-red-500 fill-current" />
+					</div>
+				</div>
+
+				{/* Bottom Slogan */}
+				<div className="mt-4 text-center">
+					<p className="text-gray-500 text-sm italic">{t.footer.slogan}</p>
+				</div>
+			</div>
+		</footer>
+	);
 }
