@@ -94,19 +94,19 @@ export default function CTASection() {
 					{/* Trust Indicators */}
 					<div className="flex flex-wrap justify-center items-center gap-8 text-green-100">
 						<div className="flex items-center">
-							<div className="w-2 h-2 bg-blue-300 rounded-full ml-2"></div>
+							<div className="w-2 h-2 bg-blue-300 rounded-full rtl:ml-2 ltr:mr-2"></div>
 							<span>{t.home.cta.trustIndicators.freeConsultation}</span>
 						</div>
 						<div className="flex items-center">
-							<div className="w-2 h-2 bg-red-300 rounded-full ml-2"></div>
+							<div className="w-2 h-2 bg-red-300 rounded-full rtl:ml-2 ltr:mr-2"></div>
 							<span>{t.home.cta.trustIndicators.qualityGuarantee}</span>
 						</div>
 						<div className="flex items-center">
-							<div className="w-2 h-2 bg-blue-300 rounded-full ml-2"></div>
+							<div className="w-2 h-2 bg-blue-300 rounded-full rtl:ml-2 ltr:mr-2"></div>
 							<span>{t.home.cta.trustIndicators.continuousSupport}</span>
 						</div>
 						<div className="flex items-center">
-							<div className="w-2 h-2 bg-red-300 rounded-full ml-2"></div>
+							<div className="w-2 h-2 bg-red-300 rounded-full rtl:ml-2 ltr:mr-2"></div>
 							<span>{t.home.cta.trustIndicators.competitivePricing}</span>
 						</div>
 					</div>

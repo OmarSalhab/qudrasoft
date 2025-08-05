@@ -114,8 +114,8 @@ export default function Services() {
                   {/* Features */}
                   <div className="grid grid-cols-2 gap-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm text-gray-400">
-                        <div className="w-2 h-2 bg-blue-400 rounded-full ml-2"></div>
+                      <div key={featureIndex} className="flex items-center text-sm ltr:text-[13px] text-gray-400">
+                        <div className="w-2 h-2 bg-blue-400 rounded-full rtl:ml-2 ltr:mr-2"></div>
                         {feature}
                       </div>
                     ))}

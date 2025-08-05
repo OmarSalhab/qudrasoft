@@ -40,12 +40,12 @@ export default function Navigation() {
 					<div className="flex items-center justify-between h-20">
 						<Link
 							href="/"
-							className="flex items-center space-x-2 rtl:space-x-reverse"
+							className="flex items-center gap-2"
 						>
 							<Image width={170} height={50} alt="Logo" src="/logo-3.png" />
 						</Link>
 
-						<nav className="hidden lg:flex items-center space-x-8 rtl:space-x-reverse">
+						<nav className="hidden lg:flex items-center gap-8">
 							<Link
 								href="/"
 								className={`hover:text-primary transition-colors ${
@@ -159,7 +159,7 @@ export default function Navigation() {
 							{/* Language Switcher */}
 
 							<button
-								className="text-sm border p-2 rtl:mx-7 cursor-pointer hover:text-primary"
+								className="text-md border p-2 cursor-pointer hover:text-primary"
 								onClick={toggleLanguage}
 							>
 								{t.nav.languageSwitch}

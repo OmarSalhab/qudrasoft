@@ -29,7 +29,7 @@ export const translations = {
 					email: {
 						title: "Email Us",
 						description: "Send us your project details",
-						contact: "info@jopython.com",
+						contact: "info@QudraSoft.com",
 					},
 					chat: {
 						title: "Live Chat",
@@ -224,6 +224,157 @@ export const translations = {
 				buttons: {
 					requestService: "Request Service Now",
 					viewAllServices: "View All Services",
+				},
+			},
+
+			whyUs: {
+				title: {
+					main: "Why Choose",
+					highlight: "QudraSoft",
+				},
+				description:
+					"We are not just a software development company, but your strategic partner in the digital transformation journey",
+				reasons: [
+					{
+						title: "Exceptional Quality",
+						description:
+							"We are committed to the highest quality standards in every project we work on, with attention to fine details",
+						stats: "99.8% Customer Satisfaction Rate",
+					},
+					{
+						title: "Fast Execution",
+						description:
+							"Professional team ensures project delivery on time without compromising quality",
+						stats: "30% faster than competitors on average",
+					},
+					{
+						title: "Expert Team",
+						description:
+							"Developers and designers with extensive experience in the latest technologies and advanced tools",
+						stats: "More than 50 technical experts",
+					},
+					{
+						title: "Security & Reliability",
+						description:
+							"We apply the highest security standards to protect your data and sensitive information",
+						stats: "100% Data Protection",
+					},
+					{
+						title: "Continuous Support",
+						description:
+							"24/7 continuous technical support to ensure your projects continue to operate at optimal performance",
+						stats: "Round-the-clock support",
+					},
+					{
+						title: "Competitive Pricing",
+						description:
+							"We offer the best value for money with flexible packages that suit all budgets",
+						stats: "Savings up to 40%",
+					},
+				],
+				cta: {
+					title: "Ready to Start Your Next Project?",
+					description:
+						"Join more than 200 satisfied clients and discover the difference with us",
+					buttons: {
+						getConsultation: "Get Free Consultation",
+						browseWork: "Browse Our Work",
+					},
+				},
+			},
+
+			testimonials: {
+				title: {
+					main: "What do our",
+					highlight: "clients",
+				},
+				description:
+					"Opinions and experiences of our valued clients who trusted us and achieved exceptional successes",
+				testimonials: [
+					{
+						name: "Ahmed Mohammed",
+						position: "General Manager",
+						company: "Advanced Technologies Company",
+						image: "/manager-1.jpeg",
+						rating: 5,
+						text: "I worked with QudraSoft on developing our company's website, and the result exceeded all my expectations. A very professional team committed to deadlines. The website became 300% faster and sales increased by 150%.",
+						project: "E-commerce Website",
+						results: [
+							"150% Sales Increase",
+							"300% Speed Improvement",
+							"Excellent User Experience",
+						],
+					},
+					{
+						name: "Fatima Al-Ali",
+						position: "Marketing Director",
+						company: "Innovation Business Group",
+						image: "/manager-2.jpeg",
+						rating: 5,
+						text: "QudraSoft developed a customer management application for us and the work was very professional. The team quickly understood our needs and provided innovative solutions. The application is easy to use and greatly improved the sales team's efficiency.",
+						project: "Customer Management App",
+						results: [
+							"80% Efficiency Improvement",
+							"60% Time Savings",
+							"95% Employee Satisfaction",
+						],
+					},
+					{
+						name: "Khalid Al-Saadi",
+						position: "Founder & CEO",
+						company: "Smart Education Platform",
+						image: "/manager-3jpeg.jpeg",
+						rating: 5,
+						text: "We chose QudraSoft to develop our e-learning platform, and it was an amazing experience. The team is creative and understanding of modern education requirements. The platform now serves more than 10,000 students with high efficiency.",
+						project: "E-learning Platform",
+						results: [
+							"10,000+ Active Students",
+							"90% Completion Rate",
+							"4.8/5 Rating",
+						],
+					},
+					{
+						name: "Sarah Al-Zahrani",
+						position: "Operations Director",
+						company: "Advanced Care Hospital",
+						image: "/manger-4.jpeg",
+						rating: 5,
+						text: "The hospital management system developed by QudraSoft completely changed how we work. Operations became more organized and faster, and patient experience improved significantly. The support team is always available and very cooperative.",
+						project: "Hospital Management System",
+						results: [
+							"70% Service Improvement",
+							"85% Error Reduction",
+							"92% Patient Satisfaction",
+						],
+					},
+					{
+						name: "Mohammed Al-Ahmad",
+						position: "IT Director",
+						company: "Digital Progressive Bank",
+						image: "/manager-5.jpeg",
+						rating: 5,
+						text: "We collaborated with QudraSoft on developing the mobile banking app, and the result was exceptional. The app is secure, fast, and easy to use. Active users increased by 200% in just 6 months.",
+						project: "Mobile Banking App",
+						results: ["200% User Increase", "100% Security", "4.9/5 Rating"],
+					},
+				],
+				stats: {
+					satisfactionRate: {
+						number: "98%",
+						label: "Customer Satisfaction Rate",
+					},
+					satisfiedClients: {
+						number: "200+",
+						label: "Satisfied Clients",
+					},
+					averageRating: {
+						number: "4.9/5",
+						label: "Average Rating",
+					},
+					renewalRate: {
+						number: "95%",
+						label: "Renewal Rate",
+					},
 				},
 			},
 		},
@@ -455,10 +606,10 @@ export const translations = {
 			followUs: "Follow Us",
 			contactUs: "Contact Us",
 			quickLinks: "Quick Links",
-			aboutUs: "JoPython",
+			aboutUs: "QudraSoft",
 			phone: "+962 77 939 3847",
-			email: "info@jopython.com",
-			website: "www.jopython.com",
+			email: "info@QudraSoft.com",
+			website: "www.QudraSoft.com",
 			services: "Our Services",
 			createWebsites: "Website Development",
 			createStores: "E-commerce Development",
@@ -471,7 +622,7 @@ export const translations = {
 				"A leading company in software development and advanced technical solutions from the heart of Amman to the Arab world",
 			whoWeAre: "Who We Are",
 			contactUsFooter: "Contact Us",
-			copyright: "© 2024 JoPython. All rights reserved",
+			copyright: "© 2024 QudraSoft. All rights reserved",
 			madeInJordan: "Made in Amman, Jordan",
 			slogan:
 				"From the heart of Amman to the Arab world, quality and innovation in software and website development",
@@ -513,7 +664,7 @@ export const translations = {
 					email: {
 						title: "راسلنا",
 						description: "أرسل لنا تفاصيل مشروعك",
-						contact: "info@jopython.com",
+						contact: "info@QudraSoft.com",
 					},
 					chat: {
 						title: "دردشة مباشرة",
@@ -698,6 +849,148 @@ export const translations = {
 				buttons: {
 					requestService: "اطلب الخدمة الآن",
 					viewAllServices: "عرض جميع الخدمات",
+				},
+			},
+
+			whyUs: {
+				title: {
+					main: "لماذا تختار",
+					highlight: "قدرةسوفت",
+				},
+				description:
+					"نحن لسنا مجرد شركة تطوير برمجيات، بل شريكك الاستراتيجي في رحلة التحول الرقمي",
+				reasons: [
+					{
+						title: "جودة استثنائية",
+						description:
+							"نلتزم بأعلى معايير الجودة في كل مشروع نعمل عليه، مع اهتمام بالتفاصيل الدقيقة",
+						stats: "99.8% معدل رضا العملاء",
+					},
+					{
+						title: "سرعة في التنفيذ",
+						description:
+							"فريق عمل محترف يضمن تسليم المشاريع في الوقت المحدد دون التنازل عن الجودة",
+						stats: "متوسط 30% أسرع من المنافسين",
+					},
+					{
+						title: "فريق خبير",
+						description:
+							"مطورون ومصممون ذوو خبرة واسعة في أحدث التقنيات والأدوات المتطورة",
+						stats: "أكثر من 50 خبير تقني",
+					},
+					{
+						title: "أمان وموثوقية",
+						description:
+							"نطبق أعلى معايير الأمان لحماية بياناتك ومعلوماتك الحساسة",
+						stats: "100% حماية البيانات",
+					},
+					{
+						title: "دعم مستمر",
+						description:
+							"دعم فني متواصل 24/7 لضمان استمرارية عمل مشاريعك بأفضل أداء",
+						stats: "دعم على مدار الساعة",
+					},
+					{
+						title: "أسعار تنافسية",
+						description:
+							"نقدم أفضل قيمة مقابل المال مع باقات مرنة تناسب جميع الميزانيات",
+						stats: "توفير يصل إلى 40%",
+					},
+				],
+				cta: {
+					title: "جاهز لبدء مشروعك التالي؟",
+					description: "انضم إلى أكثر من 200 عميل راضي واكتشف الفرق معنا",
+					buttons: {
+						getConsultation: "احصل على استشارة مجانية",
+						browseWork: "تصفح أعمالنا",
+					},
+				},
+			},
+
+			testimonials: {
+				title: {
+					main: "ماذا يقول",
+					highlight: "عملاؤنا",
+				},
+				description:
+					"آراء وتجارب عملائنا الكرام الذين وثقوا بنا وحققوا نجاحات استثنائية",
+				testimonials: [
+					{
+						name: "أحمد محمد",
+						position: "مدير عام",
+						company: "شركة التقنيات المتقدمة",
+						image: "/manager-1.jpeg",
+						rating: 5,
+						text: "تعاملت مع قدرةسوفت في تطوير موقع شركتنا الإلكتروني، والنتيجة فاقت كل توقعاتي. فريق محترف جداً وملتزم بالمواعيد. الموقع أصبح أسرع بـ 300% وزادت المبيعات بنسبة 150%.",
+						project: "موقع التجارة الإلكترونية",
+						results: [
+							"زيادة المبيعات 150%",
+							"تحسن السرعة 300%",
+							"تجربة مستخدم ممتازة",
+						],
+					},
+					{
+						name: "فاطمة العلي",
+						position: "مديرة التسويق",
+						company: "مجموعة الابتكار التجارية",
+						image: "/manager-2.jpeg",
+						rating: 5,
+						text: "قدرةسوفت طوروا لنا تطبيق إدارة العملاء وكان العمل احترافي جداً. الفريق فهم احتياجاتنا بسرعة وقدم حلول مبتكرة. التطبيق سهل الاستخدام وحسن من كفاءة فريق المبيعات بشكل كبير.",
+						project: "تطبيق إدارة العملاء",
+						results: [
+							"تحسن الكفاءة 80%",
+							"توفير الوقت 60%",
+							"رضا الموظفين 95%",
+						],
+					},
+					{
+						name: "خالد السعدي",
+						position: "مؤسس ومدير تنفيذي",
+						company: "منصة التعليم الذكي",
+						image: "/manager-3jpeg.jpeg",
+						rating: 5,
+						text: "اختارنا قدرةسوفت لتطوير منصة التعليم الإلكتروني الخاصة بنا، وكانت تجربة رائعة. الفريق مبدع ومتفهم لمتطلبات التعليم الحديث. المنصة تخدم الآن أكثر من 10,000 طالب بكفاءة عالية.",
+						project: "منصة التعليم الإلكتروني",
+						results: ["10,000+ طالب نشط", "معدل إكمال 90%", "تقييم 4.8/5"],
+					},
+					{
+						name: "سارة الزهراني",
+						position: "مديرة العمليات",
+						company: "مستشفى الرعاية المتقدمة",
+						image: "/manger-4.jpeg",
+						rating: 5,
+						text: "نظام إدارة المستشفى الذي طورته قدرةسوفت غير طريقة عملنا تماماً. أصبحت العمليات أكثر تنظيماً وسرعة، وتحسنت تجربة المرضى بشكل ملحوظ. فريق الدعم متاح دائماً ومتعاون جداً.",
+						project: "نظام إدارة المستشفى",
+						results: ["تحسن الخدمة 70%", "تقليل الأخطاء 85%", "رضا المرضى 92%"],
+					},
+					{
+						name: "محمد الأحمد",
+						position: "مدير تقنية المعلومات",
+						company: "البنك الرقمي المتطور",
+						image: "/manager-5.jpeg",
+						rating: 5,
+						text: "تعاونا مع قدرةسوفت في تطوير تطبيق البنك المحمول، والنتيجة كانت استثنائية. التطبيق آمن وسريع وسهل الاستخدام. عدد المستخدمين النشطين زاد بنسبة 200% خلال 6 أشهر فقط.",
+						project: "تطبيق البنك المحمول",
+						results: ["زيادة المستخدمين 200%", "أمان 100%", "تقييم 4.9/5"],
+					},
+				],
+				stats: {
+					satisfactionRate: {
+						number: "98%",
+						label: "معدل رضا العملاء",
+					},
+					satisfiedClients: {
+						number: "200+",
+						label: "عميل راضي",
+					},
+					averageRating: {
+						number: "4.9/5",
+						label: "متوسط التقييم",
+					},
+					renewalRate: {
+						number: "95%",
+						label: "معدل التجديد",
+					},
 				},
 			},
 		},
@@ -926,10 +1219,10 @@ export const translations = {
 			followUs: "تابعنا",
 			contactUs: "تواصل معنا",
 			quickLinks: "روابط سريعة",
-			aboutUs: "جوبايثون",
+			aboutUs: "قدرةسوفت",
 			phone: "+962 77 939 3847",
-			email: "info@jopython.com",
-			website: "www.jopython.com",
+			email: "info@QudraSoft.com",
+			website: "www.QudraSoft.com",
 			services: "خدماتنا",
 			createWebsites: "إنشاء المواقع الإلكترونية",
 			createStores: "إنشاء المتاجر الإلكترونية",
@@ -941,7 +1234,7 @@ export const translations = {
 				"شركة رائدة في تطوير البرمجيات والحلول التقنية المتقدمة من قلب عمان إلى الوطن العربي",
 			whoWeAre: "من نحن",
 			contactUsFooter: "تواصل معنا",
-			copyright: "© 2024 جوبايثون. جميع الحقوق محفوظة",
+			copyright: "© 2024 قدرةسوفت. جميع الحقوق محفوظة",
 			madeInJordan: "صنع في عمان، الأردن",
 			slogan:
 				"من قلب عمان إلى الوطن العربي، الجودة والابتكار في صناعة البرمجيات والمواقع الإلكترونية",
