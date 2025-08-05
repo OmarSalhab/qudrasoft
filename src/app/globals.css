@@ -10,7 +10,7 @@
 
 @theme inline {
 	--font-english: var(--font-inter);
-	--font-arabic: var(--font-tajawal);
+	--font-arabic: 'Noto Sans Arabic';
 }
 
 body {
@@ -20,5 +20,5 @@ body {
 
 /* RTL font support */
 [dir="rtl"] body {
-	font-family: var(--font-tajawal), 'Tajawal', sans-serif;
+	font-family: var(--font-arabic), 'Noto Sans Arabic', sans-serif;
 }
