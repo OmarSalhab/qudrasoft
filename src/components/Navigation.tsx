@@ -35,33 +35,44 @@ export default function Navigation() {
 
 	return (
 		<>
-			<header className="bg-secondary text-gray-950 relative z-50 rtl:text-xl  ">
+			<header className="bg-secondary text-gray-700 shadow-sm shadow-red-500 relative z-50 rtl:text-[19px] font-medium ">
 				<div className="container mx-auto px-4">
 					<div className="flex items-center justify-between h-20">
 						<Link
 							href="/"
-							className="flex items-center space-x-2 rtl:space-x-reverse"
+							className="flex items-center gap-2"
 						>
-							<Image width={180} height={70} alt="Logo" src="/logo.png"/>
+							<Image width={170} height={50} alt="Logo" src="/logo-3.png" />
 						</Link>
 
-						<nav className="hidden lg:flex items-center space-x-8 rtl:space-x-reverse">
+						<nav className="hidden lg:flex items-center gap-8">
+							<Link
+								href="/"
+								className={`hover:text-primary transition-colors ${
+									isActive("/") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+								}`}
+							>
+								{t.nav.home}
+							</Link>
+
+							
+
 							<div
 								className="relative"
 								onMouseEnter={() => setIsServicesOpen(true)}
 								onMouseLeave={() => setIsServicesOpen(false)}
 							>
 								<button
-									className={`flex items-center space-x-1 rtl:space-x-reverse hover:text-accent transition-colors ${
-										isActive("/services") ? "text-accent" : ""
+									className={`flex items-center justify-center gap-1  hover:text-primary transition-colors ${
+										isActive("/services") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl" : ""
 									}`}
 								>
 									<span>{t.nav.services}</span>
 									<svg
-										className={`w-4 h-4 transition-transform duration-200 ${
-											isServicesOpen ? "rotate-180" : ""
+										className={`w-4 h-4 transition-transform duration-200 text-gray-800 ${
+											isServicesOpen ? "rotate-180 " : ""
 										}`}
-										fill="none"
+										fill="black"
 										stroke="currentColor"
 										viewBox="0 0 24 24"
 									>
@@ -91,6 +102,7 @@ export default function Navigation() {
 										<div className="grid grid-cols-1 gap-3">
 											{services.map((service) => (
 												<Link
+													
 													key={service.name}
 													href={service.href}
 													className="text-gray-700 hover:text-primary hover:bg-secondary px-3 py-2 rounded-md transition-colors text-sm"
@@ -102,52 +114,52 @@ export default function Navigation() {
 									</div>
 								</div>
 							</div>
-
-							<Link
-								href="/faq"
-								className={`hover:text-accent transition-colors ${
-									isActive("/faq") ? "text-accent" : ""
-								}`}
-							>
-								{t.nav.faq}
-							</Link>
-							<Link
-								href="/career"
-								className={`hover:text-accent transition-colors ${
-									isActive("/career") ? "text-accent" : ""
-								}`}
-							>
-								{t.nav.careers}
-							</Link>
 							<Link
 								href="/about"
-								className={`hover:text-accent transition-colors ${
-									isActive("/about") ? "text-accent" : ""
+								className={`hover:text-primary transition-colors ${
+									isActive("/about") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
 								}`}
 							>
 								{t.nav.aboutUs}
 							</Link>
 							<Link
+								href="/faq"
+								className={`hover:text-primary transition-colors ${
+									isActive("/faq") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+								}`}
+							>
+								{t.nav.faq}
+							</Link>
+							<Link
+								href="/contact"
+								className={`hover:text-primary transition-colors ${
+									isActive("/contact") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+								}`}
+							>
+								{t.nav.contactUs}
+							</Link>
+							<Link
 								href="/blog"
-								className={`hover:text-accent transition-colors ${
-									isActive("/blog") ? "text-accent" : ""
+								className={`hover:text-primary transition-colors ${
+									isActive("/blog") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
 								}`}
 							>
 								{t.nav.blog}
 							</Link>
+
 							<Link
-								href="/contact"
-								className={`hover:text-accent transition-colors ${
-									isActive("/contact") ? "text-accent" : ""
+								href="/career"
+								className={`hover:text-primary transition-colors ${
+									isActive("/career") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
 								}`}
 							>
-								{t.nav.contactUs}
+								{t.nav.careers}
 							</Link>
 
 							{/* Language Switcher */}
 
 							<button
-								className="text-sm border p-2 rtl:mx-7 cursor-pointer hover:text-accent"
+								className="text-md border p-2 cursor-pointer hover:text-primary"
 								onClick={toggleLanguage}
 							>
 								{t.nav.languageSwitch}

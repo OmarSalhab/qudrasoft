@@ -15,7 +15,7 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-primary text-white py-20">
+      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">{t.faq.title}</h1>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">{t.faq.description}</p>
