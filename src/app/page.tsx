@@ -1,17 +1,25 @@
-import { Suspense } from "react"
-import HomeClient from "./pageClient"
-import Loading from "./loading"
-
+import {
+	HeroS,
+	Stats,
+	Services,
+	WhyUs,
+	Testimonial,
+	CTA,
+} from "../components/Home";
 
 export async function generateStaticParams() {
 	return [];
 }
 
-// This is now a server component by default
-export default function HomePage() {
-  return (
-    <Suspense fallback={<Loading/>}>
-      <HomeClient />
-    </Suspense>
-  )
+export default function HomeClient() {
+	return (
+		<div className="min-h-screen bg-gray-900">
+			<HeroS />
+			<Stats />
+			<Services />
+			<WhyUs />
+			<Testimonial />
+			<CTA />
+		</div>
+	);
 }

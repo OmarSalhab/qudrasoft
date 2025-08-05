@@ -4,6 +4,7 @@ export const translations = {
 	en: {
 		// Navigation
 		nav: {
+			home: "HOME",
 			services: "SERVICES",
 			faq: "FAQ",
 			careers: "CAREERS",
@@ -15,51 +16,215 @@ export const translations = {
 
 		// Home Page
 		home: {
-			hero: {
-				title: "Artificial Intelligence &",
-				titleSecond: "Machine Learning",
+			cta: {
+				title: "Ready to Start Your Project?",
 				description:
-					"Explore a spectrum of digital services, transcending boundaries with cutting-edge technology. From AI-driven insights to seamless user experiences, we craft solutions that redefine possibilities.",
-				readMore: "Read More",
+					"Don't hesitate to contact us today and get a free consultation for your technical project",
+				contactOptions: {
+					call: {
+						title: "Call Us",
+						description: "Talk directly with our experts",
+						contact: "+962 7 9999 9999",
+					},
+					email: {
+						title: "Email Us",
+						description: "Send us your project details",
+						contact: "info@jopython.com",
+					},
+					chat: {
+						title: "Live Chat",
+						description: "Instant communication with our team",
+						contact: "Available 24/7",
+					},
+					appointment: {
+						title: "Book Appointment",
+						description: "Free 30-minute consultation",
+						contact: "Free",
+					},
+				},
+				buttons: {
+					getQuote: "Get Free Quote",
+					browseWork: "Browse Our Work",
+				},
+				trustIndicators: {
+					freeConsultation: "Free Consultation",
+					qualityGuarantee: "Quality Guarantee",
+					continuousSupport: "Continuous Support",
+					competitivePricing: "Competitive Pricing",
+				},
 			},
-			vision: {
-				title: "Transforming Visions into",
-				titleSecond: "Reality, Together",
-				description1:
-					"Founded in 2008, QudraSoft has spent over 15 years building a global network of talented professionals who are passionate about technology and innovation. Our diverse team brings together expertise from various domains to deliver comprehensive solutions.",
-				description2:
-					"At E-Solutions, we believe that collaboration drives success. As a truly global organization, we work closely with our clients to understand their unique challenges and develop tailored solutions that drive growth and efficiency.",
+			hero: {
+				badge: "Leading software development company since 2020",
+				mainTitle: {
+					companyName: "QudraSoft Company",
+					subtitle: "for Software Development",
+				},
+				subtitle: {
+					main: "From the heart of Amman to the Arab world, quality and innovation in software and website development",
+					description:
+						"We transform your ideas into advanced digital solutions that help you succeed in the digital age",
+				},
+				buttons: {
+					startProject: "Start Your Project Now",
+					watchWork: "Watch Our Work",
+				},
+				stats: {
+					completedProjects: {
+						number: "500+",
+						label: "Completed Projects",
+					},
+					satisfiedClients: {
+						number: "200+",
+						label: "Satisfied Clients",
+					},
+					yearsExperience: {
+						number: "5+",
+						label: "Years Experience",
+					},
+					technicalSupport: {
+						number: "24/7",
+						label: "Technical Support",
+					},
+				},
+				videoModal: {
+					title: "Introductory Video of Our Work",
+					description: "Video will be added soon",
+				},
 			},
 			stats: {
-				title: "QudraSoft at a Glance",
-				professionals: "Professionals Served",
-				clients: "Successful Clients",
-				projects: "Specialized Projects Managed from End to End",
-			},
-			services: {
-				title: "Our Services",
-				aiAutomation: {
-					title: "AI Automation",
-					description:
-						"Intelligent automation solutions that streamline processes and enhance productivity through advanced AI technologies.",
+				title: {
+					main: "Numbers that speak of our",
+					highlight: "success",
 				},
-				eMenu: {
-					title: "E-Menu Solutions",
-					description:
-						"Digital menu solutions for restaurants and hospitality businesses with QR code integration and real-time updates.",
-				},
-				landingWebsite: {
-					title: "Landing Website",
-					description:
-						"Professional landing pages and websites designed to convert visitors into customers with modern design and optimization.",
-				},
-				learnMore: "Learn More",
-			},
-			contact: {
-				title: "Contact Us",
 				description:
-					"Engineering Innovation, Powering Intelligent, Secure, and Scalable Digital Futures",
-				getInTouch: "Get in Touch",
+					"We are proud of what we have achieved and our clients' trust over the past years",
+				stats: [
+					{
+						label: "Completed Projects",
+						description: "Diverse projects in various fields",
+						color: "text-green-400",
+					},
+					{
+						label: "Satisfied Clients",
+						description: "Clients from all over the Arab world",
+						color: "text-blue-400",
+					},
+					{
+						label: "Awards & Recognition",
+						description: "Local and regional recognitions",
+						color: "text-yellow-400",
+					},
+					{
+						label: "Years Experience",
+						description: "Accumulated experience in development",
+						color: "text-purple-400",
+					},
+				],
+			},
+
+			services: {
+				title: {
+					main: "Our Distinguished",
+					highlight: "Services",
+				},
+				description:
+					"We provide a comprehensive range of advanced technical solutions to help our clients succeed and excel in the digital world",
+				services: [
+					{
+						title: "Website Development",
+						description:
+							"Professional responsive websites for all devices using the latest technologies and global standards",
+						features: [
+							"Responsive Design",
+							"High Speed",
+							"SEO Optimized",
+							"Advanced Security",
+						],
+						price: "From 299 JD",
+						link: "/services/websites",
+						gradient: "from-blue-500 to-cyan-500",
+						bgGradient: "from-blue-500/10 to-cyan-500/10",
+					},
+					{
+						title: "Mobile App Development",
+						description:
+							"iOS and Android apps with modern technologies, user-friendly interfaces, and excellent performance",
+						features: [
+							"iOS & Android",
+							"Attractive Interfaces",
+							"Fast Performance",
+							"Continuous Updates",
+						],
+						price: "From 599 JD",
+						link: "/services/apps",
+						gradient: "from-green-500 to-emerald-500",
+						bgGradient: "from-green-500/10 to-emerald-500/10",
+					},
+					{
+						title: "E-commerce",
+						description:
+							"Integrated e-commerce stores with payment systems, shipping, inventory management, and detailed reports",
+						features: [
+							"Secure Payment System",
+							"Inventory Management",
+							"Detailed Reports",
+							"Multi-Currency Support",
+						],
+						price: "From 799 JD",
+						link: "/services/ecommerce",
+						gradient: "from-purple-500 to-pink-500",
+						bgGradient: "from-purple-500/10 to-pink-500/10",
+					},
+					{
+						title: "Database Management Systems",
+						description:
+							"Advanced data management solutions with guaranteed security, speed, and high reliability",
+						features: [
+							"High Security",
+							"Backup Systems",
+							"Optimized Performance",
+							"Continuous Monitoring",
+						],
+						price: "From 399 JD",
+						link: "/services/database",
+						gradient: "from-orange-500 to-red-500",
+						bgGradient: "from-orange-500/10 to-red-500/10",
+					},
+					{
+						title: "Cloud Solutions",
+						description:
+							"Move your business to the cloud with guaranteed security, reliability, and access from anywhere",
+						features: [
+							"Cloud Deployment",
+							"Backup Systems",
+							"Flexible Scaling",
+							"Advanced Security",
+						],
+						price: "From 199 JD monthly",
+						link: "/services/cloud",
+						gradient: "from-indigo-500 to-blue-500",
+						bgGradient: "from-indigo-500/10 to-blue-500/10",
+					},
+					{
+						title: "Cybersecurity",
+						description:
+							"Comprehensive protection for your systems and information from cyber threats and electronic attacks",
+						features: [
+							"Continuous Monitoring",
+							"Advanced Protection",
+							"Security Reports",
+							"Rapid Response",
+						],
+						price: "From 299 JD monthly",
+						link: "/services/security",
+						gradient: "from-red-500 to-pink-500",
+						bgGradient: "from-red-500/10 to-pink-500/10",
+					},
+				],
+				buttons: {
+					requestService: "Request Service Now",
+					viewAllServices: "View All Services",
+				},
 			},
 		},
 
@@ -226,10 +391,10 @@ export const translations = {
 			title: "Contact Us",
 			subtitle:
 				"We are here to help you achieve your digital goals. Contact us today to discuss your project",
-			phone: {phone:"+966 50 123 4567",title:"Call Us"},
-			email: {email: "info@company.com", title: "Email Us"},
-			location: {location: "Amman, Jordan",title:"Our Location"},
-			website: {website:"www.company.com",title:"Our Website"},
+			phone: { phone: "+966 50 123 4567", title: "Call Us" },
+			email: { email: "info@company.com", title: "Email Us" },
+			location: { location: "Amman, Jordan", title: "Our Location" },
+			website: { website: "www.company.com", title: "Our Website" },
 			whyChooseUs: "Why Choose Us?",
 			reasons: [
 				{
@@ -323,6 +488,7 @@ export const translations = {
 	ar: {
 		// Navigation
 		nav: {
+			home: "الرئيسية",
 			services: "الخدمات",
 			faq: "الأسئلة الشائعة",
 			careers: "الوظائف",
@@ -334,50 +500,205 @@ export const translations = {
 
 		// Home Page
 		home: {
-			hero: {
-				title: "الذكاء الاصطناعي و",
-				titleSecond: "التعلم الآلي",
+			cta: {
+				title: "جاهز لبدء مشروعك؟",
 				description:
-					"استكشف مجموعة واسعة من الخدمات الرقمية، متجاوزة الحدود بالتكنولوجيا المتطورة. من الرؤى المدفوعة بالذكاء الاصطناعي إلى تجارب المستخدم السلسة، نحن نصنع حلولاً تعيد تعريف الإمكانيات.",
-				readMore: "اقرأ المزيد",
+					"لا تتردد في التواصل معنا اليوم واحصل على استشارة مجانية لمشروعك التقني",
+				contactOptions: {
+					call: {
+						title: "اتصل بنا",
+						description: "تحدث مع خبرائنا مباشرة",
+						contact: "+962 7 9999 9999",
+					},
+					email: {
+						title: "راسلنا",
+						description: "أرسل لنا تفاصيل مشروعك",
+						contact: "info@jopython.com",
+					},
+					chat: {
+						title: "دردشة مباشرة",
+						description: "تواصل فوري مع فريقنا",
+						contact: "متاح 24/7",
+					},
+					appointment: {
+						title: "احجز موعد",
+						description: "استشارة مجانية 30 دقيقة",
+						contact: "مجاناً",
+					},
+				},
+				buttons: {
+					getQuote: "احصل على عرض سعر مجاني",
+					browseWork: "تصفح أعمالنا",
+				},
+				trustIndicators: {
+					freeConsultation: "استشارة مجانية",
+					qualityGuarantee: "ضمان الجودة",
+					continuousSupport: "دعم مستمر",
+					competitivePricing: "أسعار تنافسية",
+				},
 			},
-			vision: {
-				title: "تحويل الرؤى إلى",
-				titleSecond: "واقع، معاً",
-				description1:
-					"تأسست قدرةسوفت في عام 2008، وقد أمضت أكثر من 15 عاماً في بناء شبكة عالمية من المهنيين الموهوبين المتحمسين للتكنولوجيا والابتكار. يجمع فريقنا المتنوع الخبرات من مختلف المجالات لتقديم حلول شاملة.",
-				description2:
-					"في قدرةسوفت، نؤمن أن التعاون يقود النجاح. كمنظمة عالمية حقيقية، نعمل بشكل وثيق مع عملائنا لفهم تحدياتهم الفريدة وتطوير حلول مخصصة تدفع النمو والكفاءة.",
+			hero: {
+				badge: "شركة رائدة في تطوير البرمجيات منذ 2020",
+				mainTitle: {
+					companyName: "شركة قدرةسوفت",
+					subtitle: "لتطوير البرمجيات",
+				},
+				subtitle: {
+					main: "من قلب عمان إلى الوطن العربي، الجودة والمشاركة في صناعة البرمجيات والمواقع الإلكترونية",
+					description:
+						"نحول أفكارك إلى حلول رقمية متطورة تساعدك على النجاح في العصر الرقمي",
+				},
+				buttons: {
+					startProject: "ابدأ مشروعك الآن",
+					watchWork: "شاهد أعمالنا",
+				},
+				stats: {
+					completedProjects: {
+						number: "500+",
+						label: "مشروع مكتمل",
+					},
+					satisfiedClients: {
+						number: "200+",
+						label: "عميل راضي",
+					},
+					yearsExperience: {
+						number: "5+",
+						label: "سنوات خبرة",
+					},
+					technicalSupport: {
+						number: "24/7",
+						label: "دعم فني",
+					},
+				},
+				videoModal: {
+					title: "فيديو تعريفي بأعمالنا",
+					description: "سيتم إضافة الفيديو قريباً",
+				},
 			},
 			stats: {
-				title: "قدرةسوفت في لمحة",
-				professionals: "محترف تم خدمتهم",
-				clients: "عميل ناجح",
-				projects: "مشروع متخصص تم إدارته من البداية للنهاية",
+				title: {
+					main: "أرقام تتحدث عن",
+					highlight: "نجاحنا",
+				},
+				description:
+					"نفتخر بما حققناه من إنجازات وثقة عملائنا على مدار السنوات الماضية",
+				stats: [
+					{
+						label: "مشروع مكتمل",
+						description: "مشاريع متنوعة في مختلف المجالات",
+						color: "text-green-400",
+					},
+					{
+						label: "عميل راضي",
+						description: "عملاء من جميع أنحاء الوطن العربي",
+						color: "text-blue-400",
+					},
+					{
+						label: "جائزة وتقدير",
+						description: "تقديرات محلية وإقليمية",
+						color: "text-yellow-400",
+					},
+					{
+						label: "سنوات خبرة",
+						description: "خبرة متراكمة في التطوير",
+						color: "text-purple-400",
+					},
+				],
 			},
+
 			services: {
-				title: "خدماتنا",
-				aiAutomation: {
-					title: "أتمتة الذكاء الاصطناعي",
-					description:
-						"حلول أتمتة ذكية تبسط العمليات وتعزز الإنتاجية من خلال تقنيات الذكاء الاصطناعي المتقدمة.",
+				title: {
+					main: "خدماتنا",
+					highlight: "المتميزة",
 				},
-				eMenu: {
-					title: "حلول القائمة الإلكترونية",
-					description:
-						"حلول القوائم الرقمية للمطاعم وشركات الضيافة مع تكامل رمز الاستجابة السريعة والتحديثات الفورية.",
+				description:
+					"نقدم مجموعة شاملة من الحلول التقنية المتطورة لمساعدة عملائنا على النجاح والتميز في العالم الرقمي",
+				services: [
+					{
+						title: "تطوير المواقع الإلكترونية",
+						description:
+							"مواقع احترافية متجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات والمعايير العالمية",
+						features: ["تصميم متجاوب", "سرعة عالية", "SEO محسن", "أمان متقدم"],
+						price: "من 299 دينار",
+						link: "/services/websites",
+						gradient: "from-blue-500 to-cyan-500",
+						bgGradient: "from-blue-500/10 to-cyan-500/10",
+					},
+					{
+						title: "تطوير التطبيقات المحمولة",
+						description:
+							"تطبيقات iOS و Android بتقنيات حديثة وواجهات سهلة الاستخدام وأداء متميز",
+						features: [
+							"iOS & Android",
+							"واجهات جذابة",
+							"أداء سريع",
+							"تحديثات مستمرة",
+						],
+						price: "من 599 دينار",
+						link: "/services/apps",
+						gradient: "from-green-500 to-emerald-500",
+						bgGradient: "from-green-500/10 to-emerald-500/10",
+					},
+					{
+						title: "التجارة الإلكترونية",
+						description:
+							"متاجر إلكترونية متكاملة مع أنظمة الدفع والشحن وإدارة المخزون والتقارير التفصيلية",
+						features: [
+							"نظام دفع آمن",
+							"إدارة مخزون",
+							"تقارير مفصلة",
+							"دعم متعدد العملات",
+						],
+						price: "من 799 دينار",
+						link: "/services/ecommerce",
+						gradient: "from-purple-500 to-pink-500",
+						bgGradient: "from-purple-500/10 to-pink-500/10",
+					},
+					{
+						title: "أنظمة إدارة قواعد البيانات",
+						description:
+							"حلول متقدمة لإدارة البيانات مع ضمان الأمان والسرعة والموثوقية العالية",
+						features: [
+							"أمان عالي",
+							"نسخ احتياطية",
+							"أداء محسن",
+							"مراقبة مستمرة",
+						],
+						price: "من 399 دينار",
+						link: "/services/database",
+						gradient: "from-orange-500 to-red-500",
+						bgGradient: "from-orange-500/10 to-red-500/10",
+					},
+					{
+						title: "الحلول السحابية",
+						description:
+							"نقل أعمالك إلى السحابة مع ضمان الأمان والموثوقية والوصول من أي مكان",
+						features: ["نشر سحابي", "نسخ احتياطية", "مقياس مرن", "أمان متقدم"],
+						price: "من 199 دينار شهرياً",
+						link: "/services/cloud",
+						gradient: "from-indigo-500 to-blue-500",
+						bgGradient: "from-indigo-500/10 to-blue-500/10",
+					},
+					{
+						title: "الأمن السيبراني",
+						description:
+							"حماية شاملة لأنظمتك ومعلوماتك من التهديدات السيبرانية والهجمات الإلكترونية",
+						features: [
+							"مراقبة مستمرة",
+							"حماية متقدمة",
+							"تقارير أمنية",
+							"استجابة سريعة",
+						],
+						price: "من 299 دينار شهرياً",
+						link: "/services/security",
+						gradient: "from-red-500 to-pink-500",
+						bgGradient: "from-red-500/10 to-pink-500/10",
+					},
+				],
+				buttons: {
+					requestService: "اطلب الخدمة الآن",
+					viewAllServices: "عرض جميع الخدمات",
 				},
-				landingWebsite: {
-					title: "موقع الهبوط",
-					description:
-						"صفحات هبوط ومواقع ويب احترافية مصممة لتحويل الزوار إلى عملاء بتصميم حديث وتحسين.",
-				},
-				learnMore: "اعرف المزيد",
-			},
-			contact: {
-				title: "اتصل بنا",
-				description: "هندسة الابتكار، تشغيل مستقبل رقمي ذكي وآمن وقابل للتطوير",
-				getInTouch: "تواصل معنا",
 			},
 		},
 
@@ -542,10 +863,10 @@ export const translations = {
 			title: "تواصل معنا",
 			subtitle:
 				"نحن هنا لمساعدتك في تحقيق أهدافك الرقمية. تواصل معنا اليوم لمناقشة مشروعك",
-			phone: {phone:"+966 50 123 4567",title:"اتصل بنا"},
-			email: {email: "info@company.com", title: "راسلنا"},
-			location: {location: "عمان,الاردن",title:"عنواننا"},
-			website: {website:"www.company.com",title:"موقعنا"},
+			phone: { phone: "+966 50 123 4567", title: "اتصل بنا" },
+			email: { email: "info@company.com", title: "راسلنا" },
+			location: { location: "عمان,الاردن", title: "عنواننا" },
+			website: { website: "www.company.com", title: "موقعنا" },
 			whyChooseUs: "لماذا تختارنا؟",
 			reasons: [
 				{
