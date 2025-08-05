@@ -1,4 +1,4 @@
-export {default as Hero} from "./HeroSlider"
+// export {default as Hero} from "./HeroSlider"
 export {default as HeroS} from "./HeroSoild"
 export {default as Contact} from "./ContactSection"
 export {default as Services} from "./ServicesSection"

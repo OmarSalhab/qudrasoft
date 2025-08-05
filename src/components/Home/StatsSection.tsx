@@ -28,7 +28,7 @@ export default function StatsSection() {
         current += increment
         if (current >= target) {
           current = target
-          clearInterval(intervals.find((i) => i === intervals[key]))
+          clearInterval(intervals[Number(key)])
         }
         setCounters((prev) => ({ ...prev, [key]: Math.floor(current) }))
       }, duration / steps)
