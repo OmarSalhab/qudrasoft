@@ -1,18 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Cairo,Tajawal,Inter, Noto_Sans_Arabic } from "next/font/google"
+import { cookies } from "next/headers"
+import { Inter, Noto_Sans_Arabic } from "next/font/google"
 import "./globals.css"
 import Navigation from "../components/Navigation"
 import Footer from "../components/Footer"
 import { LocaleProvider } from "../context/locale-context"
 import ChatWidget from "../components/ChatWidget"
-// const inter = Inter({ 
-//   subsets: ["latin"], 
-//   variable: "--font-inter",
-//   weight:["700"],
-//   display: 'swap'
-// })
-
+import type { Locale } from "../lib/i18n"
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const arabic = Noto_Sans_Arabic({
@@ -21,42 +16,31 @@ const arabic = Noto_Sans_Arabic({
   variable: '--font-arabic',
 })
 
-const tajawal = Tajawal({ 
-  subsets: ["arabic"], 
-  weight:["700"],
-  variable: "--font-tajawal",
-  display: 'swap'
-})
 
 export const metadata: Metadata = {
   title: "QudraSoft Inc - Technology Solutions & Digital Innovation",
   description: "Engineering Innovation, Powering Intelligent, Secure, and Scalable Digital Futures",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  // Read locale cookie on the server to produce stable HTML
+  const cookieStore = await cookies()
+  
+  const cookieLocale = (cookieStore.get('locale')?.value as Locale) || 'ar'
+  const lang = cookieLocale
+  const dir = cookieLocale === 'ar' ? 'rtl' : 'ltr'
+
   return (
-    <html>
+    <html lang={lang} dir={dir}>
       <head>
-        {/* سكربت يعين اللغة والاتجاه فورًا */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){
-              try {
-                var locale = localStorage.getItem('locale') || 'ar';
-                document.documentElement.lang = locale;
-                document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
-              } catch (e) {}
-            })();`,
-          }}
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className={`${inter.variable} ${arabic.variable} font-english`}>
-        <LocaleProvider>
+      <body className={`${inter.variable} ${arabic.variable} ${lang === 'ar' ? 'font-arabic' : 'font-english'}`}>
+        <LocaleProvider initialLocale={cookieLocale}>
           <Navigation />
           <main>{children}</main>
           <Footer />

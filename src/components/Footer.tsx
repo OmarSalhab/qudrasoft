@@ -10,8 +10,7 @@ import {
 	Heart,
 } from "lucide-react";
 
-// import { Card } from "@/components/ui/card";
-// import { Button } from "@/components/ui/button";
+
 
 export default function Footer() {
 	const { t, dir } = useLocale();
@@ -78,12 +77,12 @@ export default function Footer() {
 							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
 								{t.footer.cloudSolutions}
 							</p>
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors mt-4">
+							{/* <p className="text-gray-300 hover:text-primary cursor-pointer transition-colors mt-4">
 								{t.footer.etoProgram}
 							</p>
 							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
 								{t.footer.schoolProgram}
-							</p>
+							</p> */}
 							<div className="mt-6">
 								<p className="text-gray-400 text-sm">{t.footer.whoWeAre}</p>
 								<p className="text-gray-400 text-sm mt-1">
@@ -119,10 +118,10 @@ export default function Footer() {
 					</div>
 				</div>
 
-				{/* Bottom Slogan */}
+				{/* Bottom Slogan
 				<div className="mt-4 text-center">
 					<p className="text-gray-500 text-sm italic">{t.footer.slogan}</p>
-				</div>
+				</div> */}
 			</div>
 		</footer>
 	);

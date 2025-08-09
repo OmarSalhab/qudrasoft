@@ -20,10 +20,10 @@ export default function CTASection() {
 
 			<div className="container mx-auto px-6 relative z-10">
 				<div className="max-w-6xl mx-auto text-center">
-					<h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+					<h2 className="text-2xl  md:text-6xl font-bold text-white mb-6">
 						{t.home.cta.title}
 					</h2>
-					<p className="text-xl md:text-2xl text-red-100 mb-12 max-w-4xl mx-auto leading-relaxed">
+					<p className="text-lg md:text-2xl text-red-100 mb-12 max-w-4xl mx-auto leading-relaxed">
 						{t.home.cta.description}
 					</p>
 
@@ -76,7 +76,7 @@ export default function CTASection() {
 					<div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
 						<Button
 							size="lg"
-							className="bg-white hover:bg-gray-100 px-12 py-4 text-lg font-extrabold rounded-full shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:scale-105"
+							className="bg-white hover:bg-gray-100 px-12 py-4 text-md md:text-lg font-extrabold rounded-full shadow-2xl hover:shadow-white/25 transition-all duration-300 transform hover:scale-105"
 						>
 							<div className="bg-clip-text text-transparent bg-gradient-to-l from-primary via-red-400 to-primary">
 								{t.home.cta.buttons.getQuote}
@@ -85,14 +85,14 @@ export default function CTASection() {
 						<Button
 							variant="outline"
 							size="lg"
-							className="border-2 border-white text-white hover:bg-white hover:text-primary px-12 py-4 text-lg font-bold rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105 bg-transparent"
+							className="border-2 border-white text-white hover:bg-white hover:text-primary px-12 py-4 text-md md:text-lg font-bold rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105 bg-transparent"
 						>
 							{t.home.cta.buttons.browseWork}
 						</Button>
 					</div>
 
 					{/* Trust Indicators */}
-					<div className="flex flex-wrap justify-center items-center gap-8 text-green-100">
+					<div className="flex flex-wrap justify-center items-center gap-8 text-blue-100">
 						<div className="flex items-center">
 							<div className="w-2 h-2 bg-blue-300 rounded-full rtl:ml-2 ltr:mr-2"></div>
 							<span>{t.home.cta.trustIndicators.freeConsultation}</span>

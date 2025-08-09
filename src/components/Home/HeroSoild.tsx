@@ -24,13 +24,13 @@ export default function HeroSection() {
 			{/* i want to make this dev to make the children inside it to have the same layout for english and arabic text  */}
 			<div className="container mx-auto px-6 text-center relative z-10">
 				{/* Badge */}
-				<div className="inline-flex items-center px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 sm:text-xs md:text-sm mb-8 backdrop-blur-sm">
+				<div className="inline-flex items-center px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-[11px] md:text-sm mb-8 backdrop-blur-sm">
 					<Sparkles className="w-4 h-4 me-2" />
 					<span>{t.home.hero.badge}</span>
 				</div>
 
 				{/* Main Heading with Gradient Text */}
-				<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+				<h1 className="text-2xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
 					<span className="bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
 						{t.home.hero.mainTitle.companyName}
 					</span>
@@ -39,18 +39,17 @@ export default function HeroSection() {
 				</h1>
 
 				{/* Subtitle with Typing Animation */}
-				<div className="text-lg md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+				<div className="text-sm md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
 					<p className="mb-4">{t.home.hero.subtitle.main}</p>
-					<p className="text-md text-blue-300">
+					<p className="ltr:text-xs rtl:text-sm text-blue-300">
 						{t.home.hero.subtitle.description}
 					</p>
 				</div>
 
 				{/* Call to Action Buttons */}
-				<div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+				<div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-16">
 					<Button
-						size="lg"
-						className="bg-gradient-to-r ltr:gap-2 from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-10 py-4 text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
+						className="bg-gradient-to-r ltr:gap-1 from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-4 text-sm  md:text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
 					>
 						<Sparkles className="w-6 h-6 ml-3" />
 						{t.home.hero.buttons.startProject}
@@ -58,8 +57,8 @@ export default function HeroSection() {
 
 					<Button
 						variant="outline"
-						size="lg"
-						className="bg-transparent border-2 ltr:gap-2 border-gray-400 text-white hover:bg-white hover:text-gray-900 px-10 py-4 text-lg rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
+					
+						className="bg-transparent border-2 ltr:gap-1 border-gray-400 text-white hover:bg-white hover:text-gray-900 px-5 py-4 text-sm  md:text-lg rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
 						onClick={() => setIsVideoPlaying(true)}
 					>
 						<Play className="w-6 h-6 ml-3" />
@@ -70,7 +69,7 @@ export default function HeroSection() {
 				{/* Trust Indicators */}
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
 					<div className="text-center">
-						<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.completedProjects.number}
 						</div>
 						<div className="text-gray-400">
@@ -78,7 +77,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.satisfiedClients.number}
 						</div>
 						<div className="text-gray-400">
@@ -86,7 +85,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.yearsExperience.number}
 						</div>
 						<div className="text-gray-400">
@@ -94,7 +93,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.technicalSupport.number}
 						</div>
 						<div className="text-gray-400">
@@ -115,7 +114,7 @@ export default function HeroSection() {
 					<div className="relative max-w-4xl w-full">
 						<button
 							onClick={() => setIsVideoPlaying(false)}
-							className="absolute -top-12 right-0 text-white hover:text-gray-300 text-2xl"
+							className="absolute -top-12 right-0 text-white hover:text-gray-300 text-xl md:text-2xl"
 						>
 							✕
 						</button>

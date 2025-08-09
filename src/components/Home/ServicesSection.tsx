@@ -76,11 +76,11 @@ export default function Services() {
       <div className="container mx-auto px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
+            <h2 className="text-2xl  md:text-6xl font-bold text-white mb-6">
               <span className="bg-gradient-to-r from-red-400 to-blue-400 bg-clip-text text-transparent">{t.home.services.title.main}</span>{" "}
               {t.home.services.title.highlight}
             </h2>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               {t.home.services.description}
             </p>
           </div>
@@ -105,16 +105,16 @@ export default function Services() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
+                  <h3 className="text-xl md:text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
                     {service.title}
                   </h3>
 
-                  <p className="text-gray-300 leading-relaxed mb-6 text-lg">{service.description}</p>
+                  <p className="text-gray-300 leading-relaxed mb-6 text-sm  md:text-lg">{service.description}</p>
 
                   {/* Features */}
                   <div className="grid grid-cols-2 gap-2 mb-6">
                     {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center text-sm ltr:text-[13px] text-gray-400">
+                      <div key={featureIndex} className="flex items-center text-[12px] ltr:text-[11px] md:text-sm text-gray-400">
                         <div className="w-2 h-2 bg-blue-400 rounded-full rtl:ml-2 ltr:mr-2"></div>
                         {feature}
                       </div>
@@ -124,7 +124,7 @@ export default function Services() {
                   {/* Price */}
                   <div className="flex items-center justify-between mb-6">
                     <span
-                      className={`text-2xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}
+                      className={`text-xl md:text-2xl font-bold bg-gradient-to-r ${service.gradient} bg-clip-text text-transparent`}
                     >
                       {service.price}
                     </span>

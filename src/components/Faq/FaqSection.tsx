@@ -84,7 +84,7 @@ export function FAQSection() {
 									{t.about.faq.title.highlight}
 								</span>
 							</h2>
-							<p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto leading-relaxed">
+							<p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
 								{t.about.faq.description}
 							</p>
 						</div>

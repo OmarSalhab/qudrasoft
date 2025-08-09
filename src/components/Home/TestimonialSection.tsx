@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
 			<div className="container mx-auto px-6">
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-16">
-						<h2 className="text-4xl justify-center items-center gap-1 md:text-6xl font-bold text-white mb-6">
+						<h2 className="text-2xl  justify-center items-center gap-1 md:text-6xl font-bold text-white mb-6">
 							{t.home.testimonials.title.main}{" "}
 							<span className="bg-gradient-to-l from-blue-400 via-blue-200 to-red-400 text-transparent bg-clip-text">
 								{t.home.testimonials.title.highlight}
@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
 								؟
 							</span>
 						</h2>
-						<p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+						<p className="text-lg text-gray-300 max-w-4xl mx-auto leading-relaxed">
 							{t.home.testimonials.description}
 						</p>
 					</div>
@@ -65,14 +65,14 @@ export default function TestimonialsSection() {
 										(_, i) => (
 											<Star
 												key={i}
-												className="w-6 h-6 text-yellow-400 fill-current"
+												className="w-4 h-4 md:w-6 md:h-6 text-yellow-400 fill-current"
 											/>
 										)
 									)}
 								</div>
 
 								{/* Testimonial Text */}
-								<blockquote className="text-xl md:text-2xl text-gray-200 leading-relaxed text-center mb-8 max-w-4xl mx-auto">
+								<blockquote className="text-md  md:text-2xl text-gray-200 leading-relaxed text-center mb-8 max-w-4xl mx-auto">
 									&ldquo;{testimonials[currentTestimonial].text}&rdquo;
 								</blockquote>
 
@@ -84,7 +84,7 @@ export default function TestimonialsSection() {
 												key={index}
 												className="bg-blue-500/20 border border-blue-500/30 rounded-full px-4 py-2"
 											>
-												<span className="text-blue-300 font-semibold text-sm">
+												<span className="text-blue-300 font-semibold text-[10px] md:text-sm">
 													{result}
 												</span>
 											</div>
@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
 								</div>
 
 								{/* Client Info */}
-								<div className="flex items-center justify-center">
+								<div className="flex gap-0.5 items-center justify-center">
 									<Image
 										width={100}
 										height={100}
@@ -105,13 +105,13 @@ export default function TestimonialsSection() {
 										className="w-16 h-16 rounded-full ml-4 border-2 border-red-400"
 									/>
 									<div className="text-center">
-										<h4 className="text-xl font-bold text-white mb-1">
+										<h4 className="text-md md:text-xl font-bold text-white mb-1">
 											{testimonials[currentTestimonial].name}
 										</h4>
-										<p className="text-blue-400 font-semibold">
+										<p className="text-blue-400 text-sm md:text-md font-semibold">
 											{testimonials[currentTestimonial].position}
 										</p>
-										<p className="text-gray-400 text-sm">
+										<p className="text-gray-400 text-xs md:text-sm">
 											{testimonials[currentTestimonial].company}
 										</p>
 										<p className="text-gray-500 text-xs mt-1">
@@ -155,7 +155,7 @@ export default function TestimonialsSection() {
 					{/* Stats Section */}
 					<div className="grid md:grid-cols-4 gap-8 mt-16">
 						<div className="text-center">
-							<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+							<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 								{t.home.testimonials.stats.satisfactionRate.number}
 							</div>
 							<div className="text-gray-400">
@@ -163,7 +163,7 @@ export default function TestimonialsSection() {
 							</div>
 						</div>
 						<div className="text-center">
-							<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+							<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 								{t.home.testimonials.stats.satisfiedClients.number}
 							</div>
 							<div className="text-gray-400">
@@ -171,7 +171,7 @@ export default function TestimonialsSection() {
 							</div>
 						</div>
 						<div className="text-center">
-							<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+							<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 								{t.home.testimonials.stats.averageRating.number}
 							</div>
 							<div className="text-gray-400">
@@ -179,7 +179,7 @@ export default function TestimonialsSection() {
 							</div>
 						</div>
 						<div className="text-center">
-							<div className="text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+							<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 								{t.home.testimonials.stats.renewalRate.number}
 							</div>
 							<div className="text-gray-400">

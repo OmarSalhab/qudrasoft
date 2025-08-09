@@ -56,14 +56,14 @@ export default function WhyChooseUs() {
 			<div className="container mx-auto px-6">
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-16">
-						<h2 className="text-4xl md:text-6xl gap-1 items-center justify-center font-bold text-white mb-6">
+						<h2 className="text-2xl  md:text-6xl gap-1 items-center justify-center font-bold text-white mb-6">
 							{t.home.whyUs.title.main}{" "}
 							<span className="from-blue-400 text-transparent bg-clip-text via-blue-300 to-red-400 bg-gradient-to-l">
 								{t.home.whyUs.title.highlight}
 							</span>
 							<span className={`transform inline-flex ${dir === 'ltr' ? 'scale-x-[-1]' : 'scale-x-[1]'}`}>؟</span>
 						</h2>
-						<p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+						<p className="text-md md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
 							{t.home.whyUs.description}
 						</p>
 					</div>
@@ -84,16 +84,16 @@ export default function WhyChooseUs() {
 									</div>
 
 									{/* Content */}
-									<h3 className="text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
+									<h3 className="text-lg  md:text-2xl font-bold text-white mb-4 group-hover:text-blue-300 transition-colors duration-300">
 										{reason.title}
 									</h3>
 
-									<p className="text-gray-300 leading-relaxed mb-6 text-lg">
+									<p className="text-gray-300 leading-relaxed mb-6 text-sm md:text-lg">
 										{reason.description}
 									</p>
 
 									{/* Stats */}
-									<div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4">
+									<div className="bg-blue-500/10 border text-sm border-blue-500/20 rounded-xl p-4">
 										<div className="text-blue-400 font-semibold text-center">
 											{reason.stats}
 										</div>
@@ -106,7 +106,7 @@ export default function WhyChooseUs() {
 					{/* Bottom CTA */}
 					<div className="text-center mt-16">
 						<div className="bg-gradient-to-r from-blue-500/10 to-blue-500/10 border border-blue-500/20 rounded-2xl p-8 max-w-4xl mx-auto">
-							<h3 className="text-3xl font-bold text-white mb-4">
+							<h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
 								{t.home.whyUs.cta.title}
 							</h3>
 							<p className="text-gray-300 text-lg mb-6">

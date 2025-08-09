@@ -9,23 +9,33 @@ interface LocaleContextType {
   t: ReturnType<typeof getTranslation>
   dir: 'ltr' | 'rtl'
 }
-const LocaleContext = createContext<LocaleContextType|undefined>(undefined)
+const LocaleContext = createContext<LocaleContextType | undefined>(undefined)
 
-export function LocaleProvider({ children }: { children: ReactNode }) {
-  // **هنا** نقرأ localStorage في الinitializer!
-  const [locale, setLocale] = useState<Locale>(() => {
-    if (typeof window === 'undefined') return 'ar'
-    const saved = localStorage.getItem('locale') as Locale
-    return saved === 'en' ? 'en' : 'ar'
-  })
+export function LocaleProvider({
+  children,
+  initialLocale,
+}: {
+  children: ReactNode
+  initialLocale: Locale
+}) {
+  // Initialize deterministically from server-provided value
+  const [locale, setLocale] = useState<Locale>(initialLocale)
 
   useEffect(() => {
-    // تحديث التخزين و html/body فقط عندما تتغير فعليًا
-    localStorage.setItem('locale', locale)
-    document.documentElement.lang = locale
-    document.documentElement.dir  = locale === 'ar' ? 'rtl' : 'ltr'
-    document.body.classList.remove('font-arabic','font-english')
-    document.body.classList.add(locale === 'ar' ? 'font-arabic' : 'font-english')
+    // Persist and reflect changes on the client
+    try {
+      localStorage.setItem('locale', locale)
+    } catch {}
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = locale
+      document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr'
+      document.body.classList.remove('font-arabic', 'font-english')
+      document.body.classList.add(locale === 'ar' ? 'font-arabic' : 'font-english')
+    }
+    // Keep SSR in sync on future navigations
+    if (typeof document !== 'undefined') {
+      document.cookie = `locale=${locale}; path=/; max-age=31536000`
+    }
   }, [locale])
 
   const t = getTranslation(locale)

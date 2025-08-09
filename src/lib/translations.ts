@@ -29,7 +29,7 @@ export const translations = {
 					email: {
 						title: "Email Us",
 						description: "Send us your project details",
-						contact: "info@QudraSoft.com",
+						contact: "info@solvenear.com",
 					},
 					chat: {
 						title: "Live Chat",
@@ -230,7 +230,7 @@ export const translations = {
 			whyUs: {
 				title: {
 					main: "Why Choose",
-					highlight: "QudraSoft",
+					highlight: "solvenear ",
 				},
 				description:
 					"We are not just a software development company, but your strategic partner in the digital transformation journey",
@@ -286,7 +286,7 @@ export const translations = {
 			testimonials: {
 				title: {
 					main: "What do our",
-					highlight: "clients",
+					highlight: "clients say ",
 				},
 				description:
 					"Opinions and experiences of our valued clients who trusted us and achieved exceptional successes",
@@ -297,7 +297,7 @@ export const translations = {
 						company: "Advanced Technologies Company",
 						image: "/manager-1.jpeg",
 						rating: 5,
-						text: "I worked with QudraSoft on developing our company's website, and the result exceeded all my expectations. A very professional team committed to deadlines. The website became 300% faster and sales increased by 150%.",
+						text: "I worked with solvenear on developing our company's website, and the result exceeded all my expectations. A very professional team committed to deadlines. The website became 300% faster and sales increased by 150%.",
 						project: "E-commerce Website",
 						results: [
 							"150% Sales Increase",
@@ -306,12 +306,12 @@ export const translations = {
 						],
 					},
 					{
-						name: "Fatima Al-Ali",
+						name: "abdullah Al-Ali",
 						position: "Marketing Director",
 						company: "Innovation Business Group",
 						image: "/manager-2.jpeg",
 						rating: 5,
-						text: "QudraSoft developed a customer management application for us and the work was very professional. The team quickly understood our needs and provided innovative solutions. The application is easy to use and greatly improved the sales team's efficiency.",
+						text: "solvenear developed a customer management application for us and the work was very professional. The team quickly understood our needs and provided innovative solutions. The application is easy to use and greatly improved the sales team's efficiency.",
 						project: "Customer Management App",
 						results: [
 							"80% Efficiency Improvement",
@@ -325,7 +325,7 @@ export const translations = {
 						company: "Smart Education Platform",
 						image: "/manager-3jpeg.jpeg",
 						rating: 5,
-						text: "We chose QudraSoft to develop our e-learning platform, and it was an amazing experience. The team is creative and understanding of modern education requirements. The platform now serves more than 10,000 students with high efficiency.",
+						text: "We chose solvenear to develop our e-learning platform, and it was an amazing experience. The team is creative and understanding of modern education requirements. The platform now serves more than 10,000 students with high efficiency.",
 						project: "E-learning Platform",
 						results: [
 							"10,000+ Active Students",
@@ -339,7 +339,7 @@ export const translations = {
 						company: "Advanced Care Hospital",
 						image: "/manger-4.jpeg",
 						rating: 5,
-						text: "The hospital management system developed by QudraSoft completely changed how we work. Operations became more organized and faster, and patient experience improved significantly. The support team is always available and very cooperative.",
+						text: "The hospital management system developed by solvenear completely changed how we work. Operations became more organized and faster, and patient experience improved significantly. The support team is always available and very cooperative.",
 						project: "Hospital Management System",
 						results: [
 							"70% Service Improvement",
@@ -353,7 +353,7 @@ export const translations = {
 						company: "Digital Progressive Bank",
 						image: "/manager-5.jpeg",
 						rating: 5,
-						text: "We collaborated with QudraSoft on developing the mobile banking app, and the result was exceptional. The app is secure, fast, and easy to use. Active users increased by 200% in just 6 months.",
+						text: "We collaborated with solvenear on developing the mobile banking app, and the result was exceptional. The app is secure, fast, and easy to use. Active users increased by 200% in just 6 months.",
 						project: "Mobile Banking App",
 						results: ["200% User Increase", "100% Security", "4.9/5 Rating"],
 					},
@@ -547,7 +547,7 @@ export const translations = {
 				title: "Who We Are",
 				intro: {
 					p1:
-						"QudraSoft is a leading company in software development and technology solutions, founded to provide high‑quality services in programming and the development of websites and applications.",
+						"solvenear is a leading company in software development and technology solutions, founded to provide high‑quality services in programming and the development of websites and applications.",
 					p2:
 						"We believe that technology should be in the service of people; therefore, we always strive to develop innovative solutions that meet our clients' needs and help them achieve their goals.",
 				},
@@ -792,7 +792,7 @@ export const translations = {
 			email: { email: "info@company.com", title: "Email Us" },
 			location: { location: "Amman, Jordan", title: "Our Location" },
 			website: { website: "www.company.com", title: "Our Website" },
-			whyChooseUs: "Why Choose Us?",
+			whyChooseUs: "Why Choose Us ?",
 			reasons: [
 				{
 					title: "Long Experience",
@@ -861,13 +861,13 @@ export const translations = {
 				},
 				info: {
 					title: "Contact Information",
-					email: { label: "Email", value: "info@qudrasoft.com" },
+					email: { label: "Email", value: "info@solvenear.com" },
 					phone: { label: "Phone", value: "+962 7 9999 9999" },
 					address: { label: "Address", value: "Amman, Jordan" },
 					hours: { label: "Working Hours", value: "Sun - Thu: 9:00 - 18:00" },
 				},
 				reasons: {
-					title: "Why choose QudraSoft?",
+					title: "Why choose solvenear ?",
 					items: [
 						"Extensive experience in software development",
 						"Professional and specialized team",
@@ -883,10 +883,10 @@ export const translations = {
 			followUs: "Follow Us",
 			contactUs: "Contact Us",
 			quickLinks: "Quick Links",
-			aboutUs: "QudraSoft",
+			aboutUs: "solvenear",
 			phone: "+962 77 939 3847",
-			email: "info@QudraSoft.com",
-			website: "www.QudraSoft.com",
+			email: "info@solvenear.com",
+			website: "www.solvenear.com",
 			services: "Our Services",
 			createWebsites: "Website Development",
 			createStores: "E-commerce Development",
@@ -899,7 +899,7 @@ export const translations = {
 				"A leading company in software development and advanced technical solutions from the heart of Amman to the Arab world",
 			whoWeAre: "Who We Are",
 			contactUsFooter: "Contact Us",
-			copyright: "© 2024 QudraSoft. All rights reserved",
+			copyright: "© 2024 solvenear. All rights reserved",
 			madeInJordan: "Made in Amman, Jordan",
 			slogan:
 				"From the heart of Amman to the Arab world, quality and innovation in software and website development",
@@ -941,7 +941,7 @@ export const translations = {
 					email: {
 						title: "راسلنا",
 						description: "أرسل لنا تفاصيل مشروعك",
-						contact: "info@QudraSoft.com",
+						contact: "info@solvenear.com",
 					},
 					chat: {
 						title: "دردشة مباشرة",
@@ -1131,7 +1131,7 @@ export const translations = {
 			whyUs: {
 				title: {
 					main: "لماذا تختار",
-					highlight: "قدرةسوفت",
+					highlight: "سولڤنير",
 				},
 				description:
 					"نحن لسنا مجرد شركة تطوير برمجيات، بل شريكك الاستراتيجي في رحلة التحول الرقمي",
@@ -1197,7 +1197,7 @@ export const translations = {
 						company: "شركة التقنيات المتقدمة",
 						image: "/manager-1.jpeg",
 						rating: 5,
-						text: "تعاملت مع قدرةسوفت في تطوير موقع شركتنا الإلكتروني، والنتيجة فاقت كل توقعاتي. فريق محترف جداً وملتزم بالمواعيد. الموقع أصبح أسرع بـ 300% وزادت المبيعات بنسبة 150%.",
+						text: "تعاملت مع سولڤنير في تطوير موقع شركتنا الإلكتروني، والنتيجة فاقت كل توقعاتي. فريق محترف جداً وملتزم بالمواعيد. الموقع أصبح أسرع بـ 300% وزادت المبيعات بنسبة 150%.",
 						project: "موقع التجارة الإلكترونية",
 						results: [
 							"زيادة المبيعات 150%",
@@ -1206,12 +1206,12 @@ export const translations = {
 						],
 					},
 					{
-						name: "فاطمة العلي",
-						position: "مديرة التسويق",
+						name: "عبدالله العلي",
+						position: "مدير التسويق",
 						company: "مجموعة الابتكار التجارية",
 						image: "/manager-2.jpeg",
 						rating: 5,
-						text: "قدرةسوفت طوروا لنا تطبيق إدارة العملاء وكان العمل احترافي جداً. الفريق فهم احتياجاتنا بسرعة وقدم حلول مبتكرة. التطبيق سهل الاستخدام وحسن من كفاءة فريق المبيعات بشكل كبير.",
+						text: "سولڤنير طوروا لنا تطبيق إدارة العملاء وكان العمل احترافي جداً. الفريق فهم احتياجاتنا بسرعة وقدم حلول مبتكرة. التطبيق سهل الاستخدام وحسن من كفاءة فريق المبيعات بشكل كبير.",
 						project: "تطبيق إدارة العملاء",
 						results: [
 							"تحسن الكفاءة 80%",
@@ -1225,7 +1225,7 @@ export const translations = {
 						company: "منصة التعليم الذكي",
 						image: "/manager-3jpeg.jpeg",
 						rating: 5,
-						text: "اختارنا قدرةسوفت لتطوير منصة التعليم الإلكتروني الخاصة بنا، وكانت تجربة رائعة. الفريق مبدع ومتفهم لمتطلبات التعليم الحديث. المنصة تخدم الآن أكثر من 10,000 طالب بكفاءة عالية.",
+						text: "اختارنا سولڤنير لتطوير منصة التعليم الإلكتروني الخاصة بنا، وكانت تجربة رائعة. الفريق مبدع ومتفهم لمتطلبات التعليم الحديث. المنصة تخدم الآن أكثر من 10,000 طالب بكفاءة عالية.",
 						project: "منصة التعليم الإلكتروني",
 						results: ["10,000+ طالب نشط", "معدل إكمال 90%", "تقييم 4.8/5"],
 					},
@@ -1235,7 +1235,7 @@ export const translations = {
 						company: "مستشفى الرعاية المتقدمة",
 						image: "/manger-4.jpeg",
 						rating: 5,
-						text: "نظام إدارة المستشفى الذي طورته قدرةسوفت غير طريقة عملنا تماماً. أصبحت العمليات أكثر تنظيماً وسرعة، وتحسنت تجربة المرضى بشكل ملحوظ. فريق الدعم متاح دائماً ومتعاون جداً.",
+						text: "نظام إدارة المستشفى الذي طورته سولڤنير غير طريقة عملنا تماماً. أصبحت العمليات أكثر تنظيماً وسرعة، وتحسنت تجربة المرضى بشكل ملحوظ. فريق الدعم متاح دائماً ومتعاون جداً.",
 						project: "نظام إدارة المستشفى",
 						results: ["تحسن الخدمة 70%", "تقليل الأخطاء 85%", "رضا المرضى 92%"],
 					},
@@ -1245,7 +1245,7 @@ export const translations = {
 						company: "البنك الرقمي المتطور",
 						image: "/manager-5.jpeg",
 						rating: 5,
-						text: "تعاونا مع قدرةسوفت في تطوير تطبيق البنك المحمول، والنتيجة كانت استثنائية. التطبيق آمن وسريع وسهل الاستخدام. عدد المستخدمين النشطين زاد بنسبة 200% خلال 6 أشهر فقط.",
+						text: "تعاونا مع سولڤنير في تطوير تطبيق البنك المحمول، والنتيجة كانت استثنائية. التطبيق آمن وسريع وسهل الاستخدام. عدد المستخدمين النشطين زاد بنسبة 200% خلال 6 أشهر فقط.",
 						project: "تطبيق البنك المحمول",
 						results: ["زيادة المستخدمين 200%", "أمان 100%", "تقييم 4.9/5"],
 					},
@@ -1437,7 +1437,7 @@ export const translations = {
 				title: "من نحن",
 				intro: {
 					p1:
-						"شركة قدرةسوفت هي شركة رائدة في مجال تطوير البرمجيات والحلول التقنية، تأسست بهدف تقديم خدمات عالية الجودة في البرمجة وتطوير المواقع الإلكترونية والتطبيقات.",
+						"شركة سولڤنير هي شركة رائدة في مجال تطوير البرمجيات والحلول التقنية، تأسست بهدف تقديم خدمات عالية الجودة في البرمجة وتطوير المواقع الإلكترونية والتطبيقات.",
 					p2:
 						"نحن نؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان، ولذلك نسعى دائماً لتطوير حلول مبتكرة تلبي احتياجات عملائنا وتساعدهم على تحقيق أهدافهم.",
 				},
@@ -1749,13 +1749,13 @@ export const translations = {
 				},
 				info: {
 					title: "معلومات التواصل",
-					email: { label: "البريد الإلكتروني", value: "info@qudrasoft.com" },
+					email: { label: "البريد الإلكتروني", value: "info@solvenear.com" },
 					phone: { label: "رقم الهاتف", value: "+962 7 9999 9999" },
 					address: { label: "العنوان", value: "عمان، الأردن" },
 					hours: { label: "ساعات العمل", value: "الأحد - الخميس: 9:00 - 18:00" },
 				},
 				reasons: {
-					title: "لماذا تختار قدرةسوفت ؟",
+					title: "لماذا تختار سولڤنير ؟",
 					items: [
 						"خبرة واسعة في تطوير البرمجيات",
 						"فريق محترف ومتخصص",
@@ -1771,10 +1771,10 @@ export const translations = {
 			followUs: "تابعنا",
 			contactUs: "تواصل معنا",
 			quickLinks: "روابط سريعة",
-			aboutUs: "قدرةسوفت",
+			aboutUs: "سولڤنير",
 			phone: "+962 77 939 3847",
-			email: "info@QudraSoft.com",
-			website: "www.QudraSoft.com",
+			email: "info@solvenear.com",
+			website: "www.solvenear.com",
 			services: "خدماتنا",
 			createWebsites: "إنشاء المواقع الإلكترونية",
 			createStores: "إنشاء المتاجر الإلكترونية",
@@ -1786,7 +1786,7 @@ export const translations = {
 				"شركة رائدة في تطوير البرمجيات والحلول التقنية المتقدمة من قلب عمان إلى الوطن العربي",
 			whoWeAre: "من نحن",
 			contactUsFooter: "تواصل معنا",
-			copyright: "© 2024 قدرةسوفت. جميع الحقوق محفوظة",
+			copyright: "© 2024 سولڤنير. جميع الحقوق محفوظة",
 			madeInJordan: "صنع في عمان، الأردن",
 			slogan:
 				"من قلب عمان إلى الوطن العربي، الجودة والابتكار في صناعة البرمجيات والمواقع الإلكترونية",
