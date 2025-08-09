@@ -56,12 +56,12 @@ export default function WhyChooseUs() {
 			<div className="container mx-auto px-6">
 				<div className="max-w-7xl mx-auto">
 					<div className="text-center mb-16">
-						<h2 className="text-4xl md:text-6xl flex gap-1 items-center justify-center font-bold text-white mb-6">
+						<h2 className="text-4xl md:text-6xl gap-1 items-center justify-center font-bold text-white mb-6">
 							{t.home.whyUs.title.main}{" "}
 							<span className="from-blue-400 text-transparent bg-clip-text via-blue-300 to-red-400 bg-gradient-to-l">
 								{t.home.whyUs.title.highlight}
 							</span>
-							<div className={`transform  ${dir === 'ltr' ? 'scale-x-[-1]' : ''}`}>؟</div>
+							<span className={`transform inline-flex ${dir === 'ltr' ? 'scale-x-[-1]' : 'scale-x-[1]'}`}>؟</span>
 						</h2>
 						<p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
 							{t.home.whyUs.description}

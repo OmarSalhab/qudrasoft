@@ -39,7 +39,22 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ar" dir="rtl">
+    <html>
+      <head>
+        {/* سكربت يعين اللغة والاتجاه فورًا */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){
+              try {
+                var locale = localStorage.getItem('locale') || 'ar';
+                document.documentElement.lang = locale;
+                document.documentElement.dir = locale === 'ar' ? 'rtl' : 'ltr';
+              } catch (e) {}
+            })();`,
+          }}
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
       <body className={`${inter.variable} ${arabic.variable} font-english`}>
         <LocaleProvider>
           <Navigation />

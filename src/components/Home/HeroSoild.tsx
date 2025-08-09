@@ -10,7 +10,7 @@ export default function HeroSection() {
 
 	return (
 		<div
-			className="relative min-h-screen flex ltr:mb-10 items-center justify-center px-6 overflow-hidden"
+			className="relative min-h-screen flex items-center justify-center overflow-hidden"
 			dir={dir}
 		>
 			{/* Animated Background Elements */}
@@ -21,16 +21,16 @@ export default function HeroSection() {
 				<div className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
 				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse delay-2000"></div>
 			</div>
-
-			<div className="relative z-10 text-center max-w-6xl mx-auto">
+			{/* i want to make this dev to make the children inside it to have the same layout for english and arabic text  */}
+			<div className="container mx-auto px-6 text-center relative z-10">
 				{/* Badge */}
-				<div className="inline-flex items-center ltr:gap-2 ltr:mt-9 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm mb-8 backdrop-blur-sm">
-					<Sparkles className="w-4 h-4 ml-2" />
+				<div className="inline-flex items-center px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 sm:text-xs md:text-sm mb-8 backdrop-blur-sm">
+					<Sparkles className="w-4 h-4 me-2" />
 					<span>{t.home.hero.badge}</span>
 				</div>
 
 				{/* Main Heading with Gradient Text */}
-				<h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight">
+				<h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
 					<span className="bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
 						{t.home.hero.mainTitle.companyName}
 					</span>
@@ -39,9 +39,9 @@ export default function HeroSection() {
 				</h1>
 
 				{/* Subtitle with Typing Animation */}
-				<div className="text-xl md:text-3xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+				<div className="text-lg md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
 					<p className="mb-4">{t.home.hero.subtitle.main}</p>
-					<p className="text-lg text-blue-300">
+					<p className="text-md text-blue-300">
 						{t.home.hero.subtitle.description}
 					</p>
 				</div>

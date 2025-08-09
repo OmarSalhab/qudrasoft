@@ -3,13 +3,14 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, ChevronDown, ChevronUp } from "lucide-react";
 import { useLocale } from "../context/locale-context";
 import Image from "next/image";
 
 export default function Navigation() {
 	const [isServicesOpen, setIsServicesOpen] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+	const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 	const pathname = usePathname();
 	const { locale, setLocale, t, dir } = useLocale();
 
@@ -33,15 +34,17 @@ export default function Navigation() {
 		setLocale(locale === "en" ? "ar" : "en");
 	};
 
+	const closeMobileMenu = () => {
+		setIsMobileMenuOpen(false);
+		setIsMobileServicesOpen(false);
+	};
+
 	return (
 		<>
-			<header className="bg-secondary text-gray-700 shadow-sm shadow-red-500 relative z-50 rtl:text-[19px] font-medium ">
+			<header className="bg-secondary fixed text-gray-700 h-20 w-full z-50 rtl:text-[18px] font-medium">
 				<div className="container mx-auto px-4">
 					<div className="flex items-center justify-between h-20">
-						<Link
-							href="/"
-							className="flex items-center gap-2"
-						>
+						<Link href="/" className="flex items-center gap-2">
 							<Image width={170} height={50} alt="Logo" src="/logo-3.png" />
 						</Link>
 
@@ -49,13 +52,13 @@ export default function Navigation() {
 							<Link
 								href="/"
 								className={`hover:text-primary transition-colors ${
-									isActive("/") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+									isActive("/")
+										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
+										: ""
 								}`}
 							>
 								{t.nav.home}
 							</Link>
-
-							
 
 							<div
 								className="relative"
@@ -64,7 +67,9 @@ export default function Navigation() {
 							>
 								<button
 									className={`flex items-center justify-center gap-1  hover:text-primary transition-colors ${
-										isActive("/services") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl" : ""
+										isActive("/services")
+											? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl"
+											: ""
 									}`}
 								>
 									<span>{t.nav.services}</span>
@@ -102,7 +107,6 @@ export default function Navigation() {
 										<div className="grid grid-cols-1 gap-3">
 											{services.map((service) => (
 												<Link
-													
 													key={service.name}
 													href={service.href}
 													className="text-gray-700 hover:text-primary hover:bg-secondary px-3 py-2 rounded-md transition-colors text-sm"
@@ -117,7 +121,9 @@ export default function Navigation() {
 							<Link
 								href="/about"
 								className={`hover:text-primary transition-colors ${
-									isActive("/about") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+									isActive("/about")
+										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
+										: ""
 								}`}
 							>
 								{t.nav.aboutUs}
@@ -125,7 +131,9 @@ export default function Navigation() {
 							<Link
 								href="/faq"
 								className={`hover:text-primary transition-colors ${
-									isActive("/faq") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+									isActive("/faq")
+										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
+										: ""
 								}`}
 							>
 								{t.nav.faq}
@@ -133,7 +141,9 @@ export default function Navigation() {
 							<Link
 								href="/contact"
 								className={`hover:text-primary transition-colors ${
-									isActive("/contact") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+									isActive("/contact")
+										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
+										: ""
 								}`}
 							>
 								{t.nav.contactUs}
@@ -141,7 +151,9 @@ export default function Navigation() {
 							<Link
 								href="/blog"
 								className={`hover:text-primary transition-colors ${
-									isActive("/blog") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+									isActive("/blog")
+										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
+										: ""
 								}`}
 							>
 								{t.nav.blog}
@@ -150,7 +162,9 @@ export default function Navigation() {
 							<Link
 								href="/career"
 								className={`hover:text-primary transition-colors ${
-									isActive("/career") ? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl " : ""
+									isActive("/career")
+										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
+										: ""
 								}`}
 							>
 								{t.nav.careers}
@@ -168,109 +182,173 @@ export default function Navigation() {
 
 						<button
 							className="lg:hidden"
-							onClick={() => setIsMobileMenuOpen(true)}
+							onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
 						>
-							<Menu className="w-6 h-6" />
+							{isMobileMenuOpen ? (
+								<X className="w-6 h-6" />
+							) : (
+								<Menu className="w-6 h-6" />
+							)}
 						</button>
 					</div>
 				</div>
 			</header>
+			<div className="h-[4rem]"></div>
 
-			{/* Mobile Sidebar Overlay */}
+			{/* Mobile dropdown menu */}
 			<div
-				className={`fixed inset-0 bg-black bg-opacity-50 z-50 transition-opacity duration-300 lg:hidden ${
-					isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+				className={`fixed inset-0 bg-opacity-50 z-40 transition-opacity duration-300 lg:hidden ${
+					isMobileMenuOpen
+						? "opacity-100 visible"
+						: "opacity-0 invisible pointer-events-none"
 				}`}
-				onClick={() => setIsMobileMenuOpen(false)}
 			>
-				{/* Mobile Sidebar */}
 				<div
-					className={`fixed ${
-						dir === "rtl" ? "right-0" : "left-0"
-					} top-0 h-full w-80 bg-primary text-white transform transition-transform duration-300 ease-in-out ${
+					className={`absolute top-0 ${
+						dir === "rtl" ? "left-0" : "right-0"
+					} h-full w-72 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out ${
 						isMobileMenuOpen
 							? "translate-x-0"
 							: dir === "rtl"
-							? "translate-x-full"
-							: "-translate-x-full"
+							? "-translate-x-full"
+							: "translate-x-full"
 					}`}
 					onClick={(e) => e.stopPropagation()}
 				>
-					<div className="p-6">
-						{/* Header */}
-						<div className="flex items-center justify-between mb-8">
-							<div></div>
-							<button
-								onClick={() => setIsMobileMenuOpen(false)}
-								className="p-2 hover:bg-primary-600 rounded-lg transition-colors"
-							>
-								<X className="w-6 h-6" />
-							</button>
-						</div>
+					{/* Mobile Menu Content */}
+					<div className="p-6 space-y-4">
+						{/* Home Link */}
+						<Link
+							href="/"
+							onClick={closeMobileMenu}
+							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
+								isActive("/")
+									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+									: "hover:bg-gray-50 hover:text-primary"
+							}`}
+						>
+							{t.nav.home}
+						</Link>
 
-						{/* Mobile Navigation */}
-						<nav className="space-y-4">
-							<div>
-								<div className="text-lg font-medium mb-3">{t.nav.services}</div>
-								<div className={`${dir === "rtl" ? "pr-4" : "pl-4"} space-y-2`}>
+						{/* Services Section */}
+						<div className="space-y-2">
+							<button
+								onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+								className={`w-full flex items-center justify-between py-3 px-4 rounded-lg transition-all duration-200 ${
+									isActive("/services")
+										? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+										: "hover:bg-gray-50 hover:text-primary"
+								}`}
+							>
+								<span>{t.nav.services}</span>
+								{isMobileServicesOpen ? (
+									<ChevronUp className="w-5 h-5" />
+								) : (
+									<ChevronDown className="w-5 h-5" />
+								)}
+							</button>
+
+							{/* Services Dropdown */}
+							<div
+								className={`overflow-hidden transition-all duration-300 ${
+									isMobileServicesOpen
+										? "max-h-96 opacity-100"
+										: "max-h-0 opacity-0"
+								}`}
+							>
+								<div className="pl-4 space-y-2">
 									{services.map((service) => (
 										<Link
 											key={service.name}
 											href={service.href}
-											className="block text-blue-200 hover:text-white transition-colors py-1"
-											onClick={() => setIsMobileMenuOpen(false)}
+											onClick={closeMobileMenu}
+											className="block py-2 px-4 rounded-lg text-gray-600 hover:text-primary hover:bg-gray-50 transition-all duration-200"
 										>
 											{service.name}
 										</Link>
 									))}
 								</div>
 							</div>
+						</div>
 
-							<Link
-								href="/faq"
-								className="block text-lg font-medium hover:text-accent transition-colors py-2"
-								onClick={() => setIsMobileMenuOpen(false)}
-							>
-								{t.nav.faq}
-							</Link>
-							<Link
-								href="/career"
-								className="block text-lg font-medium hover:text-accent transition-colors py-2"
-								onClick={() => setIsMobileMenuOpen(false)}
-							>
-								{t.nav.careers}
-							</Link>
-							<Link
-								href="/about"
-								className="block text-lg font-medium hover:text-accent transition-colors py-2"
-								onClick={() => setIsMobileMenuOpen(false)}
-							>
-								{t.nav.aboutUs}
-							</Link>
-							<Link
-								href="/blog"
-								className="block text-lg font-medium hover:text-accent transition-colors py-2"
-								onClick={() => setIsMobileMenuOpen(false)}
-							>
-								{t.nav.blog}
-							</Link>
-							<Link
-								href="/contact"
-								className="block text-lg font-medium hover:text-accent transition-colors py-2"
-								onClick={() => setIsMobileMenuOpen(false)}
-							>
-								{t.nav.contactUs}
-							</Link>
+						{/* About Us Link */}
+						<Link
+							href="/about"
+							onClick={closeMobileMenu}
+							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
+								isActive("/about")
+									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+									: "hover:bg-gray-50 hover:text-primary"
+							}`}
+						>
+							{t.nav.aboutUs}
+						</Link>
 
-							{/* Language Switcher */}
+						{/* FAQ Link */}
+						<Link
+							href="/faq"
+							onClick={closeMobileMenu}
+							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
+								isActive("/faq")
+									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+									: "hover:bg-gray-50 hover:text-primary"
+							}`}
+						>
+							{t.nav.faq}
+						</Link>
+
+						{/* Contact Us Link */}
+						<Link
+							href="/contact"
+							onClick={closeMobileMenu}
+							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
+								isActive("/contact")
+									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+									: "hover:bg-gray-50 hover:text-primary"
+							}`}
+						>
+							{t.nav.contactUs}
+						</Link>
+
+						{/* Blog Link */}
+						<Link
+							href="/blog"
+							onClick={closeMobileMenu}
+							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
+								isActive("/blog")
+									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+									: "hover:bg-gray-50 hover:text-primary"
+							}`}
+						>
+							{t.nav.blog}
+						</Link>
+
+						{/* Careers Link */}
+						<Link
+							href="/career"
+							onClick={closeMobileMenu}
+							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
+								isActive("/career")
+									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
+									: "hover:bg-gray-50 hover:text-primary"
+							}`}
+						>
+							{t.nav.careers}
+						</Link>
+
+						{/* Language Switcher */}
+						<div className="pt-4 border-t border-gray-200">
 							<button
-								onClick={toggleLanguage}
-								className="flex items-center space-x-2 rtl:space-x-2 hover:text-accent transition-colors py-2 text-lg font-medium"
+								onClick={() => {
+									toggleLanguage();
+									closeMobileMenu();
+								}}
+								className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all duration-200 font-medium"
 							>
-								<Globe className="w-5 h-5" />
-								<span>{t.nav.languageSwitch}</span>
+								<Globe className="w-4 h-4" />
+								{t.nav.languageSwitch}
 							</button>
-						</nav>
+						</div>
 					</div>
 				</div>
 			</div>

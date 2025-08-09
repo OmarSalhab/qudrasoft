@@ -14,8 +14,8 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">{t.blog.title}</h1>
-          <p className="text-xl opacity-90 max-w-3xl mx-auto">{t.blog.description}</p>
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">{t.blog.title}</h1>
+          <p className="text-sm md:text-xl opacity-90 max-w-3xl mx-auto">{t.blog.description}</p>
         </div>
       </section>
 
@@ -26,11 +26,11 @@ export default function BlogPage() {
             {t.blog.articles.map((article, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow">
                 <Image
-                  src={`/placeholder.svg?height=200&width=400&query=blog article ${index + 1}`}
+                  src={article.image}
                   alt={article.title}
                   width={400}
                   height={200}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-fill"
                 />
                 <CardContent className="p-6">
                   <div className="flex items-center space-x-4 text-sm text-gray-500 mb-3">
