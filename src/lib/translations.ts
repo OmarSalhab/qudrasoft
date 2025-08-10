@@ -414,7 +414,7 @@ export const translations = {
 				},
 			},
 			eMenu: {
-				title: "E-Menu Solutions",
+				title: "QR Solutions",
 				description:
 					"Revolutionary digital menu solutions for restaurants and hospitality businesses. Enhance customer experience with QR code integration and real-time menu updates.",
 				features: {
@@ -443,7 +443,7 @@ export const translations = {
 				},
 			},
 			landingWebsite: {
-				title: "Landing Website Development",
+				title: "Web Development",
 				description:
 					"Professional landing pages and websites designed to convert visitors into customers. Modern design, SEO optimization, and performance-focused development.",
 				features: {
@@ -1306,7 +1306,7 @@ export const translations = {
 				},
 			},
 			eMenu: {
-				title: "حلول القائمة الإلكترونية",
+				title: "حلول الQR",
 				description:
 					"حلول قوائم رقمية ثورية للمطاعم وشركات الضيافة. عزز تجربة العملاء مع تكامل رمز الاستجابة السريعة وتحديثات القائمة الفورية.",
 				features: {
@@ -1335,7 +1335,7 @@ export const translations = {
 			},
 
 			landingWebsite: {
-				title: "تطوير موقع الهبوط",
+				title: "تطوير المواقع الالكترونية",
 				description:
 					"صفحات هبوط ومواقع ويب احترافية مصممة لتحويل الزوار إلى عملاء. تصميم حديث، تحسين محركات البحث، وتطوير يركز على الأداء.",
 				features: {
@@ -1364,38 +1364,7 @@ export const translations = {
 			},
 		},
 
-		// FAQ
-		faq: {
-			title: "الأسئلة الشائعة",
-			description: "اعثر على إجابات للأسئلة الشائعة حول خدماتنا وحلولنا.",
-			questions: [
-				{
-					question: "ما هي الخدمات التي تقدمها إي-سوليوشنز؟",
-					answer:
-						"نحن متخصصون في أتمتة الذكاء الاصطناعي، وحلول القائمة الإلكترونية للمطاعم، وتطوير مواقع الهبوط. يقدم فريقنا حلولاً شاملة مخصصة لاحتياجات عملك.",
-				},
-				{
-					question: "كم من الوقت يستغرق إكمال المشروع؟",
-					answer:
-						"تختلف الجداول الزمنية للمشاريع حسب التعقيد والنطاق. مشاريع أتمتة الذكاء الاصطناعي تستغرق عادة 4-8 أسابيع، حلول القائمة الإلكترونية 2-4 أسابيع، ومواقع الهبوط 1-3 أسابيع.",
-				},
-				{
-					question: "هل تقدمون الدعم والصيانة المستمرة؟",
-					answer:
-						"نعم، نقدم حزم دعم وصيانة شاملة لجميع حلولنا. يشمل ذلك التحديثات المنتظمة، إصلاح الأخطاء، والدعم التقني.",
-				},
-				{
-					question: "هل يمكنكم التكامل مع الأنظمة الموجودة؟",
-					answer:
-						"بالطبع! حلولنا مصممة للتكامل بسلاسة مع أنظمتك وسير عملك الموجود. نقوم بتحليل شامل لضمان التوافق.",
-				},
-				{
-					question: "ما هي تكلفة خدماتكم؟",
-					answer:
-						"تختلف الأسعار حسب متطلبات المشروع والتعقيد. نقدم عروض أسعار مفصلة بعد فهم احتياجاتك المحددة. اتصل بنا للحصول على استشارة مجانية.",
-				},
-			],
-		},
+		
 
 		// Blog
 		blog: {

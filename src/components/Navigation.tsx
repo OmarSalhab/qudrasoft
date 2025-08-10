@@ -15,11 +15,11 @@ export default function Navigation() {
 	const { locale, setLocale, t, dir } = useLocale();
 
 	const services = [
-		{ name: t.services.aiAutomation.title, href: "/services/ai-automation" },
-		{ name: t.services.eMenu.title, href: "/services/e-menu" },
+		// { name: t.services.aiAutomation.title, href: "/services/ai-automation" },
+		{ name: t.services.eMenu.title, href: "/services/qr-solutions" },
 		{
 			name: t.services.landingWebsite.title,
-			href: "/services/landing-website",
+			href: "/services/website-development",
 		},
 	];
 
@@ -42,7 +42,7 @@ export default function Navigation() {
 	return (
 		<>
 			<header className="bg-secondary fixed text-gray-700 h-16 md:h-20 w-full z-50 rtl:text-[18px] font-medium">
-				<div className="container mx-auto px-4">
+				<div className="container mx-auto px-6">
 					<div className="flex items-center justify-between h-16 md:h-20">
 						<Link href="/" className="flex items-center gap-2">
 							<Image width={160} height={40} alt="Logo" src="/loe.png" className="w-36 h-8"/>
@@ -159,7 +159,7 @@ export default function Navigation() {
 								{t.nav.blog}
 							</Link>
 
-							<Link
+							{/* <Link
 								href="/career"
 								className={`hover:text-primary transition-colors ${
 									isActive("/career")
@@ -168,7 +168,7 @@ export default function Navigation() {
 								}`}
 							>
 								{t.nav.careers}
-							</Link>
+							</Link> */}
 
 							{/* Language Switcher */}
 
@@ -324,7 +324,7 @@ export default function Navigation() {
 						</Link>
 
 						{/* Careers Link */}
-						<Link
+						{/* <Link
 							href="/career"
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
@@ -334,7 +334,7 @@ export default function Navigation() {
 							}`}
 						>
 							{t.nav.careers}
-						</Link>
+						</Link> */}
 
 						{/* Language Switcher */}
 						<div className="pt-4 border-t border-gray-200">
