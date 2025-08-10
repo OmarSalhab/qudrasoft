@@ -41,11 +41,11 @@ export default function Navigation() {
 
 	return (
 		<>
-			<header className="bg-secondary fixed text-gray-700 h-20 w-full z-50 rtl:text-[18px] font-medium">
+			<header className="bg-secondary fixed text-gray-700 h-16 md:h-20 w-full z-50 rtl:text-[18px] font-medium">
 				<div className="container mx-auto px-4">
-					<div className="flex items-center justify-between h-20">
+					<div className="flex items-center justify-between h-16 md:h-20">
 						<Link href="/" className="flex items-center gap-2">
-							<Image width={170} height={50} alt="Logo" src="/logo-3.png" />
+							<Image width={160} height={40} alt="Logo" src="/loe.png" className="w-36 h-8"/>
 						</Link>
 
 						<nav className="hidden lg:flex items-center gap-8">
@@ -197,7 +197,7 @@ export default function Navigation() {
 
 			{/* Mobile dropdown menu */}
 			<div
-				className={`fixed inset-0 bg-opacity-50 z-40 transition-opacity duration-300 lg:hidden ${
+				className={`fixed mt-16 inset-0 bg-opacity-50 z-40 transition-opacity duration-300 lg:hidden ${
 					isMobileMenuOpen
 						? "opacity-100 visible"
 						: "opacity-0 invisible pointer-events-none"

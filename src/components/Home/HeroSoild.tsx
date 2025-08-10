@@ -30,7 +30,7 @@ export default function HeroSection() {
 				</div>
 
 				{/* Main Heading with Gradient Text */}
-				<h1 className="text-2xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+				<h1 className="text-[27px] md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
 					<span className="bg-gradient-to-r from-white via-blue-200 to-blue-400 bg-clip-text text-transparent">
 						{t.home.hero.mainTitle.companyName}
 					</span>
