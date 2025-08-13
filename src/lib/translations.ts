@@ -378,7 +378,125 @@ export const translations = {
 				},
 			},
 		},
-
+		websiteDevelopment: {
+			hero: {
+				title: "Website Development",
+				description:
+					"Design and develop professional websites responsive to all devices",
+				cta: {
+					startProject: "Start Your Project Now",
+					viewWork: "View Work",
+				},
+			},
+			features: {
+				title: "Our Service Features",
+				description:
+					"We provide you with a professional website that meets all your needs and achieves your business goals",
+				list: [
+					{
+						title: "Responsive Design for All Devices",
+						description:
+							"Your website will work perfectly on phones, tablets, and computers",
+					},
+					{
+						title: "Search Engine Optimization (SEO)",
+						description:
+							"Comprehensive SEO optimization to ensure your website appears in top results",
+					},
+					{
+						title: "High Loading Speed",
+						description:
+							"Performance optimization to ensure fast loading and excellent user experience",
+					},
+					{
+						title: "User-Friendly Dashboard",
+						description:
+							"Easily manage your website content through an intuitive dashboard",
+					},
+					{
+						title: "SSL Security Certificate",
+						description:
+							"Complete protection for your website and visitor data with a free SSL certificate",
+					},
+					{
+						title: "Continuous Technical Support",
+						description:
+							"A specialized support team available 24/7 to assist you anytime",
+					},
+				],
+			},
+			pricing: {
+				price: 50,
+				title: "Dinars Yearly",
+				description: "Includes hosting, consultation, and design",
+				features: [
+					"Responsive Design for All Devices",
+					"Search Engine Optimization (SEO)",
+					"High Loading Speed",
+					"User-Friendly Dashboard",
+					"SSL Security Certificate",
+					"Continuous Technical Support",
+				],
+				cta: "Calculate Your Website Price",
+			},
+			additionalServices: {
+				title: "Additional Services",
+				description:
+					"Advanced services to develop and enhance your website's performance",
+				list: [
+					{
+						title: "Logo Design",
+						description: "Professional logo design for your brand",
+						price: "From 50 Dinars",
+					},
+					{
+						title: "Content Writing",
+						description: "Professional and SEO-optimized content writing",
+						price: "From 100 Dinars",
+					},
+					{
+						title: "Digital Marketing",
+						description: "Social media marketing services",
+						price: "From 200 Dinars Monthly",
+					},
+					{
+						title: "Monthly Maintenance",
+						description:
+							"Regular maintenance and security updates for the website",
+						price: "From 30 Dinars Monthly",
+					},
+				],
+			},
+			testimonials: {
+				title: "What Our Clients Say?",
+				list: [
+					{
+						name: "Ahmed Mohammed",
+						company: "Advanced Technologies Company",
+						text: "Great website and excellent service, our sales increased by 150%",
+					},
+					{
+						name: "Fatima Al Ali",
+						company: "Innovation Group",
+						text: "Professional team and committed to deadlines, the result exceeded my expectations",
+					},
+					{
+						name: "Walid Al Saadi",
+						company: "Smart Education Platform",
+						text: "Modern design and fast loading, our clients are very impressed",
+					},
+				],
+			},
+			cta: {
+				title: "Ready to Start Your Project?",
+				description:
+					"Contact us today and get a free consultation for your website",
+				buttons: {
+					getQuote: "Get a Quote",
+					contactUs: "Contact Us",
+				},
+			},
+		},
 		// Services
 		services: {
 			title: "Our Services",
@@ -520,7 +638,7 @@ export const translations = {
 						"Discover how artificial intelligence is revolutionizing business processes and what it means for the future of work.",
 					date: "December 15, 2024",
 					category: "AI & Technology",
-					image:"/AIAutomationTheFutureOfWork.jpg"
+					image: "/AIAutomationTheFutureOfWork.jpg",
 				},
 				{
 					title: "Digital Menu Revolution: Transforming Restaurant Experience",
@@ -528,7 +646,7 @@ export const translations = {
 						"How QR code menus and digital solutions are changing the hospitality industry post-pandemic.",
 					date: "December 10, 2024",
 					category: "Digital Solutions",
-					image:"/detail_main_m_253.webp"
+					image: "/detail_main_m_253.webp",
 				},
 				{
 					title: "Landing Page Optimization: Converting Visitors to Customers",
@@ -536,7 +654,8 @@ export const translations = {
 						"Essential strategies and best practices for creating high-converting landing pages that drive business growth.",
 					date: "December 5, 2024",
 					category: "Web Development",
-					image:"/Landing-Page-Optimization-Strategy-For-Better-Conversions-smaller.webp"
+					image:
+						"/Landing-Page-Optimization-Strategy-For-Better-Conversions-smaller.webp",
 				},
 			],
 		},
@@ -546,10 +665,8 @@ export const translations = {
 			whoWe: {
 				title: "Who We Are",
 				intro: {
-					p1:
-						"solvenear is a leading company in software development and technology solutions, founded to provide high‑quality services in programming and the development of websites and applications.",
-					p2:
-						"We believe that technology should be in the service of people; therefore, we always strive to develop innovative solutions that meet our clients' needs and help them achieve their goals.",
+					p1: "solvenear is a leading company in software development and technology solutions, founded to provide high‑quality services in programming and the development of websites and applications.",
+					p2: "We believe that technology should be in the service of people; therefore, we always strive to develop innovative solutions that meet our clients' needs and help them achieve their goals.",
 				},
 				cards: {
 					vision: {
@@ -673,12 +790,14 @@ export const translations = {
 				},
 				empty: {
 					title: "No results found",
-					description: "Try searching with different keywords or browse other categories",
+					description:
+						"Try searching with different keywords or browse other categories",
 					reset: "Reset Search",
 				},
 				contactCta: {
 					title: "Didn't find an answer to your question?",
-					description: "Our support team is available 24/7 to answer all your inquiries",
+					description:
+						"Our support team is available 24/7 to answer all your inquiries",
 					chat: "Live Chat",
 					call: "Call Us",
 					email: "Email Us",
@@ -851,12 +970,21 @@ export const translations = {
 					"We’re here to help. Reach out today and let’s turn your ideas into a digital reality.",
 				form: {
 					title: "Send Us a Message",
-					firstName: { label: "First Name", placeholder: "Enter your first name" },
+					firstName: {
+						label: "First Name",
+						placeholder: "Enter your first name",
+					},
 					lastName: { label: "Last Name", placeholder: "Enter your last name" },
 					email: { label: "Email", placeholder: "Enter your email address" },
-					phone: { label: "Phone Number", placeholder: "Enter your phone number" },
+					phone: {
+						label: "Phone Number",
+						placeholder: "Enter your phone number",
+					},
 					subject: { label: "Subject", placeholder: "Message subject" },
-					message: { label: "Message", placeholder: "Write your message here..." },
+					message: {
+						label: "Message",
+						placeholder: "Write your message here...",
+					},
 					submit: "Send Message",
 				},
 				info: {
@@ -1270,7 +1398,116 @@ export const translations = {
 				},
 			},
 		},
-
+		websiteDevelopment: {
+			hero: {
+				title: "إنشاء المواقع الإلكترونية",
+				description: "تصميم وتطوير مواقع احترافية متجاوبة مع جميع الأجهزة",
+				cta: {
+					startProject: "ابدأ مشروعك الآن",
+					viewWork: "عرض الأعمال",
+				},
+			},
+			features: {
+				title: "مميزات خدمتنا",
+				description:
+					"نقدم لك موقعاً إلكترونياً احترافياً يلبي جميع احتياجاتك ويحقق أهدافك التجارية",
+				list: [
+					{
+						title: "تصميم متجاوب مع جميع الأجهزة",
+						description: "موقعك سيعمل بشكل مثالي على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر",
+					},
+					{
+						title: "تحسين محركات البحث (SEO)",
+						description: "تحسين شامل لمحركات البحث لضمان ظهور موقعك في النتائج الأولى",
+					},
+					{
+						title: "سرعة تحميل عالية",
+						description: "تحسين الأداء لضمان تحميل سريع وتجربة مستخدم ممتازة",
+					},
+					{
+						title: "لوحة تحكم سهلة الاستخدام",
+						description: "إدارة محتوى موقعك بسهولة من خلال لوحة تحكم بديهية",
+					},
+					{
+						title: "شهادة أمان SSL",
+						description: "حماية كاملة لموقعك وبيانات زوارك مع شهادة SSL مجانية",
+					},
+					{
+						title: "دعم فني مستمر",
+						description: "فريق دعم متخصص متاح 24/7 لمساعدتك في أي وقت",
+					},
+				],
+			},
+			pricing: {
+				price: 50,
+				title: "دينار سنويا",
+				description: "يشمل الاستضافة والاستشارة والتصميم",
+				features: [
+					"تصميم متجاوب مع جميع الأجهزة",
+					"تحسين محركات البحث (SEO)",
+					"سرعة تحميل عالية",
+					"لوحة تحكم سهلة الاستخدام",
+					"شهادة أمان SSL",
+					"دعم فني مستمر",
+				],
+				cta: "احسب سعر موقعك",
+			},
+			additionalServices: {
+				title: "خدمات إضافية",
+				description: "خدمات متقدمة لتطوير موقعك الإلكتروني وتحسين أدائه",
+				list: [
+					{
+						title: "تصميم شعار",
+						description: "تصميم شعار احترافي لعلامتك التجارية",
+						price: "من 50 دينار",
+					},
+					{
+						title: "كتابة المحتوى",
+						description: "كتابة محتوى احترافي ومحسن لمحركات البحث",
+						price: "من 100 دينار",
+					},
+					{
+						title: "التسويق الرقمي",
+						description: "خدمات التسويق عبر وسائل التواصل الاجتماعي",
+						price: "من 200 دينار شهرياً",
+					},
+					{
+						title: "الصيانة الشهرية",
+						description: "صيانة دورية وتحديثات أمنية للموقع",
+						price: "من 30 دينار شهرياً",
+					},
+				],
+			},
+			testimonials: {
+				title: "ماذا يقول عملاؤنا؟",
+				list: [
+					{
+						name: "أحمد محمد",
+						company: "شركة التقنيات المتقدمة",
+						text: "موقع رائع وخدمة ممتازة، زادت مبيعاتنا بنسبة 150%",
+					},
+					{
+						name: "فاطمة العلي",
+						company: "مجموعة الابتكار التجارية",
+						text: "فريق محترف وملتزم بالمواعيد، النتيجة فاقت توقعاتي",
+					},
+					{
+						name: "وليد السعدي",
+						company: "منصة التعليم الذكي",
+						text: "تصميم عصري وسرعة في التحميل، عملاؤنا معجبون جداً",
+					},
+				],
+			},
+			cta: {
+				title: "جاهز لبدء مشروعك؟",
+				description:
+					"تواصل معنا اليوم واحصل على استشارة مجانية لموقعك الإلكتروني",
+				buttons: {
+					getQuote: "احصل على عرض سعر",
+					contactUs: "تواصل معنا",
+				},
+			},
+		},
 		// Services
 		services: {
 			title: "خدماتنا",
@@ -1364,8 +1601,6 @@ export const translations = {
 			},
 		},
 
-		
-
 		// Blog
 		blog: {
 			title: "أحدث الرؤى",
@@ -1379,7 +1614,7 @@ export const translations = {
 						"اكتشف كيف يثور الذكاء الاصطناعي في عمليات الأعمال وما يعنيه لمستقبل العمل.",
 					date: "15 ديسمبر 2024",
 					category: "الذكاء الاصطناعي والتكنولوجيا",
-					image:"/AIAutomationTheFutureOfWork.jpg"
+					image: "/AIAutomationTheFutureOfWork.jpg",
 				},
 				{
 					title: "ثورة القائمة الرقمية: تحويل تجربة المطعم",
@@ -1387,7 +1622,7 @@ export const translations = {
 						"كيف تغير قوائم رمز الاستجابة السريعة والحلول الرقمية صناعة الضيافة بعد الجائحة.",
 					date: "10 ديسمبر 2024",
 					category: "الحلول الرقمية",
-					image:"/detail_main_m_253.webp"
+					image: "/detail_main_m_253.webp",
 				},
 				{
 					title: "تحسين صفحة الهبوط: تحويل الزوار إلى عملاء",
@@ -1395,7 +1630,8 @@ export const translations = {
 						"الاستراتيجيات الأساسية وأفضل الممارسات لإنشاء صفحات هبوط عالية التحويل تدفع نمو الأعمال.",
 					date: "5 ديسمبر 2024",
 					category: "تطوير الويب",
-					image:"/Landing-Page-Optimization-Strategy-For-Better-Conversions-smaller.webp"
+					image:
+						"/Landing-Page-Optimization-Strategy-For-Better-Conversions-smaller.webp",
 				},
 			],
 		},
@@ -1405,10 +1641,8 @@ export const translations = {
 			whoWe: {
 				title: "من نحن",
 				intro: {
-					p1:
-						"شركة سولڤنير هي شركة رائدة في مجال تطوير البرمجيات والحلول التقنية، تأسست بهدف تقديم خدمات عالية الجودة في البرمجة وتطوير المواقع الإلكترونية والتطبيقات.",
-					p2:
-						"نحن نؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان، ولذلك نسعى دائماً لتطوير حلول مبتكرة تلبي احتياجات عملائنا وتساعدهم على تحقيق أهدافهم.",
+					p1: "شركة سولڤنير هي شركة رائدة في مجال تطوير البرمجيات والحلول التقنية، تأسست بهدف تقديم خدمات عالية الجودة في البرمجة وتطوير المواقع الإلكترونية والتطبيقات.",
+					p2: "نحن نؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان، ولذلك نسعى دائماً لتطوير حلول مبتكرة تلبي احتياجات عملائنا وتساعدهم على تحقيق أهدافهم.",
 				},
 				cards: {
 					vision: {
@@ -1705,12 +1939,16 @@ export const translations = {
 			},
 			page: {
 				title: "تواصل معنا",
-				description: "نحن هنا لمساعدتك. تواصل معنا اليوم ودعنا نحول أفكارك إلى واقع رقمي",
+				description:
+					"نحن هنا لمساعدتك. تواصل معنا اليوم ودعنا نحول أفكارك إلى واقع رقمي",
 				form: {
 					title: "أرسل لنا رسالة",
 					firstName: { label: "الاسم الأول", placeholder: "أدخل اسمك الأول" },
 					lastName: { label: "الاسم الأخير", placeholder: "أدخل اسمك الأخير" },
-					email: { label: "البريد الإلكتروني", placeholder: "أدخل بريدك الإلكتروني" },
+					email: {
+						label: "البريد الإلكتروني",
+						placeholder: "أدخل بريدك الإلكتروني",
+					},
 					phone: { label: "رقم الهاتف", placeholder: "أدخل رقم هاتفك" },
 					subject: { label: "الموضوع", placeholder: "موضوع الرسالة" },
 					message: { label: "الرسالة", placeholder: "اكتب رسالتك هنا..." },
@@ -1721,7 +1959,10 @@ export const translations = {
 					email: { label: "البريد الإلكتروني", value: "info@solvenear.com" },
 					phone: { label: "رقم الهاتف", value: "+962 7 9999 9999" },
 					address: { label: "العنوان", value: "عمان، الأردن" },
-					hours: { label: "ساعات العمل", value: "الأحد - الخميس: 9:00 - 18:00" },
+					hours: {
+						label: "ساعات العمل",
+						value: "الأحد - الخميس: 9:00 - 18:00",
+					},
 				},
 				reasons: {
 					title: "لماذا تختار سولڤنير ؟",
