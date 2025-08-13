@@ -497,6 +497,193 @@ export const translations = {
 				},
 			},
 		},
+		qrSolution: {
+			hero: {
+				title: "Smart QR Solutions",
+				description:
+					"A technological revolution that transforms your business and saves thousands of dinars annually",
+				cta: {
+					startSaving: "Start Saving Now",
+					viewDemo: "View Demo",
+				},
+				statsTitle: "Dinars for the complete solution",
+				statsDescription: "Save thousands of dinars annually and gain more customers",
+				savings: {
+					title: "💰 Guaranteed Savings:",
+					items: [
+						"High-quality QR codes",
+						"Responsive design for all devices",
+						"Advanced dashboard",
+						"Instant notifications",
+						"Analytics and reports",
+						"Continuous technical support",
+					],
+				},
+			},
+			stats: [
+				{ number: "500K+", label: "Scans per month" },
+				{ number: "85%", label: "Increase in average sales" },
+				{ number: "60%", label: "Cost savings" },
+				{ number: "99.9%", label: "System uptime" },
+			],
+			solutions: {
+				title: "Our Three Advanced Solutions",
+				description:
+					"Three smart solutions that transform your business into a digital experience and save you thousands of dinars",
+				items: [
+					{
+						title: "QR Menu - Smart Menu",
+						description:
+							"An interactive digital menu displayed when scanning the code, with rating and waiter call features",
+						featuresTitle: "✨ Features:",
+						features: [
+							"Interactive and attractive menus",
+							"Multiple designs (modern, classic, custom)",
+							"Customer rating system",
+							"Direct waiter call button",
+							"Instant updates for prices and offers",
+							"Multi-language support",
+						],
+						benefitsTitle: "💰 Financial Benefits:",
+						benefits: [
+							"Save on menu printing costs",
+							"Instant menu updates",
+							"Enhanced customer experience",
+							"Reduced waiting time",
+						],
+						price: "From 199 Dinars",
+						cta: "Order Now",
+					},
+					{
+						title: "QR Ordering - Smart Ordering System",
+						description:
+							"A comprehensive ordering system for hotels and restaurants that saves thousands of dinars annually in operating costs",
+						featuresTitle: "✨ Features:",
+						features: [
+							"Direct orders from rooms and tables",
+							"Advanced management dashboard",
+							"Instant order notifications",
+							"Real-time order tracking",
+							"Integration with payment systems",
+							"Detailed sales reports",
+						],
+						benefitsTitle: "💰 Financial Benefits:",
+						benefits: [
+							"Save 60% on employee costs",
+							"Increase sales by 40%",
+							"Reduce human errors",
+							"24/7 customer service without staff",
+						],
+						price: "From 599 Dinars",
+						cta: "Order Now",
+					},
+					{
+						title: "QR Offers - Smart Offers",
+						description:
+							"A dynamic offers system with a countdown timer that boosts sales and creates urgency among customers",
+						featuresTitle: "✨ Features:",
+						features: [
+							"Offers with an exciting countdown timer",
+							"Comprehensive management dashboard",
+							"Easily add and remove offers",
+							"Full design customization",
+							"Detailed offer statistics",
+							"Automatic customer notifications",
+						],
+						benefitsTitle: "💰 Financial Benefits:",
+						benefits: [
+							"Increase sales by 70%",
+							"Attract new customers",
+							"Encourage quick purchases",
+							"Build a loyal customer base",
+						],
+						price: "From 299 Dinars",
+						cta: "Order Now",
+					},
+				],
+			},
+			features: {
+				title: "Why Choose QR Solutions from Solvenear?",
+				description:
+					"Advanced technology that transforms your business and saves you money, time, and effort",
+				items: [
+					{
+						title: "Advanced QR Technology",
+						description:
+							"High-quality QR codes that work with all smartphones at lightning speed",
+					},
+					{
+						title: "Huge Financial Savings",
+						description:
+							"Save thousands of dinars annually on operating, employee, and printing costs",
+					},
+					{
+						title: "Increase Sales",
+						description:
+							"Guaranteed sales increase of up to 70% within the first month",
+					},
+					{
+						title: "Instant Notifications",
+						description:
+							"Receive instant notifications for all orders and customer interactions",
+					},
+					{
+						title: "Full Control",
+						description:
+							"Advanced dashboard to manage all aspects of your QR system",
+					},
+					{
+						title: "Smart Analytics",
+						description:
+							"Detailed reports and accurate statistics to help you make better decisions",
+					},
+				],
+			},
+			testimonials: {
+				title: "Real Success Stories",
+				description:
+					"See how QR solutions transformed our clients' businesses and saved them thousands of dinars",
+				items: [
+					{
+						name: "Ahmed Al-Khalidi",
+						company: "Al-Asala Restaurant",
+						text: "The QR Menu system saved us 3000 Dinars annually on printing costs, and customers love the new experience!",
+						savings: "Saved 3000 Dinars annually",
+					},
+					{
+						name: "Fatima Al-Ali",
+						company: "Hospitality Hotel",
+						text: "The QR Ordering system changed our hotel! We saved 8 employees and increased sales by 45% in just two months",
+						savings: "Saved 8 employees + 45% increase",
+					},
+					{
+						name: "Mohammed Massad",
+						company: "5Stars Cafe",
+						text: "QR Offers increased our sales by 80% in one month! Customers are excited about the countdown offers",
+						savings: "80% sales increase",
+					},
+				],
+			},
+			cta: {
+				title: "Ready to Save Thousands of Dinars?",
+				description:
+					"Start your digital transformation journey today and save your business thousands of dinars annually with smart QR solutions",
+				guarantee: {
+					title: "🎯 Results Guarantee:",
+					items: [
+						"✅ Guaranteed cost savings within 30 days",
+						"✅ Increased sales or your money back",
+						"✅ Free technical support for 6 months",
+						"✅ Free team training",
+					],
+				},
+				buttons: {
+					startSaving: "Start Saving Now - Free",
+					bookConsultation: "Book a Free Consultation",
+				},
+				note: "💡 Free 30-minute consultation to assess your needs",
+			},
+		},
 		// Services
 		services: {
 			title: "Our Services",
@@ -1414,11 +1601,13 @@ export const translations = {
 				list: [
 					{
 						title: "تصميم متجاوب مع جميع الأجهزة",
-						description: "موقعك سيعمل بشكل مثالي على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر",
+						description:
+							"موقعك سيعمل بشكل مثالي على الهواتف والأجهزة اللوحية وأجهزة الكمبيوتر",
 					},
 					{
 						title: "تحسين محركات البحث (SEO)",
-						description: "تحسين شامل لمحركات البحث لضمان ظهور موقعك في النتائج الأولى",
+						description:
+							"تحسين شامل لمحركات البحث لضمان ظهور موقعك في النتائج الأولى",
 					},
 					{
 						title: "سرعة تحميل عالية",
@@ -1506,6 +1695,184 @@ export const translations = {
 					getQuote: "احصل على عرض سعر",
 					contactUs: "تواصل معنا",
 				},
+			},
+		},
+
+		qrSolution: {
+			hero: {
+				title: "حلول QR الذكية",
+				description: "ثورة تقنية تحول عملك وتوفر آلاف الدنانير سنوياً",
+				cta: {
+					startSaving: "ابدأ التوفير الآن",
+					viewDemo: "شاهد العرض التوضيحي",
+				},
+				savings: {
+					title: "💰 توفير مضمون:",
+					items: ["أكواد QR عالية الجودة", "تصميم متجاوب مع جميع الأجهزة","لوحة تحكم متقدمة","إشعارات فورية","تحليلات وتقارير","دعم فني مستمر"],
+				},
+				statsTitle: "دينار للحل الكامل",
+				statsDescription: "وفر آلاف الدنانير سنوياً واكسب عملاء أكثر",
+			},
+			stats: [
+				{ number: "500K+", label: "عملية مسح شهرياً" },
+				{ number: "85%", label: "زيادة متوسط المبيعات" },
+				{ number: "60%", label: "توفير في التكاليف" },
+				{ number: "99.9%", label: "وقت تشغيل النظام" },
+			],
+			solutions: {
+				title: "حلولنا الثلاثة المتطورة",
+				description:
+					"ثلاثة حلول ذكية تحول عملك إلى تجربة رقمية متطورة وتوفر عليك آلاف الدنانير",
+				items: [
+					{
+						title: "QR Menu - قائمة الطعام الذكية",
+						description:
+							"قائمة طعام رقمية تفاعلية تُعرض عند مسح الكود، مع إمكانية التقييم واستدعاء النادل",
+						featuresTitle: "✨ المميزات:",
+						features: [
+							"قوائم طعام تفاعلية وجذابة",
+							"تصاميم متعددة (عصري، كلاسيكي، مخصص)",
+							"نظام تقييمات العملاء",
+							"زر استدعاء النادل المباشر",
+							"تحديث فوري للأسعار والعروض",
+							"دعم متعدد اللغات",
+						],
+						benefitsTitle: "💰 الفوائد المالية:",
+						benefits: [
+							"توفير تكاليف طباعة القوائم",
+							"تحديث فوري للقائمة",
+							"تجربة عملاء متطورة",
+							"تقليل وقت الانتظار",
+						],
+						price: "من 199 دينار",
+						cta: "اطلب الآن",
+					},
+					{
+						title: "QR Ordering - نظام الطلبات الذكي",
+						description:
+							"نظام طلبات متكامل للفنادق والمطاعم يوفر آلاف الدنانير سنوياً من تكاليف التشغيل",
+						featuresTitle: "✨ المميزات:",
+						features: [
+							"طلبات مباشرة من الغرف والطاولات",
+							"لوحة تحكم متقدمة للإدارة",
+							"إشعارات فورية للطلبات",
+							"تتبع حالة الطلب في الوقت الفعلي",
+							"تكامل مع أنظمة الدفع",
+							"تقارير مبيعات تفصيلية",
+						],
+						benefitsTitle: "💰 الفوائد المالية:",
+						benefits: [
+							"توفير 60% من تكاليف الموظفين",
+							"زيادة المبيعات بنسبة 40%",
+							"تقليل الأخطاء البشرية",
+							"خدمة عملاء 24/7 بدون موظفين",
+						],
+						price: "من 599 دينار",
+						cta: "اطلب الآن",
+					},
+					{
+						title: "QR Offers - العروض الذكية",
+						description:
+							"نظام عروض ديناميكي مع عداد تنازلي يزيد المبيعات ويخلق إحساساً بالإلحاح لدى العملاء",
+						featuresTitle: "✨ المميزات:",
+						features: [
+							"عروض مع عداد تنازلي مثير",
+							"لوحة تحكم شاملة للإدارة",
+							"إضافة وحذف العروض بسهولة",
+							"تخصيص كامل للتصميم",
+							"إحصائيات مفصلة للعروض",
+							"إشعارات تلقائية للعملاء",
+						],
+						benefitsTitle: "💰 الفوائد المالية:",
+						benefits: [
+							"زيادة المبيعات بنسبة 70%",
+							"جذب عملاء جدد",
+							"تحفيز الشراء السريع",
+							"بناء قاعدة عملاء مخلصين",
+						],
+						price: "من 299 دينار",
+						cta: "اطلب الآن",
+					},
+				],
+			},
+			features: {
+				title: "لماذا تختار حلول QR من سولڤنير؟",
+				description: "تقنية متطورة تحول عملك وتوفر عليك المال والوقت والجهد",
+				items: [
+					{
+						title: "تقنية QR متطورة",
+						description:
+							"أكواد QR عالية الجودة تعمل مع جميع الهواتف الذكية بسرعة فائقة",
+					},
+					{
+						title: "توفير مالي هائل",
+						description:
+							"وفر آلاف الدنانير سنوياً من تكاليف التشغيل والموظفين والطباعة",
+					},
+					{
+						title: "زيادة المبيعات",
+						description:
+							"زيادة مؤكدة في المبيعات بنسبة تصل إلى 70% خلال الشهر الأول",
+					},
+					{
+						title: "إشعارات فورية",
+						description:
+							"تلقي إشعارات فورية لجميع الطلبات والتفاعلات مع عملائك",
+					},
+					{
+						title: "تحكم كامل",
+						description: "لوحة تحكم متقدمة لإدارة جميع جوانب نظام QR الخاص بك",
+					},
+					{
+						title: "تحليلات ذكية",
+						description:
+							"تقارير مفصلة وإحصائيات دقيقة لمساعدتك في اتخاذ قرارات أفضل",
+					},
+				],
+			},
+			testimonials: {
+				title: "قصص نجاح حقيقية",
+				description:
+					"شاهد كيف غيرت حلول QR أعمال عملائنا ووفرت عليهم آلاف الدنانير",
+				items: [
+					{
+						name: "أحمد الخالدي",
+						company: "مطعم الأصالة",
+						text: "نظام QR Menu وفر علينا 3000 دينار سنوياً من تكاليف الطباعة، والعملاء يحبون التجربة الجديدة!",
+						savings: "توفير 3000 دينار سنوياً",
+					},
+					{
+						name: "فاطمة العلي",
+						company: "فندق الضيافة",
+						text: "نظام QR Ordering غير حياة فندقنا! وفرنا 8 موظفين وزادت مبيعاتنا 45% في شهرين فقط",
+						savings: "توفير 8 موظفين + زيادة 45%",
+					},
+					{
+						name: "محمد مساد",
+						company: "كافيه 5ستارز",
+						text: "QR Offers زاد مبيعاتنا 80% خلال شهر واحد! العملاء متحمسون للعروض مع العداد التنازلي",
+						savings: "زيادة المبيعات 80%",
+					},
+				],
+			},
+			cta: {
+				title: "جاهز لتوفير آلاف الدنانير؟",
+				description:
+					"ابدأ رحلة التحول الرقمي اليوم ووفر على عملك آلاف الدنانير سنوياً مع حلول QR الذكية",
+				guarantee: {
+					title: "🎯 ضمان النتائج:",
+					items: [
+						"✅ توفير مضمون في التكاليف خلال 30 يوم",
+						"✅ زيادة المبيعات أو نعيد أموالك",
+						"✅ دعم فني مجاني لمدة 6 أشهر",
+						"✅ تدريب مجاني لفريق العمل",
+					],
+				},
+				buttons: {
+					startSaving: "ابدأ التوفير الآن - مجاناً",
+					bookConsultation: "احجز استشارة مجانية",
+				},
+				note: "💡 استشارة مجانية لمدة 30 دقيقة لتقييم احتياجاتك",
 			},
 		},
 		// Services
