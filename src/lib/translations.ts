@@ -507,7 +507,8 @@ export const translations = {
 					viewDemo: "View Demo",
 				},
 				statsTitle: "Dinars for the complete solution",
-				statsDescription: "Save thousands of dinars annually and gain more customers",
+				statsDescription:
+					"Save thousands of dinars annually and gain more customers",
 				savings: {
 					title: "💰 Guaranteed Savings:",
 					items: [
@@ -553,6 +554,7 @@ export const translations = {
 						],
 						price: "From 199 Dinars",
 						cta: "Order Now",
+						scanCode: "Scan To See The System",
 					},
 					{
 						title: "QR Ordering - Smart Ordering System",
@@ -649,21 +651,51 @@ export const translations = {
 						company: "Al-Asala Restaurant",
 						text: "The QR Menu system saved us 3000 Dinars annually on printing costs, and customers love the new experience!",
 						savings: "Saved 3000 Dinars annually",
+						rating: 5,
 					},
 					{
 						name: "Fatima Al-Ali",
 						company: "Hospitality Hotel",
 						text: "The QR Ordering system changed our hotel! We saved 8 employees and increased sales by 45% in just two months",
 						savings: "Saved 8 employees + 45% increase",
+						rating: 5,
 					},
 					{
 						name: "Mohammed Massad",
 						company: "5Stars Cafe",
 						text: "QR Offers increased our sales by 80% in one month! Customers are excited about the countdown offers",
 						savings: "80% sales increase",
+						rating: 5,
 					},
 				],
 			},
+			additionalServicesInfo: {
+				title: "Additional Services",
+				description: "Comprehensive services to develop your QR system",
+			},
+			additionalServices: [
+				{
+					title: "Custom QR Code Design",
+					description: "QR codes designed with your brand and custom colors",
+					price: "From 50 Dinars",
+				},
+				{
+					title: "POS System Integration",
+					description: "Integrate the QR system with your existing POS systems",
+					price: "From 200 Dinars",
+				},
+				{
+					title: "Custom Mobile App",
+					description: "A mobile app dedicated to your brand",
+					price: "From 800 Dinars",
+				},
+				{
+					title: "QR Digital Marketing",
+					description:
+						"Marketing campaigns to introduce customers to the QR system",
+					price: "From 300 Dinars monthly",
+				},
+			],
 			cta: {
 				title: "Ready to Save Thousands of Dinars?",
 				description:
@@ -1708,7 +1740,14 @@ export const translations = {
 				},
 				savings: {
 					title: "💰 توفير مضمون:",
-					items: ["أكواد QR عالية الجودة", "تصميم متجاوب مع جميع الأجهزة","لوحة تحكم متقدمة","إشعارات فورية","تحليلات وتقارير","دعم فني مستمر"],
+					items: [
+						"أكواد QR عالية الجودة",
+						"تصميم متجاوب مع جميع الأجهزة",
+						"لوحة تحكم متقدمة",
+						"إشعارات فورية",
+						"تحليلات وتقارير",
+						"دعم فني مستمر",
+					],
 				},
 				statsTitle: "دينار للحل الكامل",
 				statsDescription: "وفر آلاف الدنانير سنوياً واكسب عملاء أكثر",
@@ -1746,6 +1785,7 @@ export const translations = {
 						],
 						price: "من 199 دينار",
 						cta: "اطلب الآن",
+						scanCode: "أمسح الكود لتجربه النظام",
 					},
 					{
 						title: "QR Ordering - نظام الطلبات الذكي",
@@ -1840,21 +1880,50 @@ export const translations = {
 						company: "مطعم الأصالة",
 						text: "نظام QR Menu وفر علينا 3000 دينار سنوياً من تكاليف الطباعة، والعملاء يحبون التجربة الجديدة!",
 						savings: "توفير 3000 دينار سنوياً",
+						rating: 5,
 					},
 					{
 						name: "فاطمة العلي",
 						company: "فندق الضيافة",
 						text: "نظام QR Ordering غير حياة فندقنا! وفرنا 8 موظفين وزادت مبيعاتنا 45% في شهرين فقط",
 						savings: "توفير 8 موظفين + زيادة 45%",
+						rating: 5,
 					},
 					{
 						name: "محمد مساد",
 						company: "كافيه 5ستارز",
 						text: "QR Offers زاد مبيعاتنا 80% خلال شهر واحد! العملاء متحمسون للعروض مع العداد التنازلي",
 						savings: "زيادة المبيعات 80%",
+						rating: 5,
 					},
 				],
 			},
+			additionalServicesInfo: {
+				title: "خدمات إضافية",
+				description: "خدمات متكاملة لتطوير نظام QR الخاص بك",
+			},
+			additionalServices: [
+				{
+					title: "تصميم أكواد QR مخصصة",
+					description: "أكواد QR بتصميم علامتك التجارية وألوانك الخاصة",
+					price: "من 50 دينار",
+				},
+				{
+					title: "تكامل مع أنظمة POS",
+					description: "ربط نظام QR مع أنظمة نقاط البيع الحالية",
+					price: "من 200 دينار",
+				},
+				{
+					title: "تطبيق محمول مخصص",
+					description: "تطبيق محمول خاص بعلامتك التجارية",
+					price: "من 800 دينار",
+				},
+				{
+					title: "التسويق الرقمي للـ QR",
+					description: "حملات تسويقية لتعريف العملاء بنظام QR",
+					price: "من 300 دينار شهرياً",
+				},
+			],
 			cta: {
 				title: "جاهز لتوفير آلاف الدنانير؟",
 				description:
