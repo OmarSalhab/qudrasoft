@@ -8,6 +8,7 @@ import {
 	HeartHandshake,
 } from "lucide-react";
 import { useLocale } from "../../context/locale-context";
+import Link from "next/link";
 
 export default function WhyChooseUs() {
 	const { t, dir } = useLocale();
@@ -61,7 +62,13 @@ export default function WhyChooseUs() {
 							<span className="from-blue-400 text-transparent bg-clip-text via-blue-300 to-red-400 bg-gradient-to-l">
 								{t.home.whyUs.title.highlight}
 							</span>
-							<span className={`transform inline-flex ${dir === 'ltr' ? 'scale-x-[-1]' : 'scale-x-[1]'}`}>؟</span>
+							<span
+								className={`transform inline-flex ${
+									dir === "ltr" ? "scale-x-[-1]" : "scale-x-[1]"
+								}`}
+							>
+								؟
+							</span>
 						</h2>
 						<p className="text-md md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
 							{t.home.whyUs.description}
@@ -113,12 +120,14 @@ export default function WhyChooseUs() {
 								{t.home.whyUs.cta.description}
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
-								<button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
-									{t.home.whyUs.cta.buttons.getConsultation}
-								</button>
-								<button className="border-2 border-gray-400 text-gray-300 hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all duration-300">
+								<Link href="/contact">
+									<button className="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
+										{t.home.whyUs.cta.buttons.getConsultation}
+									</button>
+								</Link>
+								{/* <button className="border-2 border-gray-400 text-gray-300 hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all duration-300">
 									{t.home.whyUs.cta.buttons.browseWork}
-								</button>
+								</button> */}
 							</div>
 						</div>
 					</div>

@@ -145,7 +145,7 @@ export default function Services() {
 
           {/* View All Services Button */}
           <div className="text-center mt-16">
-            <Link href="/services">
+            <Link href="/services/website-development">
               <Button
                 size="lg"
                 variant="outline"

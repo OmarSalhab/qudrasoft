@@ -54,15 +54,15 @@ export const translations = {
 				},
 			},
 			hero: {
-				badge: "Helping businesses grow and save since 2025",
+				badge: "Helping businesses grow and save since 2023",
 				mainTitle: {
 					companyName: "Solvenear",
 					subtitle: "Empowering Business Growth",
 				},
 				subtitle: {
-					main: "We help businesses grow, save money, and automate their operations.",
+					main: "We help you to moor the stability and control over your business",
 					description:
-						"Transforming your business with innovative solutions tailored to your needs.",
+						"By this we will help to treasure the two most important elements for your business: money & time",
 				},
 				buttons: {
 					startProject: "Start Your Journey",
@@ -70,15 +70,15 @@ export const translations = {
 				},
 				stats: {
 					completedProjects: {
-						number: "500+",
+						number: "30+",
 						label: "Projects Delivered",
 					},
 					satisfiedClients: {
-						number: "200+",
+						number: "45+",
 						label: "Happy Clients",
 					},
 					yearsExperience: {
-						number: "5+",
+						number: "2+",
 						label: "Years of Expertise",
 					},
 					technicalSupport: {
@@ -93,11 +93,11 @@ export const translations = {
 			},
 			stats: {
 				title: {
-					main: "Numbers that speak of our",
-					highlight: "success",
+					main: "Global Reach, ",
+					highlight: "Trusted Worldwide",
 				},
 				description:
-					"We are proud of what we have achieved and our clients' trust over the past years",
+					"We proudly serve clients from every corner of the globe, delivering innovative solutions and building lasting partnerships across continents.",
 				stats: [
 					{
 						label: "Completed Projects",
@@ -141,7 +141,7 @@ export const translations = {
 							"Advanced Security",
 						],
 						price: "From 299 JD",
-						link: "/services/websites",
+						link: "/contact",
 						gradient: "from-blue-500 to-cyan-500",
 						bgGradient: "from-blue-500/10 to-cyan-500/10",
 					},
@@ -156,7 +156,7 @@ export const translations = {
 							"Continuous Updates",
 						],
 						price: "From 599 JD",
-						link: "/services/apps",
+						link: "/contact",
 						gradient: "from-green-500 to-emerald-500",
 						bgGradient: "from-green-500/10 to-emerald-500/10",
 					},
@@ -171,7 +171,7 @@ export const translations = {
 							"Multi-Currency Support",
 						],
 						price: "From 799 JD",
-						link: "/services/ecommerce",
+						link: "/contact",
 						gradient: "from-purple-500 to-pink-500",
 						bgGradient: "from-purple-500/10 to-pink-500/10",
 					},
@@ -186,7 +186,7 @@ export const translations = {
 							"Continuous Monitoring",
 						],
 						price: "From 399 JD",
-						link: "/services/database",
+						link: "/contact",
 						gradient: "from-orange-500 to-red-500",
 						bgGradient: "from-orange-500/10 to-red-500/10",
 					},
@@ -201,7 +201,7 @@ export const translations = {
 							"Advanced Security",
 						],
 						price: "From 199 JD monthly",
-						link: "/services/cloud",
+						link: "/contact",
 						gradient: "from-indigo-500 to-blue-500",
 						bgGradient: "from-indigo-500/10 to-blue-500/10",
 					},
@@ -216,7 +216,7 @@ export const translations = {
 							"Rapid Response",
 						],
 						price: "From 299 JD monthly",
-						link: "/services/security",
+						link: "/contact",
 						gradient: "from-red-500 to-pink-500",
 						bgGradient: "from-red-500/10 to-pink-500/10",
 					},
@@ -251,7 +251,7 @@ export const translations = {
 						title: "Expert Team",
 						description:
 							"Developers and designers with extensive experience in the latest technologies and advanced tools",
-						stats: "More than 50 technical experts",
+						stats: "More than 10 technical experts",
 					},
 					{
 						title: "Security & Reliability",
@@ -275,7 +275,7 @@ export const translations = {
 				cta: {
 					title: "Ready to Start Your Next Project?",
 					description:
-						"Join more than 200 satisfied clients and discover the difference with us",
+						"Join more than 45 satisfied clients and discover the difference with us",
 					buttons: {
 						getConsultation: "Get Free Consultation",
 						browseWork: "Browse Our Work",
@@ -364,7 +364,7 @@ export const translations = {
 						label: "Customer Satisfaction Rate",
 					},
 					satisfiedClients: {
-						number: "200+",
+						number: "45+",
 						label: "Satisfied Clients",
 					},
 					averageRating: {
@@ -590,7 +590,7 @@ export const translations = {
 				},
 			},
 			stats: [
-				{ number: "500K+", label: "Scans per month" },
+				{ number: "50K+", label: "Scans per month" },
 				{ number: "85%", label: "Increase in average sales" },
 				{ number: "60%", label: "Cost savings" },
 				{ number: "99.9%", label: "System uptime" },
@@ -1381,14 +1381,15 @@ export const translations = {
 				},
 			},
 			hero: {
-				badge: "مساعدة الشركات على النمو والتوفير منذ 2025",
+				badge: "مساعدة الشركات على النمو والتوفير منذ 2023",
 				mainTitle: {
 					companyName: "سولڤنير",
 					subtitle: "تمكين نمو الأعمال",
 				},
 				subtitle: {
-					main: "نساعد الشركات على النمو، توفير المال، وأتمتة عملياتها.",
-					description: "تحويل أعمالك بحلول مبتكرة مصممة خصيصًا لاحتياجاتك.",
+					main: "نساعدك على ترسيخ الاستقرار والتحكم في عملك.",
+					description:
+						"بذلك سنساعدك على الحفاظ على أهم عنصرين في عملك: المال والوقت.",
 				},
 				buttons: {
 					startProject: "ابدأ رحلتك",
@@ -1396,15 +1397,15 @@ export const translations = {
 				},
 				stats: {
 					completedProjects: {
-						number: "500+",
+						number: "30+",
 						label: "مشاريع مكتملة",
 					},
 					satisfiedClients: {
-						number: "200+",
+						number: "45+",
 						label: "عملاء سعداء",
 					},
 					yearsExperience: {
-						number: "5+",
+						number: "2+",
 						label: "سنوات من الخبرة",
 					},
 					technicalSupport: {
@@ -1419,11 +1420,11 @@ export const translations = {
 			},
 			stats: {
 				title: {
-					main: "أرقام تتحدث عن",
-					highlight: "نجاحنا",
+					main: "انتشار عالمي، ",
+					highlight: "ثقة حول العالم",
 				},
 				description:
-					"نفتخر بما حققناه من إنجازات وثقة عملائنا على مدار السنوات الماضية",
+					"نفخر بخدمة عملائنا من جميع أنحاء العالم، ونقدم حلولاً مبتكرة ونبني شراكات دائمة عبر القارات.",
 				stats: [
 					{
 						label: "مشروع مكتمل",
@@ -1462,7 +1463,7 @@ export const translations = {
 							"مواقع احترافية متجاوبة مع جميع الأجهزة باستخدام أحدث التقنيات والمعايير العالمية",
 						features: ["تصميم متجاوب", "سرعة عالية", "SEO محسن", "أمان متقدم"],
 						price: "من 299 دينار",
-						link: "/services/websites",
+						link: "/contact",
 						gradient: "from-blue-500 to-cyan-500",
 						bgGradient: "from-blue-500/10 to-cyan-500/10",
 					},
@@ -1492,7 +1493,7 @@ export const translations = {
 							"دعم متعدد العملات",
 						],
 						price: "من 799 دينار",
-						link: "/services/ecommerce",
+						link: "/contact",
 						gradient: "from-purple-500 to-pink-500",
 						bgGradient: "from-purple-500/10 to-pink-500/10",
 					},
@@ -1507,7 +1508,7 @@ export const translations = {
 							"مراقبة مستمرة",
 						],
 						price: "من 399 دينار",
-						link: "/services/database",
+						link: "/contact",
 						gradient: "from-orange-500 to-red-500",
 						bgGradient: "from-orange-500/10 to-red-500/10",
 					},
@@ -1517,7 +1518,7 @@ export const translations = {
 							"نقل أعمالك إلى السحابة مع ضمان الأمان والموثوقية والوصول من أي مكان",
 						features: ["نشر سحابي", "نسخ احتياطية", "مقياس مرن", "أمان متقدم"],
 						price: "من 199 دينار شهرياً",
-						link: "/services/cloud",
+						link: "/contact",
 						gradient: "from-indigo-500 to-blue-500",
 						bgGradient: "from-indigo-500/10 to-blue-500/10",
 					},
@@ -1532,7 +1533,7 @@ export const translations = {
 							"استجابة سريعة",
 						],
 						price: "من 299 دينار شهرياً",
-						link: "/services/security",
+						link: "/contact",
 						gradient: "from-red-500 to-pink-500",
 						bgGradient: "from-red-500/10 to-pink-500/10",
 					},
@@ -1567,7 +1568,7 @@ export const translations = {
 						title: "فريق خبير",
 						description:
 							"مطورون ومصممون ذوو خبرة واسعة في أحدث التقنيات والأدوات المتطورة",
-						stats: "أكثر من 50 خبير تقني",
+						stats: "أكثر من 10 خبير تقني",
 					},
 					{
 						title: "أمان وموثوقية",
@@ -1590,7 +1591,7 @@ export const translations = {
 				],
 				cta: {
 					title: "جاهز لبدء مشروعك التالي؟",
-					description: "انضم إلى أكثر من 200 عميل راضي واكتشف الفرق معنا",
+					description: "انضم إلى أكثر من 45 عميل راضي واكتشف الفرق معنا",
 					buttons: {
 						getConsultation: "احصل على استشارة مجانية",
 						browseWork: "تصفح أعمالنا",
@@ -1671,7 +1672,7 @@ export const translations = {
 						label: "معدل رضا العملاء",
 					},
 					satisfiedClients: {
-						number: "200+",
+						number: "45+",
 						label: "عميل راضي",
 					},
 					averageRating: {
@@ -1887,7 +1888,7 @@ export const translations = {
 				statsDescription: "وفر آلاف الدنانير سنوياً واكسب عملاء أكثر",
 			},
 			stats: [
-				{ number: "500K+", label: "عملية مسح شهرياً" },
+				{ number: "50K+", label: "عملية مسح شهرياً" },
 				{ number: "85%", label: "زيادة متوسط المبيعات" },
 				{ number: "60%", label: "توفير في التكاليف" },
 				{ number: "99.9%", label: "وقت تشغيل النظام" },

@@ -18,7 +18,7 @@ const arabic = Noto_Sans_Arabic({
 
 
 export const metadata: Metadata = {
-  title: "QudraSoft Inc - Technology Solutions & Digital Innovation",
+  title: "Solvenear Inc - Technology Solutions & Digital Innovation",
   description: "Engineering Innovation, Powering Intelligent, Secure, and Scalable Digital Futures",
 }
 

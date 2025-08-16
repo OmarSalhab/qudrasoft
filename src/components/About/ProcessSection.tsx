@@ -9,6 +9,7 @@ import {
 	Users,
 } from "lucide-react";
 import { useLocale } from "../../context/locale-context";
+import Link from "next/link";
 
 export default function ProcessSection() {
 	const { t, dir } = useLocale();
@@ -156,9 +157,11 @@ export default function ProcessSection() {
 							<p className="text-gray-300 text-lg mb-6">
 								{t.about.process.cta.description}
 							</p>
-							<button className="bg-gradient-to-tl  to-red-400 from-blue-400  text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all duration-300">
-								{t.about.process.cta.button}
-							</button>
+							<Link href="/contact">
+								<button className="bg-gradient-to-tl  to-red-400 from-blue-400  text-white px-10 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all duration-300">
+									{t.about.process.cta.button}
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>

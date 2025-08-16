@@ -15,9 +15,9 @@ export default function HomeClient() {
 	return (
 		<div className="min-h-screen bg-gray-900">
 			<HeroS />
-			<Stats />
 			<Services />
 			<WhyUs />
+			<Stats />
 			<Testimonial />
 			<CTA />
 		</div>

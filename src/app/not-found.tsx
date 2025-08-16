@@ -1,5 +1,5 @@
-const Error = () => {
-  return <div>Page not found</div>
-}
+import Error from "../components/Error";
 
-export default Error
+export default function NotFound() {
+	return <Error />;
+}

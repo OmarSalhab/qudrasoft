@@ -43,9 +43,9 @@ export default function Navigation() {
 		<>
 			<header className="bg-secondary fixed text-gray-700 h-16 md:h-20 w-full z-50 rtl:text-[18px] font-medium">
 				<div className="container mx-auto px-6">
-					<div className="flex items-center justify-between h-16 md:h-20">
+					<div className="flex items-center justify-between h-15 md:h-20">
 						<Link href="/" className="flex items-center gap-2">
-							<Image width={160} height={40} alt="Logo" src="/loe.png" className="w-36 h-8"/>
+							<Image width={160} height={40} alt="Logo" src="/solvenear.png" className="w-30 h-13 md:w-34 md:h-16"/>
 						</Link>
 
 						<nav className="hidden lg:flex items-center gap-8">

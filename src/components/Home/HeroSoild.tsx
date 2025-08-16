@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Sparkles, ArrowDown, Play } from "lucide-react";
 import { useState } from "react";
 import { useLocale } from "../../context/locale-context";
+import Link from "next/link";
 
 export default function HeroSection() {
 	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -39,7 +40,7 @@ export default function HeroSection() {
 				</h1>
 
 				{/* Subtitle with Typing Animation */}
-				<div className="text-sm md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto">
+				<div className="text-sm md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto">
 					<p className="mb-4">{t.home.hero.subtitle.main}</p>
 					<p className="ltr:text-xs rtl:text-sm text-blue-300">
 						{t.home.hero.subtitle.description}
@@ -48,12 +49,15 @@ export default function HeroSection() {
 
 				{/* Call to Action Buttons */}
 				<div className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-16">
+					<Link href="/contact">
 					<Button
+					
 						className="bg-gradient-to-r ltr:gap-1 from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-5 py-4 text-sm  md:text-lg rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105"
 					>
 						<Sparkles className="w-6 h-6 ml-3" />
 						{t.home.hero.buttons.startProject}
 					</Button>
+					</Link>
 
 					<Button
 						variant="outline"
@@ -69,7 +73,7 @@ export default function HeroSection() {
 				{/* Trust Indicators */}
 				<div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
 					<div className="text-center">
-						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-lg md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.completedProjects.number}
 						</div>
 						<div className="text-gray-400">
@@ -77,7 +81,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-lg md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.satisfiedClients.number}
 						</div>
 						<div className="text-gray-400">
@@ -85,7 +89,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-lg md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.yearsExperience.number}
 						</div>
 						<div className="text-gray-400">
@@ -93,7 +97,7 @@ export default function HeroSection() {
 						</div>
 					</div>
 					<div className="text-center">
-						<div className="text-2xl md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
+						<div className="text-lg md:text-3xl font-bold bg-gradient-to-tl text-transparent bg-clip-text to-red-400 from-blue-400 mb-2">
 							{t.home.hero.stats.technicalSupport.number}
 						</div>
 						<div className="text-gray-400">
