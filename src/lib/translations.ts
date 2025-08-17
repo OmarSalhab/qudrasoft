@@ -24,7 +24,7 @@ export const translations = {
 					call: {
 						title: "Call Us",
 						description: "Talk directly with our experts",
-						contact: "+962 7 9999 9999",
+						contact: "+962 7 8054 4989",
 					},
 					email: {
 						title: "Email Us",
@@ -1194,7 +1194,7 @@ export const translations = {
 			title: "Contact Us",
 			subtitle:
 				"We are here to help you achieve your digital goals. Contact us today to discuss your project",
-			phone: { phone: "+966 50 123 4567", title: "Call Us" },
+			phone: { phone: "+962 7 8054 4989", title: "Call Us" },
 			email: { email: "info@company.com", title: "Email Us" },
 			location: { location: "Amman, Jordan", title: "Our Location" },
 			website: { website: "www.company.com", title: "Our Website" },
@@ -1277,7 +1277,7 @@ export const translations = {
 				info: {
 					title: "Contact Information",
 					email: { label: "Email", value: "info@solvenear.com" },
-					phone: { label: "Phone", value: "+962 7 9999 9999" },
+					phone: { label: "Phone", value: "+962 7 8054 4989" },
 					address: { label: "Address", value: "Amman, Jordan" },
 					hours: { label: "Working Hours", value: "Sun - Thu: 9:00 - 18:00" },
 				},
@@ -1298,26 +1298,26 @@ export const translations = {
 			followUs: "Follow Us",
 			contactUs: "Contact Us",
 			quickLinks: "Quick Links",
-			aboutUs: "solvenear",
-			phone: "+962 77 939 3847",
+			aboutUs: "Solvenear",
+			phone: "+962 7 8054 4989",
 			email: "info@solvenear.com",
 			website: "www.solvenear.com",
 			services: "Our Services",
 			createWebsites: "Website Development",
-			createStores: "E-commerce Development",
+			createQr: "QR Development",
 			mobileApps: "Mobile Applications",
 			cloudSolutions: "Cloud Solutions",
 			etoProgram: "Eto Pro® Electronic Power Program",
 			schoolProgram:
 				"Tasdeed® Integrated Accounting Program for Private Schools",
 			aboutUsText:
-				"A leading company in software development and advanced technical solutions from the heart of Amman to the Arab world",
+				"A leading company in software development and advanced technical solutions.",
 			whoWeAre: "Who We Are",
 			contactUsFooter: "Contact Us",
-			copyright: "© 2024 solvenear. All rights reserved",
-			madeInJordan: "Made in Amman, Jordan",
+			copyright: "© 2023 solvenear. All rights reserved",
+			madeInJordan: "",
 			slogan:
-				"From the heart of Amman to the Arab world, quality and innovation in software and website development",
+				"quality and innovation in software and website development",
 		},
 
 		// Common
@@ -1351,7 +1351,7 @@ export const translations = {
 					call: {
 						title: "اتصل بنا",
 						description: "تحدث مع خبرائنا مباشرة",
-						contact: "+962 7 9999 9999",
+						contact: "+962 7 8054 4989",
 					},
 					email: {
 						title: "راسلنا",
@@ -2452,9 +2452,9 @@ export const translations = {
 			title: "تواصل معنا",
 			subtitle:
 				"نحن هنا لمساعدتك في تحقيق أهدافك الرقمية. تواصل معنا اليوم لمناقشة مشروعك",
-			phone: { phone: "+966 50 123 4567", title: "اتصل بنا" },
+			phone: { phone: "+962 7 8054 4989", title: "اتصل بنا" },
 			email: { email: "info@company.com", title: "راسلنا" },
-			location: { location: "عمان,الاردن", title: "عنواننا" },
+			location: { location: "عمان ,الاردن", title: "عنواننا" },
 			website: { website: "www.company.com", title: "موقعنا" },
 			whyChooseUs: "لماذا تختارنا؟",
 			reasons: [
@@ -2528,7 +2528,7 @@ export const translations = {
 				info: {
 					title: "معلومات التواصل",
 					email: { label: "البريد الإلكتروني", value: "info@solvenear.com" },
-					phone: { label: "رقم الهاتف", value: "+962 7 9999 9999" },
+					phone: { label: "رقم الهاتف", value: "+962 7 8054 4989" },
 					address: { label: "العنوان", value: "عمان، الأردن" },
 					hours: {
 						label: "ساعات العمل",
@@ -2553,24 +2553,24 @@ export const translations = {
 			contactUs: "تواصل معنا",
 			quickLinks: "روابط سريعة",
 			aboutUs: "سولڤنير",
-			phone: "+962 77 939 3847",
+			phone: "+962 7 8054 4989",
 			email: "info@solvenear.com",
 			website: "www.solvenear.com",
 			services: "خدماتنا",
 			createWebsites: "إنشاء المواقع الإلكترونية",
-			createStores: "إنشاء المتاجر الإلكترونية",
+			createQr: "إنشاء حلول الQR",
 			mobileApps: "تطبيقات الهواتف الذكية",
 			cloudSolutions: "الحلول السحابية",
 			etoProgram: "برنامج إيتــو برو® للقوة الإلكترونية",
 			schoolProgram: "تسديــد® برنامج محاسبة متكامل للمدارس الخاصة",
 			aboutUsText:
-				"شركة رائدة في تطوير البرمجيات والحلول التقنية المتقدمة من قلب عمان إلى الوطن العربي",
+				"شركة رائدة في تطوير البرمجيات والحلول التقنية المتقدمة.",
 			whoWeAre: "من نحن",
 			contactUsFooter: "تواصل معنا",
-			copyright: "© 2024 سولڤنير. جميع الحقوق محفوظة",
-			madeInJordan: "صنع في عمان، الأردن",
+			copyright: "© 2023 سولڤنير. جميع الحقوق محفوظة",
+			madeInJordan: "",
 			slogan:
-				"من قلب عمان إلى الوطن العربي، الجودة والابتكار في صناعة البرمجيات والمواقع الإلكترونية",
+				".الجودة والابتكار في صناعة البرمجيات والمواقع الإلكترونية",
 		},
 
 		// Common

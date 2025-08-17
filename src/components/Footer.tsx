@@ -10,13 +10,11 @@ import {
 	Heart,
 } from "lucide-react";
 
-
-
 export default function Footer() {
 	const { t, dir } = useLocale();
 
 	return (
-		<footer className="bg-slate-900 text-white">
+		<footer className="bg-slate-900 text-white" dir={dir}>
 			<div
 				className={`container mx-auto px-4 py-12 ${
 					dir === "rtl" ? "rtl" : "ltr"
@@ -24,21 +22,37 @@ export default function Footer() {
 			>
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 					{/* Social Media Section */}
-					<div className={`${dir === "rtl" ? "text-center" : "text-center"} items-center flex flex-col`}>
+					<div
+						className={`${
+							dir === "rtl" ? "text-center" : "text-center"
+						} items-center flex flex-col`}
+					>
 						<h3 className="text-lg font-semibold mb-6 text-secondary">
 							{t.footer.followUs}
 						</h3>
 						<div className="flex gap-3">
-							<Link href="#" className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+							<Link
+								href="#"
+								className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
+							>
 								<MessageCircle className="w-6 h-6 text-white" />
 							</Link>
-							<Link href="#" className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+							<Link
+								href="#"
+								className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
+							>
 								<Linkedin className="w-6 h-6 text-white" />
 							</Link>
-							<Link href="#" className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+							<Link
+								href="#"
+								className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
+							>
 								<Instagram className="w-6 h-6 text-white" />
 							</Link>
-							<Link href="#" className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer">
+							<Link
+								href="#"
+								className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
+							>
 								<Facebook className="w-6 h-6 text-white" />
 							</Link>
 						</div>
@@ -62,21 +76,22 @@ export default function Footer() {
 							{t.footer.quickLinks}
 						</h3>
 						<div className="space-y-3">
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
-								{t.footer.services}
-							</p>
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
-								{t.footer.createWebsites}
-							</p>
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
-								{t.footer.createStores}
-							</p>
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+							<Link href="/services/website-development">
+								<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+									{t.footer.createWebsites}
+								</p>
+							</Link>
+							<Link href="/services/qr-solutions">
+								<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
+									{t.footer.createQr}
+								</p>
+							</Link>
+							{/* <p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
 								{t.footer.mobileApps}
 							</p>
 							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
 								{t.footer.cloudSolutions}
-							</p>
+							</p> */}
 							{/* <p className="text-gray-300 hover:text-primary cursor-pointer transition-colors mt-4">
 								{t.footer.etoProgram}
 							</p>
