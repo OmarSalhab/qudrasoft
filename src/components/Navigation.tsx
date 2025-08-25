@@ -168,6 +168,7 @@ export default function Navigation({ locale, t, dir }: NavigationProps) {
 							</Link>
 							<Link
 								href={`/${locale}/blog`}
+								prefetch={false}
 								className={`hover:text-primary transition-colors ${
 									isActive(`/${locale}/blog`)
 										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
@@ -280,6 +281,7 @@ export default function Navigation({ locale, t, dir }: NavigationProps) {
 						{/* About Us Link */}
 						<Link
 							href={`/${locale}/about`}
+							prefetch={false}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
 								isActive(`/${locale}/about`)
@@ -293,6 +295,7 @@ export default function Navigation({ locale, t, dir }: NavigationProps) {
 						{/* FAQ Link */}
 						<Link
 							href={`/${locale}/faq`}
+							prefetch={false}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
 								isActive(`/${locale}/faq`)
@@ -319,6 +322,7 @@ export default function Navigation({ locale, t, dir }: NavigationProps) {
 						{/* Blog Link */}
 						<Link
 							href={`/${locale}/blog`}
+							prefetch={false}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
 								isActive(`/${locale}/blog`)
