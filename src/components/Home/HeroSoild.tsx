@@ -2,12 +2,16 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, ArrowDown, Play } from "lucide-react";
 import { useState } from "react";
-import { useLocale } from "../../context/locale-context";
 import Link from "next/link";
+import type { TranslationType } from "../../lib/types";
 
-export default function HeroSection() {
+type HeroSectionProps = {
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
+
+export default function HeroSection({ t, dir }: HeroSectionProps) {
 	const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-	const { t, dir } = useLocale();
 
 	return (
 		<div

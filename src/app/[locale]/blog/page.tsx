@@ -1,13 +1,15 @@
-"use client"
-
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calendar, Tag } from "lucide-react"
-import { useLocale } from "../../context/locale-context"
+import { getTranslation } from "../../../lib/translations"
+import { getDirection } from "../../../lib/i18n"
+import type { Locale } from "../../../lib/i18n"
 
-export default function BlogPage() {
-  const { t } = useLocale()
+export default async function BlogPage({ params }: { params: Promise<{ locale: Locale }> }) {
+  const { locale } = await params;
+  const t = getTranslation(locale);
+  const dir = getDirection(locale);
 
   return (
     <div className="min-h-screen bg-white">
@@ -20,7 +22,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Articles */}
-      <section className="py-20">
+      <section className="py-20" dir={dir}>
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.blog.articles.map((article, index) => (

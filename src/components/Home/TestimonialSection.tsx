@@ -1,12 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import { useLocale } from "../../context/locale-context";
 import Image from "next/image";
+import type { TranslationType } from "../../lib/types";
 
-export default function TestimonialsSection() {
+type TestimonialsSectionProps = {
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
+
+export default function TestimonialsSection({ t, dir }: TestimonialsSectionProps) {
 	const [currentTestimonial, setCurrentTestimonial] = useState(0);
-	const { t, dir } = useLocale();
 
 	const testimonials = t.home.testimonials.testimonials;
 

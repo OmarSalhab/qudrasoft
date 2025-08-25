@@ -16,7 +16,7 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "../../components/ui/accordion";
-import { useLocale } from "../../context/locale-context";
+import type { TranslationType } from "../../lib/types";
 
 interface FAQ {
 	id: string;
@@ -26,8 +26,12 @@ interface FAQ {
 	popular: boolean;
 }
 
-export function FAQSection() {
-	const { t, dir } = useLocale();
+type FAQSectionProps = {
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
+
+export function FAQSection({ t, dir }: FAQSectionProps) {
 	const isLtr = dir === "ltr";
 
 	const [searchTerm, setSearchTerm] = useState("");

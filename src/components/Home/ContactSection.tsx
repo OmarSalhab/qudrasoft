@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Globe } from "lucide-react";
-import { useLocale } from "@/context/locale-context";
+import { Phone, Mail, MapPin, Globe, Clock, Users, Lightbulb, Headphones, DollarSign } from "lucide-react";
+import type { TranslationType } from "../../lib/types";
 
 type ContactItem = {
 	icon: typeof Phone;
@@ -10,9 +10,18 @@ type ContactItem = {
 	color: string;
 };
 
-export default function Contact() {
-	const { t, dir } = useLocale();
+type ContactProps = {
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
 
+type Reason = {
+	title: string;
+	description: string;
+	icon: React.ComponentType<{ className?: string }>;
+};
+
+export default function Contact({ t, dir }: ContactProps) {
 	const contactItems: ContactItem[] = [
 		{
 			icon: Phone,
@@ -37,6 +46,34 @@ export default function Contact() {
 			text: t.reachout.website.website,
 			title: t.reachout.website.title,
 			color: "bg-purple-600",
+		},
+	];
+
+	const reasons:Reason[] =  [
+		{
+			title: t.reachout.reasons[0].title,
+			description: t.reachout.reasons[0].description,
+			icon: Clock,
+		},
+		{
+			title: t.reachout.reasons[1].title,
+			description: t.reachout.reasons[1].description,
+			icon: Users,
+		},
+		{
+			title: t.reachout.reasons[2].title,
+			description: t.reachout.reasons[2].description,
+			icon: Lightbulb,
+		},
+		{
+			title: t.reachout.reasons[3].title,
+			description: t.reachout.reasons[3].description,
+			icon: Headphones,
+		},
+		{
+			title: t.reachout.reasons[4].title,
+			description: t.reachout.reasons[4].description,
+			icon: DollarSign,
 		},
 	];
 
@@ -116,7 +153,7 @@ export default function Contact() {
 									dir === "rtl" ? "text-right" : "text-left"
 								}`}
 							>
-								{t.reachout.reasons.map((reason, index) => {
+								{reasons.map((reason : Reason, index) => {
 									const IconComponent = reason.icon;
 									return (
 										<div

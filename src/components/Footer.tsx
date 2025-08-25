@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useLocale } from "../context/locale-context";
 import {
 	MessageCircle,
 	Linkedin,
@@ -9,10 +8,16 @@ import {
 	Facebook,
 	Heart,
 } from "lucide-react";
+import type { Locale } from "../lib/i18n";
+import type { TranslationType } from "../lib/types";
 
-export default function Footer() {
-	const { t, dir } = useLocale();
+type FooterProps = {
+	t: TranslationType ;
+	dir: "ltr" | "rtl";
+	locale: Locale;
+};
 
+export default function Footer({ t, dir, locale }: FooterProps) {
 	return (
 		<footer className="bg-slate-900 text-white" dir={dir}>
 			<div
@@ -76,28 +81,16 @@ export default function Footer() {
 							{t.footer.quickLinks}
 						</h3>
 						<div className="space-y-3">
-							<Link href="/services/website-development">
+							<Link href={`/${locale}/services/website-development`}>
 								<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
 									{t.footer.createWebsites}
 								</p>
 							</Link>
-							<Link href="/services/qr-solutions">
+							<Link href={`/${locale}/services/qr-solutions`}>
 								<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
 									{t.footer.createQr}
 								</p>
 							</Link>
-							{/* <p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
-								{t.footer.mobileApps}
-							</p>
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
-								{t.footer.cloudSolutions}
-							</p> */}
-							{/* <p className="text-gray-300 hover:text-primary cursor-pointer transition-colors mt-4">
-								{t.footer.etoProgram}
-							</p>
-							<p className="text-gray-300 hover:text-primary cursor-pointer transition-colors">
-								{t.footer.schoolProgram}
-							</p> */}
 							<div className="mt-6">
 								<p className="text-gray-400 text-sm">{t.footer.whoWeAre}</p>
 								<p className="text-gray-400 text-sm mt-1">
@@ -132,11 +125,6 @@ export default function Footer() {
 						<Heart className="w-4 h-4 text-red-500 fill-current" />
 					</div>
 				</div>
-
-				{/* Bottom Slogan
-				<div className="mt-4 text-center">
-					<p className="text-gray-500 text-sm italic">{t.footer.slogan}</p>
-				</div> */}
 			</div>
 		</footer>
 	);

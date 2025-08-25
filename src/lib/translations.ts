@@ -1,5 +1,4 @@
 import type { Locale } from "./i18n"; // Assuming Locale is defined in a types file
-import { Clock, Users, Lightbulb, Headphones, DollarSign } from "lucide-react";
 export const translations = {
 	en: {
 		// Navigation
@@ -13,7 +12,6 @@ export const translations = {
 			contactUs: "CONTACT US",
 			languageSwitch: "العربية",
 		},
-
 		// Home Page
 		home: {
 			cta: {
@@ -877,40 +875,40 @@ export const translations = {
 				},
 			},
 		},
-
-		// FAQ
-		faq: {
-			title: "Frequently Asked Questions",
-			description:
-				"Find answers to common questions about our services and solutions.",
-			questions: [
-				{
-					question: "What services does E-Solutions offer?",
-					answer:
-						"We specialize in AI Automation, E-Menu Solutions for restaurants, and Landing Website development. Our team provides end-to-end solutions tailored to your business needs.",
-				},
-				{
-					question: "How long does it take to complete a project?",
-					answer:
-						"Project timelines vary depending on complexity and scope. AI Automation projects typically take 4-8 weeks, E-Menu solutions 2-4 weeks, and Landing Websites 1-3 weeks.",
-				},
-				{
-					question: "Do you provide ongoing support and maintenance?",
-					answer:
-						"Yes, we offer comprehensive support and maintenance packages for all our solutions. This includes regular updates, bug fixes, and technical support.",
-				},
-				{
-					question: "Can you integrate with existing systems?",
-					answer:
-						"Our solutions are designed to integrate seamlessly with your existing systems and workflows. We conduct thorough analysis to ensure compatibility.",
-				},
-				{
-					question: "What is the cost of your services?",
-					answer:
-						"Pricing varies based on project requirements and complexity. We provide detailed quotes after understanding your specific needs. Contact us for a free consultation.",
-				},
-			],
-		},
+		
+		// // FAQ
+		// faq: {
+		// 	title: "Frequently Asked Questions",
+		// 	description:
+		// 		"Find answers to common questions about our services and solutions.",
+		// 	questions: [
+		// 		{
+		// 			question: "What services does E-Solutions offer?",
+		// 			answer:
+		// 				"We specialize in AI Automation, E-Menu Solutions for restaurants, and Landing Website development. Our team provides end-to-end solutions tailored to your business needs.",
+		// 		},
+		// 		{
+		// 			question: "How long does it take to complete a project?",
+		// 			answer:
+		// 				"Project timelines vary depending on complexity and scope. AI Automation projects typically take 4-8 weeks, E-Menu solutions 2-4 weeks, and Landing Websites 1-3 weeks.",
+		// 		},
+		// 		{
+		// 			question: "Do you provide ongoing support and maintenance?",
+		// 			answer:
+		// 				"Yes, we offer comprehensive support and maintenance packages for all our solutions. This includes regular updates, bug fixes, and technical support.",
+		// 		},
+		// 		{
+		// 			question: "Can you integrate with existing systems?",
+		// 			answer:
+		// 				"Our solutions are designed to integrate seamlessly with your existing systems and workflows. We conduct thorough analysis to ensure compatibility.",
+		// 		},
+		// 		{
+		// 			question: "What is the cost of your services?",
+		// 			answer:
+		// 				"Pricing varies based on project requirements and complexity. We provide detailed quotes after understanding your specific needs. Contact us for a free consultation.",
+		// 		},
+		// 	],
+		// },
 
 		// Blog
 		blog: {
@@ -1203,27 +1201,27 @@ export const translations = {
 				{
 					title: "Long Experience",
 					description: "More than 10 years of experience",
-					icon: Clock,
+					
 				},
 				{
 					title: "Professional Team",
 					description: "Specialized and professional team",
-					icon: Users,
+					
 				},
 				{
 					title: "Innovative Solutions",
 					description: "Innovative and advanced solutions",
-					icon: Lightbulb,
+					
 				},
 				{
 					title: "Continuous Support",
 					description: "24/7 technical support",
-					icon: Headphones,
+					
 				},
 				{
 					title: "Competitive Prices",
 					description: "Competitive and suitable prices",
-					icon: DollarSign,
+					
 				},
 			],
 			startProject: "Start Your Project With Us",
@@ -2461,27 +2459,27 @@ export const translations = {
 				{
 					title: "خبرة طويلة",
 					description: "خبرة أكثر من 10 سنوات في المجال",
-					icon: Clock,
+					
 				},
 				{
 					title: "فريق محترف",
 					description: "فريق متخصص ومحترف",
-					icon: Users,
+					
 				},
 				{
 					title: "حلول مبتكرة",
 					description: "حلول مبتكرة ومتطورة",
-					icon: Lightbulb,
+					
 				},
 				{
 					title: "دعم مستمر",
 					description: "دعم فني على مدار الساعة",
-					icon: Headphones,
+					
 				},
 				{
 					title: "أسعار تنافسية",
 					description: "أسعار تنافسية ومناسبة",
-					icon: DollarSign,
+					
 				},
 			],
 			startProject: "ابدأ مشروعك معنا",

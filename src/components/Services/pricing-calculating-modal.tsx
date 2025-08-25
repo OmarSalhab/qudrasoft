@@ -11,18 +11,22 @@ import {
 	ShoppingCart,
 	Database,
 } from "lucide-react";
-import { useLocale } from "@/context/locale-context";
+
+import { TranslationType } from "@/lib/types";
 
 interface PricingCalculatorModalProps {
 	isOpen: boolean;
 	onClose: () => void;
+	t: TranslationType;
+	dir: "ltr" | "rtl";
 }
 
 export function PricingCalculatorModal({
 	isOpen,
 	onClose,
+	t,
+	dir,
 }: PricingCalculatorModalProps) {
-	const { t, dir } = useLocale();
 	const [step, setStep] = useState(1);
 	const [formData, setFormData] = useState({
 		websiteType: "",
@@ -542,7 +546,10 @@ export function PricingCalculatorModal({
 					)}
 
 					{/* Navigation Buttons */}
-					<div className="flex justify-between items-center mt-8 rtl:gap-2" dir={dir}>
+					<div
+						className="flex justify-between items-center mt-8 rtl:gap-2"
+						dir={dir}
+					>
 						{step > 1 && (
 							<Button
 								variant="outline"

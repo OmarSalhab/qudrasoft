@@ -1,12 +1,15 @@
-"use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
-import { useLocale } from "@/context/locale-context";
+import { getTranslation } from "../../../lib/translations";
+import { getDirection } from "../../../lib/i18n";
+import type { Locale } from "../../../lib/i18n";
 
-export default function ContactPage() {
-	const { t, dir } = useLocale();
+export default async function ContactPage({ params }: { params: Promise<{ locale: Locale }> }) {
+	const { locale } = await params;
+	const t = getTranslation(locale);
+	const dir = getDirection(locale);
 	const isLtr = dir === "ltr";
 
 	return (

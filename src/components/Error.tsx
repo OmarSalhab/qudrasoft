@@ -1,12 +1,8 @@
-"use client";
-import { useLocale } from "@/context/locale-context";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import Link from "next/link";
 
-export default function Error() {
-	const { dir } = useLocale();
-
+export default function Error({ dir }: { dir: "rtl" | "ltr" }) {
 	return (
 		<div
 			className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"

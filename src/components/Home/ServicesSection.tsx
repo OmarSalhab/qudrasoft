@@ -1,13 +1,14 @@
-"use client";
-
 import { Button } from "@/components/ui/button"
 import { Globe, Smartphone, ShoppingCart, Database, Cloud, Shield } from "lucide-react"
 import Link from "next/link"
-import { useLocale } from "../../context/locale-context"
+import type { TranslationType } from "../../lib/types"
 
-export default function Services() {
-  const { t, dir } = useLocale()
+type ServicesProps = {
+  t: TranslationType;
+  dir: "ltr" | "rtl";
+};
 
+export default function Services({ t, dir }: ServicesProps) {
   const services = [
     {
       icon: Globe,

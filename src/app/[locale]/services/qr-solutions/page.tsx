@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
 	QrCode,
@@ -14,10 +12,14 @@ import {
 	Settings,
 	BarChart3,
 } from "lucide-react";
-import { useLocale } from "@/context/locale-context";
+import { getTranslation } from "../../../../lib/translations";
+import { getDirection } from "../../../../lib/i18n";
+import type { Locale } from "../../../../lib/i18n";
 
-export default function QRSolutionsPage() {
-	const { t, dir } = useLocale();
+export default async function QRSolutionsPage({ params }: { params: Promise<{ locale: Locale }> }) {
+	const { locale } = await params;
+	const t = getTranslation(locale);
+	const dir = getDirection(locale);
 
 	const solutions = t.qrSolution.solutions.items.map((item, idx) => ({
 		icon: [QrCode, Smartphone, Eye][idx],

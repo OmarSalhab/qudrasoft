@@ -7,12 +7,15 @@ import {
 	Shield,
 	HeartHandshake,
 } from "lucide-react";
-import { useLocale } from "../../context/locale-context";
 import Link from "next/link";
+import type { TranslationType } from "../../lib/types";
 
-export default function WhyChooseUs() {
-	const { t, dir } = useLocale();
+type WhyChooseUsProps = {
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
 
+export default function WhyChooseUs({ t, dir }: WhyChooseUsProps) {
 	const reasons = [
 		{
 			icon: Star,
@@ -125,9 +128,6 @@ export default function WhyChooseUs() {
 										{t.home.whyUs.cta.buttons.getConsultation}
 									</button>
 								</Link>
-								{/* <button className="border-2 border-gray-400 text-gray-300 hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all duration-300">
-									{t.home.whyUs.cta.buttons.browseWork}
-								</button> */}
 							</div>
 						</div>
 					</div>

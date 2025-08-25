@@ -2,36 +2,48 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, X, Globe, ChevronDown, ChevronUp } from "lucide-react";
-import { useLocale } from "../context/locale-context";
 import Image from "next/image";
+import { setCookie } from "cookies-next";
+import type { Locale } from "../lib/i18n";
+import type { TranslationType } from "../lib/types";
 
-export default function Navigation() {
+type NavigationProps = {
+	locale: Locale;
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
+
+export default function Navigation({ locale, t, dir }: NavigationProps) {
 	const [isServicesOpen, setIsServicesOpen] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 	const pathname = usePathname();
-	const { locale, setLocale, t, dir } = useLocale();
+	const router = useRouter();
+	
 
 	const services = [
 		// { name: t.services.aiAutomation.title, href: "/services/ai-automation" },
-		{ name: t.services.eMenu.title, href: "/services/qr-solutions" },
+		{ name: t.services.eMenu.title, href: `/${locale}/services/qr-solutions` },
 		{
 			name: t.services.landingWebsite.title,
-			href: "/services/website-development",
+			href: `/${locale}/services/website-development`,
 		},
 	];
 
 	const isActive = (path: string) => {
 		if (path === "/services") {
-			return pathname.startsWith("/services");
+			return pathname.includes("/services");
 		}
 		return pathname === path;
 	};
 
-	const toggleLanguage = () => {
-		setLocale(locale === "en" ? "ar" : "en");
+	const switchLocale = (newLocale: Locale) => {
+		setCookie("locale", newLocale, { path: "/" });
+		// Remove current locale from pathname and add new one
+		const pathWithoutLocale = pathname.replace(/^\/(en|ar)/, "");
+		router.push(`/${newLocale}${pathWithoutLocale}`);
 	};
 
 	const closeMobileMenu = () => {
@@ -44,15 +56,21 @@ export default function Navigation() {
 			<header className="bg-secondary fixed text-gray-700 h-16 md:h-20 w-full z-50 rtl:text-[18px] font-medium">
 				<div className="container mx-auto px-6">
 					<div className="flex items-center justify-between h-15 md:h-20">
-						<Link href="/" className="flex items-center gap-2">
-							<Image width={160} height={40} alt="Logo" src="/solvenear.png" className="w-30 h-13 md:w-34 md:h-16"/>
+						<Link href={`/${locale}`} className="flex items-center gap-2">
+							<Image
+								width={160}
+								height={40}
+								alt="Logo"
+								src="/solvenear.png"
+								className="w-30 h-13 md:w-34 md:h-16"
+							/>
 						</Link>
 
 						<nav className="hidden lg:flex items-center gap-8">
 							<Link
-								href="/"
+								href={`/${locale}`}
 								className={`hover:text-primary transition-colors ${
-									isActive("/")
+									isActive(`/${locale}`)
 										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
 										: ""
 								}`}
@@ -119,9 +137,9 @@ export default function Navigation() {
 								</div>
 							</div>
 							<Link
-								href="/about"
+								href={`/${locale}/about`}
 								className={`hover:text-primary transition-colors ${
-									isActive("/about")
+									isActive(`/${locale}/about`)
 										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
 										: ""
 								}`}
@@ -129,9 +147,9 @@ export default function Navigation() {
 								{t.nav.aboutUs}
 							</Link>
 							<Link
-								href="/faq"
+								href={`/${locale}/faq`}
 								className={`hover:text-primary transition-colors ${
-									isActive("/faq")
+									isActive(`/${locale}/faq`)
 										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
 										: ""
 								}`}
@@ -139,9 +157,9 @@ export default function Navigation() {
 								{t.nav.faq}
 							</Link>
 							<Link
-								href="/contact"
+								href={`/${locale}/contact`}
 								className={`hover:text-primary transition-colors ${
-									isActive("/contact")
+									isActive(`/${locale}/contact`)
 										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
 										: ""
 								}`}
@@ -149,9 +167,9 @@ export default function Navigation() {
 								{t.nav.contactUs}
 							</Link>
 							<Link
-								href="/blog"
+								href={`/${locale}/blog`}
 								className={`hover:text-primary transition-colors ${
-									isActive("/blog")
+									isActive(`/${locale}/blog`)
 										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
 										: ""
 								}`}
@@ -159,22 +177,10 @@ export default function Navigation() {
 								{t.nav.blog}
 							</Link>
 
-							{/* <Link
-								href="/career"
-								className={`hover:text-primary transition-colors ${
-									isActive("/career")
-										? "to-red-500 from-blue-500 bg-clip-text text-transparent bg-gradient-to-tl "
-										: ""
-								}`}
-							>
-								{t.nav.careers}
-							</Link> */}
-
 							{/* Language Switcher */}
-
 							<button
 								className="text-md border p-2 cursor-pointer hover:text-primary"
-								onClick={toggleLanguage}
+								onClick={() => switchLocale(locale === "en" ? "ar" : "en")}
 							>
 								{t.nav.languageSwitch}
 							</button>
@@ -219,10 +225,10 @@ export default function Navigation() {
 					<div className="p-6 space-y-4">
 						{/* Home Link */}
 						<Link
-							href="/"
+							href={`/${locale}`}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
-								isActive("/")
+								isActive(`/${locale}`)
 									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
 									: "hover:bg-gray-50 hover:text-primary"
 							}`}
@@ -273,10 +279,10 @@ export default function Navigation() {
 
 						{/* About Us Link */}
 						<Link
-							href="/about"
+							href={`/${locale}/about`}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
-								isActive("/about")
+								isActive(`/${locale}/about`)
 									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
 									: "hover:bg-gray-50 hover:text-primary"
 							}`}
@@ -286,10 +292,10 @@ export default function Navigation() {
 
 						{/* FAQ Link */}
 						<Link
-							href="/faq"
+							href={`/${locale}/faq`}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
-								isActive("/faq")
+								isActive(`/${locale}/faq`)
 									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
 									: "hover:bg-gray-50 hover:text-primary"
 							}`}
@@ -299,10 +305,10 @@ export default function Navigation() {
 
 						{/* Contact Us Link */}
 						<Link
-							href="/contact"
+							href={`/${locale}/contact`}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
-								isActive("/contact")
+								isActive(`/${locale}/contact`)
 									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
 									: "hover:bg-gray-50 hover:text-primary"
 							}`}
@@ -312,10 +318,10 @@ export default function Navigation() {
 
 						{/* Blog Link */}
 						<Link
-							href="/blog"
+							href={`/${locale}/blog`}
 							onClick={closeMobileMenu}
 							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
-								isActive("/blog")
+								isActive(`/${locale}/blog`)
 									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
 									: "hover:bg-gray-50 hover:text-primary"
 							}`}
@@ -323,24 +329,11 @@ export default function Navigation() {
 							{t.nav.blog}
 						</Link>
 
-						{/* Careers Link */}
-						{/* <Link
-							href="/career"
-							onClick={closeMobileMenu}
-							className={`block py-3 px-4 rounded-lg transition-all duration-200 ${
-								isActive("/career")
-									? "bg-gradient-to-r from-blue-500 to-red-500 text-white shadow-lg"
-									: "hover:bg-gray-50 hover:text-primary"
-							}`}
-						>
-							{t.nav.careers}
-						</Link> */}
-
 						{/* Language Switcher */}
 						<div className="pt-4 border-t border-gray-200">
 							<button
 								onClick={() => {
-									toggleLanguage();
+									switchLocale(locale === "en" ? "ar" : "en");
 									closeMobileMenu();
 								}}
 								className="w-full flex items-center justify-center gap-2 py-3 px-4 bg-gray-100 hover:bg-gray-200 rounded-lg transition-all duration-200 font-medium"

@@ -2,12 +2,15 @@
 
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MessageCircle, Calendar } from "lucide-react";
-import { useLocale } from "../../context/locale-context";
 import Link from "next/link";
+import type { TranslationType } from "../../lib/types";
 
-export default function CTASection() {
-	const { t, dir } = useLocale();
+type CTASectionProps = {
+	t: TranslationType;
+	dir: "ltr" | "rtl";
+};
 
+export default function CTASection({ t, dir }: CTASectionProps) {
 	return (
 		<section
 			className="py-20 bg-gradient-to-br from-gray-900 via-primary to-gray-900 relative overflow-hidden"
@@ -103,13 +106,6 @@ export default function CTASection() {
 								</div>
 							</Button>
 						</Link>
-						{/* <Button
-							variant="outline"
-							size="lg"
-							className="border-2 border-white text-white hover:bg-white hover:text-primary px-12 py-4 text-md md:text-lg font-bold rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105 bg-transparent"
-						>
-							{t.home.cta.buttons.browseWork}
-						</Button> */}
 					</div>
 
 					{/* Trust Indicators */}
