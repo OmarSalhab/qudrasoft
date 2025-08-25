@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter, Noto_Sans_Arabic } from "next/font/google";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
@@ -59,6 +60,7 @@ export default async function LocaleLayout({
 				<main>{children}</main>
 				<Footer t={t} dir={dir} locale={locale} />
 				<ChatWidget />
+				<Analytics />
 			</body>
 		</html>
 	);
