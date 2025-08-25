@@ -1,10 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { defaultLocale, locales } from './lib/i18n'
 
+
+
+
+
+const IMAGE_EXT_RE = /\.(png|jpe?g|webp|avif|svg|gif|ico)$/i;
+
+
+
 export function middleware(request: NextRequest) {
   // Get the pathname from the request
   const pathname = request.nextUrl.pathname
   
+  // 1) Always skip internal Next routes and common static files
+  if (
+    IMAGE_EXT_RE.test(pathname)
+  ) {
+    return NextResponse.next();
+  }
 
   // Check if the pathname already has a locale
   const pathnameHasLocale = locales.some(
