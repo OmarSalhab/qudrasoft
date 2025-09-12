@@ -37,25 +37,25 @@ export default function Footer({ t, dir, locale }: FooterProps) {
 						</h3>
 						<div className="flex gap-3">
 							<Link
-								href="#"
+								href="https://wa.me/+962780544989"
 								className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
 							>
 								<MessageCircle className="w-6 h-6 text-white" />
 							</Link>
 							<Link
-								href="#"
+								href="https://www.linkedin.com/company/solvenear"
 								className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
 							>
 								<Linkedin className="w-6 h-6 text-white" />
 							</Link>
 							<Link
-								href="#"
+								href="https://www.linkedin.com/company/solvenear"
 								className="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
 							>
 								<Instagram className="w-6 h-6 text-white" />
 							</Link>
 							<Link
-								href="#"
+								href="https://web.facebook.com/profile.php?id=61579696023245"
 								className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center hover:opacity-80 transition-opacity cursor-pointer"
 							>
 								<Facebook className="w-6 h-6 text-white" />
