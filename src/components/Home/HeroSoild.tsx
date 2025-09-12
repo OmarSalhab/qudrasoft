@@ -63,7 +63,7 @@ export default function HeroSection({ t, dir }: HeroSectionProps) {
 					</Button>
 					</Link>
 
-					<Button
+					{/* <Button
 						variant="outline"
 					
 						className="bg-transparent border-2 ltr:gap-1 border-gray-400 text-white hover:bg-white hover:text-gray-900 px-5 py-4 text-sm  md:text-lg rounded-full backdrop-blur-sm transition-all duration-300 transform hover:scale-105"
@@ -71,7 +71,7 @@ export default function HeroSection({ t, dir }: HeroSectionProps) {
 					>
 						<Play className="w-6 h-6 ml-3" />
 						{t.home.hero.buttons.watchWork}
-					</Button>
+					</Button> */}
 				</div>
 
 				{/* Trust Indicators */}

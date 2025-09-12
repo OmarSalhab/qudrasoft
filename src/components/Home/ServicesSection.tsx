@@ -132,7 +132,7 @@ export default function Services({ t, dir }: ServicesProps) {
                   </div>
 
                   {/* CTA Button */}
-                  <Link href={service.link}>
+                  <Link href={dir === "ltr" ? `/en/${service.link}` : `/ar/${service.link}`}>
                     <Button
                       className={`w-full bg-gradient-to-r ${service.gradient} hover:shadow-lg hover:shadow-current/25 text-white font-semibold py-3 rounded-xl transition-all duration-300`}
                     >

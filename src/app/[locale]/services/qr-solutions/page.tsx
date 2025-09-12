@@ -15,8 +15,13 @@ import {
 import { getTranslation } from "../../../../lib/translations";
 import { getDirection } from "../../../../lib/i18n";
 import type { Locale } from "../../../../lib/i18n";
+import Link from "next/link";
 
-export default async function QRSolutionsPage({ params }: { params: Promise<{ locale: Locale }> }) {
+export default async function QRSolutionsPage({
+	params,
+}: {
+	params: Promise<{ locale: Locale }>;
+}) {
 	const { locale } = await params;
 	const t = getTranslation(locale);
 	const dir = getDirection(locale);
@@ -89,10 +94,12 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 							</div>
 							{/* CTA Button */}
 							<div className="relative">
-								<Button className="w-full bg-white/90 hover:bg-white text-blue-700 text-lg py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
-									<QrCode className="w-6 h-6 me-3" />
-									{t.qrSolution.hero.cta.startSaving}
-								</Button>
+								<Link href={dir === "ltr" ? "/en/contact" : "/ar/contact"}>
+									<Button className="w-full bg-white/90 hover:bg-white text-blue-700 text-lg py-4 rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center">
+										<QrCode className="w-6 h-6 me-3" />
+										{t.qrSolution.hero.cta.startSaving}
+									</Button>
+								</Link>
 							</div>
 						</div>
 						{/* Right Side - Service Description */}
@@ -133,13 +140,15 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 								>
 									{t.qrSolution.hero.cta.startSaving}
 								</Button> */}
-								<Button
-									variant="outline"
-									size="lg"
-									className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4 text-lg font-semibold rounded-full bg-transparent"
-								>
-									{t.qrSolution.hero.cta.viewDemo}
-								</Button>
+								<Link href={dir === "ltr" ? "/en/contact" : "/ar/contact"}>
+									<Button
+										variant="outline"
+										size="lg"
+										className="border-2 border-white text-white hover:bg-white hover:text-blue-700 px-8 py-4 text-lg font-semibold rounded-full bg-transparent"
+									>
+										{t.qrSolution.hero.cta.viewDemo}
+									</Button>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -238,7 +247,9 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 																	dir === "rtl" ? "me-2" : "me-2"
 																} flex-shrink-0`}
 															/>
-															<span className="text-gray-700 text-md md:text-lg">{feature}</span>
+															<span className="text-gray-700 text-md md:text-lg">
+																{feature}
+															</span>
 														</div>
 													))}
 												</div>
@@ -274,11 +285,15 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 												>
 													{solution.price}
 												</div>
-												<Button
-													className={`bg-gradient-to-r ${solution.color} text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300`}
+												<Link
+													href={dir === "ltr" ? "/en/contact" : "/ar/contact"}
 												>
-													{solution.cta}
-												</Button>
+													<Button
+														className={`bg-gradient-to-r ${solution.color} text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transition-all duration-300`}
+													>
+														{solution.cta}
+													</Button>
+												</Link>
 											</div>
 										</div>
 
@@ -314,7 +329,7 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 
 			{/* Features Section */}
 			<div className="bg-white py-20">
-				<div className="container mx-auto px-6" dir= {dir}>
+				<div className="container mx-auto px-6" dir={dir}>
 					<div className="max-w-7xl mx-auto">
 						<div className="text-center mb-16">
 							<h2 className="text-3xl sm:text-5xl font-bold text-gray-800 mb-6">
@@ -410,7 +425,7 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 
 			{/* Additional Services */}
 			<div className="bg-gradient-to-br from-gray-900 via-primary to-gray-900 py-20">
-				<div className="container mx-auto px-6" dir= {dir}>
+				<div className="container mx-auto px-6" dir={dir}>
 					<div className="max-w-7xl mx-auto">
 						<div className="text-center mb-16">
 							<h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
@@ -445,7 +460,7 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 
 			{/* Testimonials */}
 			<div className="bg-white py-20">
-				<div className="container mx-auto px-6" dir= {dir}>
+				<div className="container mx-auto px-6" dir={dir}>
 					<div className="max-w-7xl mx-auto">
 						<div className="text-center mb-16">
 							<h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -493,11 +508,10 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 
 			{/* CTA Section */}
 			<div className="bg-gray-900 py-20">
-				<div className="container mx-auto px-6" dir= {dir}>
+				<div className="container mx-auto px-6" dir={dir}>
 					<div className="max-w-5xl mx-auto text-center">
 						<h2 className="text-3xl md:text-4xl font-bold text-white mb-8">
 							{t.qrSolution.cta.title}
-							
 						</h2>
 						<p className="text-gray-300 text-lg md:text-xl mb-10 leading-relaxed">
 							{t.qrSolution.cta.description}
@@ -515,19 +529,23 @@ export default async function QRSolutionsPage({ params }: { params: Promise<{ lo
 						</div>
 
 						<div className="flex flex-col sm:flex-row gap-6 justify-center">
-							<Button
-								size="lg"
-								className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-md sm:text-lg font-semibold rounded-full shadow-lg"
-							>
-								{t.qrSolution.cta.buttons.startSaving}
-							</Button>
-							<Button
-								variant="outline"
-								size="lg"
-								className="border-2 border-gray-600 text-gray-300 hover:bg-gray-800 px-10 py-4 text-md sm:text-lg font-semibold rounded-full bg-transparent"
-							>
-								{t.qrSolution.cta.buttons.bookConsultation}
-							</Button>
+							<Link href={dir === "ltr" ? "/en/contact" : "/ar/contact"}>
+								<Button
+									size="lg"
+									className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-md sm:text-lg font-semibold rounded-full shadow-lg"
+								>
+									{t.qrSolution.cta.buttons.startSaving}
+								</Button>
+							</Link>
+							<Link href={dir === "ltr" ? "/en/contact" : "/ar/contact"}>
+								<Button
+									variant="outline"
+									size="lg"
+									className="border-2 border-gray-600 text-gray-300 hover:bg-gray-800 px-10 py-4 text-md sm:text-lg font-semibold rounded-full bg-transparent"
+								>
+									{t.qrSolution.cta.buttons.bookConsultation}
+								</Button>
+							</Link>
 						</div>
 
 						<p className="text-gray-400 mt-6">{t.qrSolution.cta.note}</p>

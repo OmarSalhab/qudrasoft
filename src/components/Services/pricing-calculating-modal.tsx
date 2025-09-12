@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 
 import { TranslationType } from "@/lib/types";
+import { number } from "framer-motion";
 
 interface PricingCalculatorModalProps {
 	isOpen: boolean;
@@ -46,57 +47,57 @@ export function PricingCalculatorModal({
 		{
 			id: "corporate",
 			name: t.pricingCalculator.websiteTypes.corporate,
-			price: 500,
+			price: 110,
 			icon: Globe,
 		},
 		{
 			id: "ecommerce",
 			name: t.pricingCalculator.websiteTypes.ecommerce,
-			price: 800,
+			price: 240,
 			icon: ShoppingCart,
 		},
 		{
 			id: "portfolio",
 			name: t.pricingCalculator.websiteTypes.portfolio,
-			price: 300,
+			price: 70,
 			icon: Smartphone,
 		},
 		{
 			id: "blog",
 			name: t.pricingCalculator.websiteTypes.blog,
-			price: 250,
+			price: 95,
 			icon: Database,
 		},
 	];
 
 	const features = [
-		{ id: "cms", name: t.pricingCalculator.featureNames.cms, price: 200 },
-		{ id: "seo", name: t.pricingCalculator.featureNames.seo, price: 150 },
+		{ id: "cms", name: t.pricingCalculator.featureNames.cms, price: 100 },
+		{ id: "seo", name: t.pricingCalculator.featureNames.seo, price: 60 },
 		{
 			id: "analytics",
 			name: t.pricingCalculator.featureNames.analytics,
-			price: 100,
+			price: 25,
 		},
-		{ id: "social", name: t.pricingCalculator.featureNames.social, price: 80 },
+		{ id: "social", name: t.pricingCalculator.featureNames.social, price: 70 },
 		{
 			id: "multilang",
 			name: t.pricingCalculator.featureNames.multilang,
-			price: 300,
+			price: 45,
 		},
 		{
 			id: "mobile-app",
 			name: t.pricingCalculator.featureNames.mobileApp,
-			price: 500,
+			price: 390,
 		},
 		{
 			id: "payment",
 			name: t.pricingCalculator.featureNames.payment,
-			price: 250,
+			price: 130,
 		},
 		{
 			id: "booking",
 			name: t.pricingCalculator.featureNames.booking,
-			price: 200,
+			price: 80,
 		},
 	];
 
@@ -106,11 +107,11 @@ export function PricingCalculatorModal({
 			name: t.pricingCalculator.designNames.template,
 			price: 0,
 		},
-		{ id: "custom", name: t.pricingCalculator.designNames.custom, price: 300 },
+		{ id: "custom", name: t.pricingCalculator.designNames.custom, price: 60 },
 		{
 			id: "premium",
 			name: t.pricingCalculator.designNames.premium,
-			price: 600,
+			price: 110,
 		},
 	];
 
@@ -488,7 +489,7 @@ export function PricingCalculatorModal({
 									</p>
 									<p>
 										{t.pricingCalculator.summary.pages}
-										{formData.pages}
+										{parseInt(formData.pages) + 1}
 									</p>
 									<p>
 										{t.pricingCalculator.summary.features}

@@ -515,7 +515,7 @@ export const translations = {
 			detailsTitle: "Website Details",
 			pagesLabel: "Number of required pages",
 			pagesPlaceholder: "Example: 5",
-			pagesNote: "50 Dinars for each additional page",
+			pagesNote: "30 Dinars for each additional page",
 			featuresLabel: "Required Features",
 			featureNames: {
 				cms: "Content Management System",
@@ -1476,7 +1476,7 @@ export const translations = {
 							"تحديثات مستمرة",
 						],
 						price: "من 599 دينار",
-						link: "/services/apps",
+						link: "/contact",
 						gradient: "from-green-500 to-emerald-500",
 						bgGradient: "from-green-500/10 to-emerald-500/10",
 					},
@@ -1752,12 +1752,12 @@ export const translations = {
 					{
 						title: "كتابة المحتوى",
 						description: "كتابة محتوى احترافي ومحسن لمحركات البحث",
-						price: "من 100 دينار",
+						price: "من 70 دينار",
 					},
 					{
 						title: "التسويق الرقمي",
 						description: "خدمات التسويق عبر وسائل التواصل الاجتماعي",
-						price: "من 200 دينار شهرياً",
+						price: "من 100 دينار شهرياً",
 					},
 					{
 						title: "الصيانة الشهرية",
@@ -1816,7 +1816,7 @@ export const translations = {
 			detailsTitle: "تفاصيل الموقع",
 			pagesLabel: "عدد الصفحات المطلوبة",
 			pagesPlaceholder: "مثال: 5",
-			pagesNote: "50 دينار لكل صفحة إضافية",
+			pagesNote: "30 دينار لكل صفحة إضافية",
 			featuresLabel: "الميزات المطلوبة",
 			featureNames: {
 				cms: "نظام إدارة المحتوى",

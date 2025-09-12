@@ -13,6 +13,7 @@ import { getTranslation } from "../../../../lib/translations";
 import { getDirection } from "../../../../lib/i18n";
 import type { Locale } from "../../../../lib/i18n";
 import Hero from "@/components/Services/HeroSection";
+import Link from "next/link";
 
 export default async function WebsiteServicesPage({
 	params,
@@ -325,19 +326,23 @@ export default async function WebsiteServicesPage({
 							{t.websiteDevelopment.cta.description}
 						</p>
 						<div className="flex flex-col sm:flex-row gap-6 justify-center">
-							<Button
-								size="lg"
-								className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-semibold rounded-full"
-							>
-								{t.websiteDevelopment.cta.buttons.getQuote}
-							</Button>
-							<Button
-								variant="outline"
-								size="lg"
-								className="border-2 border-gray-600 text-gray-300 hover:bg-gray-800 px-10 py-4 text-lg font-semibold rounded-full bg-transparent"
-							>
-								{t.websiteDevelopment.cta.buttons.contactUs}
-							</Button>
+							<Link href={dir === "ltr" ? "/en/contact" : "/ar/contact"}>
+								<Button
+									size="lg"
+									className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 text-lg font-semibold rounded-full"
+								>
+									{t.websiteDevelopment.cta.buttons.getQuote}
+								</Button>
+							</Link>
+							<Link href={dir === "ltr" ? "/en/contact" : "/ar/contact"}>
+								<Button
+									variant="outline"
+									size="lg"
+									className="border-2 border-gray-600 text-gray-300 hover:bg-gray-800 px-10 py-4 text-lg font-semibold rounded-full bg-transparent"
+								>
+									{t.websiteDevelopment.cta.buttons.contactUs}
+								</Button>
+							</Link>
 						</div>
 					</div>
 				</div>

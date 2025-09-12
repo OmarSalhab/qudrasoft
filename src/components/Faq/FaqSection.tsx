@@ -260,31 +260,38 @@ export function FAQSection({ t, dir }: FAQSectionProps) {
 							{t.about.faq.contactCta.description}
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Button
-								size="lg"
-								className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold"
-							>
-								<MessageCircle
-									className={`w-5 h-5 ${isLtr ? "mr-2" : "ml-2"}`}
-								/>
-								{t.about.faq.contactCta.chat}
-							</Button>
-							<Button
-								variant="outline"
-								size="lg"
-								className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold bg-transparent"
-							>
-								<Phone className={`w-5 h-5 ${isLtr ? "mr-2" : "ml-2"}`} />
-								{t.about.faq.contactCta.call}
-							</Button>
-							<Button
-								variant="outline"
-								size="lg"
-								className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold bg-transparent"
-							>
-								<Mail className={`w-5 h-5 ${isLtr ? "mr-2" : "ml-2"}`} />
-								{t.about.faq.contactCta.email}
-							</Button>
+							<a href="https://wa.me/+962780544989">
+								<Button
+									size="lg"
+									className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-full font-semibold"
+								>
+									<MessageCircle
+										className={`w-5 h-5 ${isLtr ? "mr-2" : "ml-2"}`}
+									/>
+									{t.about.faq.contactCta.chat}
+								</Button>
+							</a>
+							<a href="tel:+962780544989">
+								<Button
+									variant="outline"
+									size="lg"
+									className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold bg-transparent"
+								>
+									<Phone className={`w-5 h-5 ${isLtr ? "mr-2" : "ml-2"}`} />
+									{t.about.faq.contactCta.call}
+								</Button>
+							</a>
+
+							<a href="mailto:solvenearcom@gmail.com">
+								<Button
+									variant="outline"
+									size="lg"
+									className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-full font-semibold bg-transparent"
+								>
+									<Mail className={`w-5 h-5 ${isLtr ? "mr-2" : "ml-2"}`} />
+									{t.about.faq.contactCta.email}
+								</Button>
+							</a>
 						</div>
 					</div>
 				</div>

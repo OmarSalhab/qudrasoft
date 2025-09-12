@@ -1,13 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { defaultLocale, locales } from './lib/i18n'
 
-
-
-
-
 const IMAGE_EXT_RE = /\.(png|jpe?g|webp|avif|svg|gif|ico)$/i;
-
-
 
 export function middleware(request: NextRequest) {
   // Get the pathname from the request

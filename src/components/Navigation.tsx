@@ -53,7 +53,7 @@ export default function Navigation({ locale, t, dir }: NavigationProps) {
 
 	return (
 		<>
-			<header className="bg-secondary fixed text-gray-700 h-16 md:h-20 w-full z-50 rtl:text-[18px] font-medium">
+			<header className="bg-gradient-to-br to-blue-400 via-secondary from-red-300 font-semibold  fixed text-gray-700 h-16 md:h-20 w-full z-50 rtl:text-[18px] ">
 				<div className="container mx-auto px-6">
 					<div className="flex items-center justify-between h-15 md:h-20">
 						<Link href={`/${locale}`} className="flex items-center gap-2">
