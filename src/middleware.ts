@@ -13,6 +13,19 @@ export function middleware(request: NextRequest) {
   ) {
     return NextResponse.next();
   }
+  // Skip middleware for static files, API routes, sitemap, and robots
+  if (
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/api") ||
+    pathname.startsWith("/static") ||
+    pathname.includes(".") && !pathname.includes("/") || // files with extensions
+    pathname === "/sitemap.xml" ||
+    pathname === "/robots.txt" ||
+    pathname.startsWith("/sitemap") ||
+    pathname.startsWith("/favicon")
+  ) {
+    return NextResponse.next();
+  }
 
   // Check if the pathname already has a locale
   const pathnameHasLocale = locales.some(
@@ -32,6 +45,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: [
     // Skip all internal paths (_next)
-    '/((?!_next|api|favicon.ico).*)',
+    '/((?!_next/static|_next/image|api|favicon.ico).*)',
   ],
 }
