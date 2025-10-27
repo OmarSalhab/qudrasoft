@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Home Pages -->
+  <url>
+    <loc>https://www.solvenear.com/ar</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.solvenear.com/ar"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.solvenear.com/ar"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- About Pages -->
+  <url>
+    <loc>https://www.solvenear.com/ar/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/about"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/about"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Pages -->
+  <url>
+    <loc>https://www.solvenear.com/ar/services/website-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/services/website-development"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/services/website-development"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en/services/website-development</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/services/website-development"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/services/website-development"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.solvenear.com/ar/services/qr-solutions</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/services/qr-solutions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/services/qr-solutions"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en/services/qr-solutions</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/services/qr-solutions"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/services/qr-solutions"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact Pages -->
+  <url>
+    <loc>https://www.solvenear.com/ar/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/contact"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/contact"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ Pages -->
+  <url>
+    <loc>https://www.solvenear.com/ar/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/faq"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/faq"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/faq"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Pages -->
+  <url>
+    <loc>https://www.solvenear.com/ar/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/blog"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.solvenear.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.solvenear.com/en/blog"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.solvenear.com/ar/blog"/>
+    <lastmod>2025-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

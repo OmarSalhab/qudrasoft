@@ -72,6 +72,12 @@ export function FAQSection({ t, dir }: FAQSectionProps) {
 
 	const popularFAQs = faqs.filter((faq) => faq.popular);
 
+	async function testApi() {
+		const res = await fetch("/api/hello");
+		console.log(res);
+		const data = await res.json();
+		console.log(data);
+	}
 	return (
 		<section className="bg-gradient-to-br from-gray-50 to-white" dir={dir}>
 			<div className=" bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20">
@@ -121,7 +127,10 @@ export function FAQSection({ t, dir }: FAQSectionProps) {
 							{categories.map((category) => (
 								<button
 									key={category.id}
-									onClick={() => setSelectedCategory(category.id)}
+									onClick={() => {
+										testApi();
+										setSelectedCategory(category.id);
+									}}
 									className={`px-2 py-1 md:px-6 md:py-3 rounded-full font-semibold transition-all duration-300 ${
 										selectedCategory === category.id
 											? "bg-gradient-to-tl  to-red-400 from-blue-400 text-white shadow-lg transform scale-105"

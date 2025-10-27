@@ -14,6 +14,66 @@ import { getDirection } from "../../../../lib/i18n";
 import type { Locale } from "../../../../lib/i18n";
 import Hero from "@/components/Services/HeroSection";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+	const { locale } = await params;
+
+	const metadata = {
+		ar: {
+			title: "تطوير المواقع الإلكترونية | تصميم مواقع احترافية - سولڤنير",
+			description:
+				"خدمات تطوير وتصميم المواقع الإلكترونية الاحترافية. مواقع متجاوبة، سريعة، وآمنة. تصميم حديث، SEO متقدم، استضافة مجانية. باقات تبدأ من 50 دينار شهرياً. خدمة عملاء 24/7 ودعم فني مستمر.",
+			keywords:
+				"تطوير مواقع, تصميم مواقع, مواقع احترافية, تصميم ويب, مواقع متجاوبة, شركة تطوير مواقع الأردن, برمجة مواقع, مواقع شركات, متاجر إلكترونية, SEO, استضافة مواقع, تصميم مواقع عصرية",
+		},
+		en: {
+			title: "Website Development | Professional Web Design - Solvenear",
+			description:
+				"Professional website development and design services. Responsive, fast, and secure websites. Modern design, advanced SEO, free hosting. Packages starting from 50 JOD monthly. 24/7 customer service and continuous technical support.",
+			keywords:
+				"web development, website design, professional websites, web design, responsive websites, Jordan web development company, website programming, corporate websites, e-commerce, SEO, web hosting, modern web design",
+		},
+	};
+
+	const current = metadata[locale];
+
+	return {
+		title: current.title,
+		description: current.description,
+		keywords: current.keywords,
+		alternates: {
+			canonical: `/${locale}/services/website-development`,
+			languages: {
+				en: "/en/services/website-development",
+				ar: "/ar/services/website-development",
+			},
+		},
+		openGraph: {
+			title: current.title,
+			description: current.description,
+			url: `https://www.solvenear.com/${locale}/services/website-development`,
+			type: "website",
+			images: [
+				{
+					url: "https://www.solvenear.com/favicon.ico",
+					width: 512,
+					height: 512,
+					alt: "Solvenear Website Development",
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: current.title,
+			description: current.description,
+		},
+	};
+}
 
 export default async function WebsiteServicesPage({
 	params,

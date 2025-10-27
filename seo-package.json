@@ -1,0 +1,8 @@
+{
+  "name": "solvenear",
+  "scripts": {
+    "seo:check": "echo 'SEO Validation:' && echo '1. Checking sitemap...' && curl -s https://www.solvenear.com/sitemap.xml | head -20 && echo '\\n2. Checking robots.txt...' && curl -s https://www.solvenear.com/robots.txt",
+    "seo:validate": "echo 'Run these manual checks:' && echo '1. Google Rich Results Test: https://search.google.com/test/rich-results' && echo '2. PageSpeed Insights: https://pagespeed.web.dev/' && echo '3. Mobile-Friendly Test: https://search.google.com/test/mobile-friendly'",
+    "seo:submit": "echo 'Submit your sitemap to:' && echo '1. Google Search Console: https://search.google.com/search-console' && echo '2. Bing Webmaster Tools: https://www.bing.com/webmasters' && echo '3. Yandex Webmaster: https://webmaster.yandex.com/'"
+  }
+}

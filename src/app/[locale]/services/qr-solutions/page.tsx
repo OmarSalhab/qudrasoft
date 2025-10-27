@@ -16,6 +16,66 @@ import { getTranslation } from "../../../../lib/translations";
 import { getDirection } from "../../../../lib/i18n";
 import type { Locale } from "../../../../lib/i18n";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+	params,
+}: {
+	params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+	const { locale } = await params;
+
+	const metadata = {
+		ar: {
+			title: "حلول QR الذكية | قوائم طعام رقمية ونظام طلبات - سولڤنير",
+			description:
+				"حلول QR متطورة للمطاعم والفنادق. قوائم طعام رقمية، نظام طلبات ذكي، عروض ديناميكية. وفر 60% من التكاليف وزد مبيعاتك 70%. باقات تبدأ من 199 دينار. QR Menu، QR Ordering، QR Offers.",
+			keywords:
+				"حلول QR, قائمة طعام رقمية, نظام طلبات, QR Menu, QR Code, مطاعم, فنادق, قوائم إلكترونية, نظام طلبات ذكي, عروض رقمية, أتمتة مطاعم, تطبيق طلبات, منيو رقمي, QR Solutions Jordan",
+		},
+		en: {
+			title: "Smart QR Solutions | Digital Menus & Ordering System - Solvenear",
+			description:
+				"Advanced QR solutions for restaurants and hotels. Digital menus, smart ordering system, dynamic offers. Save 60% on costs and increase sales by 70%. Packages from 199 JOD. QR Menu, QR Ordering, QR Offers.",
+			keywords:
+				"QR solutions, digital menu, ordering system, QR Menu, QR Code, restaurants, hotels, electronic menus, smart ordering system, digital offers, restaurant automation, ordering app, digital menu, QR Solutions Jordan",
+		},
+	};
+
+	const current = metadata[locale];
+
+	return {
+		title: current.title,
+		description: current.description,
+		keywords: current.keywords,
+		alternates: {
+			canonical: `/${locale}/services/qr-solutions`,
+			languages: {
+				en: "/en/services/qr-solutions",
+				ar: "/ar/services/qr-solutions",
+			},
+		},
+		openGraph: {
+			title: current.title,
+			description: current.description,
+			url: `https://www.solvenear.com/${locale}/services/qr-solutions`,
+			type: "website",
+			images: [
+				{
+					url: "https://www.solvenear.com/favicon.ico",
+					width: 512,
+					height: 512,
+					alt: "Solvenear QR Solutions",
+				},
+			],
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: current.title,
+			description: current.description,
+		},
+	};
+}
 
 export default async function QRSolutionsPage({
 	params,
